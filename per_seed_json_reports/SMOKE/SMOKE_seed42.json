@@ -1,0 +1,56 @@
+{
+  "experiment": "smoke_test",
+  "scenario_id": "SMOKE",
+  "random_seed": 42,
+  "timestamp": "2026-09-10T09:30:14.409602+00:00",
+  "provenance": {
+    "model_version": "1.0",
+    "ontology_version": "IFC4X3_ADD2/OWL + hep",
+    "ifc_version": "IFC4X3_ADD2",
+    "llm_model": "none(template)",
+    "prompt_version": "v1",
+    "dataset_version": "OFFICIAL_PLAN_QINGHAI",
+    "algorithm_version": "proposed_nsga2(seed42)"
+  },
+  "event": {
+    "event_id": "EVT-SMOKE-001",
+    "type": "TRAFFIC_ACCIDENT",
+    "severity": "III"
+  },
+  "processes": 1,
+  "tasks": 3,
+  "resources": 5,
+  "dispatch": {
+    "strategy": "proposed_nsga2",
+    "seed": 42,
+    "assigned": {
+      "SMOKE-T01": "RES-QH-007",
+      "SMOKE-T02": "RES-QH-008",
+      "SMOKE-T03": "RES-SIM-001"
+    },
+    "unmet": [],
+    "metrics": {
+      "demand_fulfillment_rate": 1.0,
+      "weighted_response_distance_km": 220.17229038234,
+      "mean_response_time_h": 1.3369325974069062,
+      "gini_fairness": 0.0,
+      "unmet_demands": 0,
+      "violation_rate": 0.0,
+      "violation_count": 0
+    },
+    "feasible": true,
+    "front_size": 40
+  },
+  "plan_valid": true,
+  "plan_unmet": [],
+  "provisions": 5,
+  "grounding_in_ontology": true,
+  "ifc_round_trip_identical": true,
+  "sparql_ifc_task_count": 3,
+  "artifacts": {
+    "ifc": "C:\\Users\\Young\\Desktop\\IFC\\highway-emergency-ifc\\experiments\\outputs\\SMOKE\\SMOKE.ifc",
+    "ttl": "C:\\Users\\Young\\Desktop\\IFC\\highway-emergency-ifc\\experiments\\outputs\\SMOKE\\SMOKE.ttl",
+    "plan_json": "C:\\Users\\Young\\Desktop\\IFC\\highway-emergency-ifc\\experiments\\outputs\\SMOKE\\SMOKE_plan.json",
+    "plan_txt": "C:\\Users\\Young\\Desktop\\IFC\\highway-emergency-ifc\\experiments\\outputs\\SMOKE\\SMOKE_plan.txt"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "status": "RUN (placement / re-snapping)",
+  "n_rows": 84,
+  "node_changed_by_radius": {
+    "0.0": 0,
+    "1.0": 24,
+    "3.0": 27
+  },
+  "full_network_matrix_recompute": "NOT RUN",
+  "full_dispatch_rerun_under_perturbation": "NOT RUN"
+}

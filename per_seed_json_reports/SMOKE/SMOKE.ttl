@@ -1,0 +1,431 @@
+@prefix ex: <https://w3id.org/hepn/instances/> .
+@prefix hep: <https://w3id.org/hepn/> .
+@prefix ifcowl: <https://standards.buildingsmart.org/IFC/DEV/IFC4X3/ADD2/OWL/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+hep:ExtremeWeatherEvent a owl:Class ;
+    rdfs:label "ExtremeWeatherEvent" ;
+    rdfs:comment "极端天气事件 — 附件1类别: 恶劣天气" ;
+    rdfs:subClassOf hep:HighwayEmergencyEvent .
+
+hep:GeologicalDisasterEvent a owl:Class ;
+    rdfs:label "GeologicalDisasterEvent" ;
+    rdfs:comment "地质灾害事件 — 附件1类别: 公路水运工程基础设施" ;
+    rdfs:subClassOf hep:HighwayEmergencyEvent .
+
+hep:HazardousChemicalLeakEvent a owl:Class ;
+    rdfs:label "HazardousChemicalLeakEvent" ;
+    rdfs:comment "危化品泄漏事件 — 附件1类别: 危险化学(品)运输车辆事故" ;
+    rdfs:subClassOf hep:HighwayEmergencyEvent .
+
+hep:InfrastructureFailureEvent a owl:Class ;
+    rdfs:label "InfrastructureFailureEvent" ;
+    rdfs:comment "基础设施失效事件 — 附件1类别: 公路水运工程基础设施" ;
+    rdfs:subClassOf hep:HighwayEmergencyEvent .
+
+hep:actualResourceQuantity a owl:DatatypeProperty ;
+    rdfs:label "actualResourceQuantity" ;
+    rdfs:domain ifcowl:IfcTask ;
+    rdfs:range xsd:integer .
+
+hep:assignedToTask a owl:ObjectProperty ;
+    rdfs:label "assignedToTask" ;
+    rdfs:domain ifcowl:IfcCrewResource ;
+    rdfs:range ifcowl:IfcTask .
+
+hep:blockageStatus a owl:DatatypeProperty ;
+    rdfs:label "blockageStatus" ;
+    rdfs:domain ifcowl:IfcEvent ;
+    rdfs:range xsd:string .
+
+hep:capacity a owl:DatatypeProperty ;
+    rdfs:label "capacity" ;
+    rdfs:domain owl:Thing ;
+    rdfs:range xsd:float .
+
+hep:casualtyCount a owl:DatatypeProperty ;
+    rdfs:label "casualtyCount" ;
+    rdfs:domain ifcowl:IfcEvent ;
+    rdfs:range xsd:integer .
+
+hep:completionRate a owl:DatatypeProperty ;
+    rdfs:label "completionRate" ;
+    rdfs:domain ifcowl:IfcProcedure ;
+    rdfs:range xsd:float .
+
+hep:confidence a owl:DatatypeProperty ;
+    rdfs:label "confidence" ;
+    rdfs:domain ifcowl:IfcEvent ;
+    rdfs:range xsd:float .
+
+hep:dataProvenance a owl:DatatypeProperty ;
+    rdfs:label "dataProvenance" ;
+    rdfs:domain owl:Thing ;
+    rdfs:range xsd:string .
+
+hep:eventType a owl:DatatypeProperty ;
+    rdfs:label "eventType" ;
+    rdfs:domain ifcowl:IfcEvent ;
+    rdfs:range xsd:string .
+
+hep:expectedDurationHours a owl:DatatypeProperty ;
+    rdfs:label "expectedDurationHours" ;
+    rdfs:domain ifcowl:IfcTask ;
+    rdfs:range xsd:float .
+
+hep:hasIncidentType a owl:ObjectProperty ;
+    rdfs:label "hasIncidentType" ;
+    rdfs:domain ifcowl:IfcEvent ;
+    rdfs:range ifcowl:IfcEvent,
+        hep:HighwayEmergencyEvent .
+
+hep:hasTask a owl:ObjectProperty ;
+    rdfs:label "hasTask" ;
+    rdfs:domain ifcowl:IfcProcedure ;
+    rdfs:range ifcowl:IfcTask .
+
+ex:EVT-SMOKE-001 a ifcowl:IfcEvent ;
+    ifcowl:identification "EVT-SMOKE-001" ;
+    ifcowl:name "追尾事故（演示）" ;
+    ifcowl:objectType "HighwayEmergencyEvent" ;
+    ifcowl:predefinedType "STARTEVENT" ;
+    hep:blockageStatus "OPEN" ;
+    hep:casualtyCount 0 ;
+    hep:confidence "1.0"^^xsd:float ;
+    hep:dataProvenance "derived|SYNTH_SCENARIO_GEN|run_experiments#smoke" ;
+    hep:eventType "TRAFFIC_ACCIDENT" ;
+    hep:hasIncidentType hep:TrafficAccidentEvent ;
+    hep:locationReference "G3011-K350+600" ;
+    hep:provenanceLevel "derived" ;
+    hep:secondaryHazard false ;
+    hep:severityLevel "III" ;
+    hep:sourceId "SYNTH_SCENARIO_GEN" ;
+    hep:startTime "2026-09-08T14:05:00" ;
+    hep:triggersProcess ex:SMOKE-P01 ;
+    hep:vehicleCount 0 .
+
+ex:RES-QH-001 a ifcowl:IfcCrewResource ;
+    ifcowl:description "青海艺苑龙羊峡水陆运输有限公司" ;
+    ifcowl:identification "RES-QH-001" ;
+    ifcowl:name "龙羊峡水上应急救助分队" ;
+    ifcowl:objectType "RESCUE_TEAM" ;
+    hep:capacity "20.0"^^xsd:float ;
+    hep:dataProvenance "official|QH_JTT_PLAN_2024|附件4#row1" ;
+    hep:latitude "36.744"^^xsd:float ;
+    hep:longitude "100.4532"^^xsd:float ;
+    hep:needsVerification "status:synthetic|travel_speed_kmh:simulated|availability_time:synthetic|capacity:derived|current_assignment:derived|last_update_time:synthetic" ;
+    hep:personCount 20 ;
+    hep:provenanceLevel "official" ;
+    hep:resourceStatus "AVAILABLE" ;
+    hep:resourceType "RESCUE_TEAM" ;
+    hep:sourceId "QH_JTT_PLAN_2024" ;
+    hep:specialCapabilities "负责辖区水域突发事件的应急救援任务。" ;
+    hep:travelSpeedKmh "60.0"^^xsd:float .
+
+ex:RES-QH-002 a ifcowl:IfcCrewResource ;
+    ifcowl:description "贵德县滨顺航运旅游有限责任公司" ;
+    ifcowl:identification "RES-QH-002" ;
+    ifcowl:name "贵德县滨顺航运旅游有限责任公司" ;
+    ifcowl:objectType "RESCUE_TEAM" ;
+    hep:capacity "10.0"^^xsd:float ;
+    hep:dataProvenance "official|QH_JTT_PLAN_2024|附件4#row2" ;
+    hep:latitude "36.315"^^xsd:float ;
+    hep:longitude "101.2531"^^xsd:float ;
+    hep:needsVerification "status:synthetic|travel_speed_kmh:simulated|availability_time:synthetic|capacity:derived|current_assignment:derived|last_update_time:synthetic" ;
+    hep:personCount 10 ;
+    hep:provenanceLevel "official" ;
+    hep:resourceStatus "AVAILABLE" ;
+    hep:resourceType "RESCUE_TEAM" ;
+    hep:sourceId "QH_JTT_PLAN_2024" ;
+    hep:specialCapabilities "负责辖区水域突发事件的应急救援任务。" ;
+    hep:travelSpeedKmh "60.0"^^xsd:float .
+
+ex:RES-SIM-001 a ifcowl:IfcConstructionEquipmentResource ;
+    ifcowl:description "simulated inventory @ Xining-Depot" ;
+    ifcowl:identification "RES-SIM-001" ;
+    ifcowl:name "清障车-Wrecker-A" ;
+    ifcowl:objectType "EQUIPMENT" ;
+    hep:capacity "2.0"^^xsd:float ;
+    hep:dataProvenance "simulated|SYNTH_INVENTORY_001|resource_engine/inventory.py#DEFAULT_INVENTORY_SPEC" ;
+    hep:latitude "36.617"^^xsd:float ;
+    hep:longitude "101.778"^^xsd:float ;
+    hep:needsVerification "ALL:simulated|depot:Xining-Depot" ;
+    hep:personCount 2 ;
+    hep:provenanceLevel "simulated" ;
+    hep:resourceStatus "AVAILABLE" ;
+    hep:resourceType "EQUIPMENT" ;
+    hep:sourceId "SYNTH_INVENTORY_001" ;
+    hep:specialCapabilities "simulated" ;
+    hep:travelSpeedKmh "50.0"^^xsd:float .
+
+ex:RES-SIM-002 a ifcowl:IfcConstructionEquipmentResource ;
+    ifcowl:description "simulated inventory @ Golmud-Depot" ;
+    ifcowl:identification "RES-SIM-002" ;
+    ifcowl:name "清障车-Wrecker-B" ;
+    ifcowl:objectType "EQUIPMENT" ;
+    hep:capacity "2.0"^^xsd:float ;
+    hep:dataProvenance "simulated|SYNTH_INVENTORY_001|resource_engine/inventory.py#DEFAULT_INVENTORY_SPEC" ;
+    hep:latitude "36.402"^^xsd:float ;
+    hep:longitude "94.903"^^xsd:float ;
+    hep:needsVerification "ALL:simulated|depot:Golmud-Depot" ;
+    hep:personCount 2 ;
+    hep:provenanceLevel "simulated" ;
+    hep:resourceStatus "AVAILABLE" ;
+    hep:resourceType "EQUIPMENT" ;
+    hep:sourceId "SYNTH_INVENTORY_001" ;
+    hep:specialCapabilities "simulated" ;
+    hep:travelSpeedKmh "50.0"^^xsd:float .
+
+ex:RES-SIM-008 a ifcowl:IfcCrewResource ;
+    ifcowl:description "simulated inventory @ Xining-Depot" ;
+    ifcowl:identification "RES-SIM-008" ;
+    ifcowl:name "医疗急救组-Medic-A" ;
+    ifcowl:objectType "MEDICAL_TEAM" ;
+    hep:capacity "4.0"^^xsd:float ;
+    hep:dataProvenance "simulated|SYNTH_INVENTORY_001|resource_engine/inventory.py#DEFAULT_INVENTORY_SPEC" ;
+    hep:latitude "36.617"^^xsd:float ;
+    hep:longitude "101.778"^^xsd:float ;
+    hep:needsVerification "ALL:simulated|depot:Xining-Depot" ;
+    hep:personCount 4 ;
+    hep:provenanceLevel "simulated" ;
+    hep:resourceStatus "AVAILABLE" ;
+    hep:resourceType "MEDICAL_TEAM" ;
+    hep:sourceId "SYNTH_INVENTORY_001" ;
+    hep:specialCapabilities "simulated" ;
+    hep:travelSpeedKmh "50.0"^^xsd:float .
+
+hep:latitude a owl:DatatypeProperty ;
+    rdfs:label "latitude" ;
+    rdfs:domain owl:Thing ;
+    rdfs:range xsd:float .
+
+hep:locationReference a owl:DatatypeProperty ;
+    rdfs:label "locationReference" ;
+    rdfs:domain ifcowl:IfcEvent ;
+    rdfs:range xsd:string .
+
+hep:longitude a owl:DatatypeProperty ;
+    rdfs:label "longitude" ;
+    rdfs:domain owl:Thing ;
+    rdfs:range xsd:float .
+
+hep:needsVerification a owl:DatatypeProperty ;
+    rdfs:label "needsVerification" ;
+    rdfs:domain owl:Thing ;
+    rdfs:range xsd:string .
+
+hep:ontology a owl:Ontology ;
+    owl:imports ifcowl: .
+
+hep:personCount a owl:DatatypeProperty ;
+    rdfs:label "personCount" ;
+    rdfs:domain owl:Thing ;
+    rdfs:range xsd:integer .
+
+hep:precedesTask a owl:ObjectProperty ;
+    rdfs:label "precedesTask" ;
+    rdfs:domain ifcowl:IfcTask ;
+    rdfs:range ifcowl:IfcTask .
+
+hep:predecessorTaskId a owl:DatatypeProperty ;
+    rdfs:label "predecessorTaskId" ;
+    rdfs:domain ifcowl:IfcTask ;
+    rdfs:range xsd:string .
+
+hep:priority a owl:DatatypeProperty ;
+    rdfs:label "priority" ;
+    rdfs:domain ifcowl:IfcProcedure ;
+    rdfs:range xsd:integer .
+
+hep:processStatus a owl:DatatypeProperty ;
+    rdfs:label "processStatus" ;
+    rdfs:domain ifcowl:IfcProcedure ;
+    rdfs:range xsd:string .
+
+hep:processType a owl:DatatypeProperty ;
+    rdfs:label "processType" ;
+    rdfs:domain ifcowl:IfcProcedure ;
+    rdfs:range xsd:string .
+
+hep:provenanceLevel a owl:DatatypeProperty ;
+    rdfs:label "provenanceLevel" ;
+    rdfs:domain owl:Thing ;
+    rdfs:range xsd:string .
+
+hep:replanningCount a owl:DatatypeProperty ;
+    rdfs:label "replanningCount" ;
+    rdfs:domain ifcowl:IfcProcedure ;
+    rdfs:range xsd:integer .
+
+hep:requiredQuantity a owl:DatatypeProperty ;
+    rdfs:label "requiredQuantity" ;
+    rdfs:domain ifcowl:IfcTask ;
+    rdfs:range xsd:integer .
+
+hep:requiredResourceType a owl:DatatypeProperty ;
+    rdfs:label "requiredResourceType" ;
+    rdfs:domain ifcowl:IfcTask ;
+    rdfs:range xsd:string .
+
+hep:resourceStatus a owl:DatatypeProperty ;
+    rdfs:label "resourceStatus" ;
+    rdfs:domain owl:Thing ;
+    rdfs:range xsd:string .
+
+hep:resourceType a owl:DatatypeProperty ;
+    rdfs:label "resourceType" ;
+    rdfs:domain owl:Thing ;
+    rdfs:range xsd:string .
+
+hep:secondaryHazard a owl:DatatypeProperty ;
+    rdfs:label "secondaryHazard" ;
+    rdfs:domain ifcowl:IfcEvent ;
+    rdfs:range xsd:boolean .
+
+hep:severityLevel a owl:DatatypeProperty ;
+    rdfs:label "severityLevel" ;
+    rdfs:domain ifcowl:IfcEvent ;
+    rdfs:range xsd:string .
+
+hep:sourceId a owl:DatatypeProperty ;
+    rdfs:label "sourceId" ;
+    rdfs:domain owl:Thing ;
+    rdfs:range xsd:string .
+
+hep:specialCapabilities a owl:DatatypeProperty ;
+    rdfs:label "specialCapabilities" ;
+    rdfs:domain owl:Thing ;
+    rdfs:range xsd:string .
+
+hep:startTime a owl:DatatypeProperty ;
+    rdfs:label "startTime" ;
+    rdfs:domain ifcowl:IfcEvent ;
+    rdfs:range xsd:string .
+
+hep:taskStatus a owl:DatatypeProperty ;
+    rdfs:label "taskStatus" ;
+    rdfs:domain ifcowl:IfcTask ;
+    rdfs:range xsd:string .
+
+hep:taskType a owl:DatatypeProperty ;
+    rdfs:label "taskType" ;
+    rdfs:domain ifcowl:IfcTask ;
+    rdfs:range xsd:string .
+
+hep:travelSpeedKmh a owl:DatatypeProperty ;
+    rdfs:label "travelSpeedKmh" ;
+    rdfs:domain owl:Thing ;
+    rdfs:range xsd:float .
+
+hep:triggerEventId a owl:DatatypeProperty ;
+    rdfs:label "triggerEventId" ;
+    rdfs:domain ifcowl:IfcProcedure ;
+    rdfs:range xsd:string .
+
+hep:triggersProcess a owl:ObjectProperty ;
+    rdfs:label "triggersProcess" ;
+    rdfs:domain ifcowl:IfcEvent ;
+    rdfs:range ifcowl:IfcProcedure .
+
+hep:vehicleCount a owl:DatatypeProperty ;
+    rdfs:label "vehicleCount" ;
+    rdfs:domain ifcowl:IfcEvent ;
+    rdfs:range xsd:integer .
+
+hep:TrafficAccidentEvent a owl:Class ;
+    rdfs:label "TrafficAccidentEvent" ;
+    rdfs:comment "交通事故事件 — 附件1类别: 交通安全事故" ;
+    rdfs:subClassOf hep:HighwayEmergencyEvent .
+
+ex:SMOKE-P01 a ifcowl:IfcProcedure ;
+    ifcowl:identification "SMOKE-P01" ;
+    ifcowl:name "抢险救援" ;
+    ifcowl:objectType "RescueProcess" ;
+    ifcowl:predefinedType "USERDEFINED" ;
+    hep:completionRate "0.0"^^xsd:float ;
+    hep:dataProvenance "derived|SPEC_001|process_engine/templates" ;
+    hep:hasTask ex:SMOKE-T01,
+        ex:SMOKE-T02,
+        ex:SMOKE-T03 ;
+    hep:priority 0 ;
+    hep:processStatus "NOT_STARTED" ;
+    hep:processType "RESCUE" ;
+    hep:provenanceLevel "derived" ;
+    hep:replanningCount 0 ;
+    hep:sourceId "SPEC_001" ;
+    hep:triggerEventId "EVT-SMOKE-001" .
+
+ex:SMOKE-T01 a ifcowl:IfcTask ;
+    ifcowl:identification "SMOKE-T01" ;
+    ifcowl:name "现场评估" ;
+    ifcowl:objectType "SCENE_ASSESSMENT" ;
+    ifcowl:predefinedType "EMERGENCY" ;
+    ifcowl:priority 0 ;
+    ifcowl:status "PENDING" ;
+    hep:actualResourceQuantity 0 ;
+    hep:dataProvenance "derived|SPEC_001|process_engine/templates" ;
+    hep:expectedDurationHours "0.5"^^xsd:float ;
+    hep:precedesTask ex:SMOKE-T02 ;
+    hep:priority 0 ;
+    hep:provenanceLevel "derived" ;
+    hep:requiredQuantity 1 ;
+    hep:requiredResourceType "RESCUE_TEAM" ;
+    hep:sourceId "SPEC_001" ;
+    hep:taskStatus "PENDING" ;
+    hep:taskType "SCENE_ASSESSMENT" .
+
+ifcowl:IfcConstructionEquipmentResource a owl:Class .
+
+ex:SMOKE-T02 a ifcowl:IfcTask ;
+    ifcowl:identification "SMOKE-T02" ;
+    ifcowl:name "搜救被困人员" ;
+    ifcowl:objectType "RESCUE_TRAPPED_PERSONS" ;
+    ifcowl:predefinedType "EMERGENCY" ;
+    ifcowl:priority 0 ;
+    ifcowl:status "PENDING" ;
+    hep:actualResourceQuantity 0 ;
+    hep:dataProvenance "derived|SPEC_001|process_engine/templates" ;
+    hep:expectedDurationHours "2.0"^^xsd:float ;
+    hep:precedesTask ex:SMOKE-T03 ;
+    hep:predecessorTaskId "SMOKE-T01" ;
+    hep:priority 0 ;
+    hep:provenanceLevel "derived" ;
+    hep:requiredQuantity 1 ;
+    hep:requiredResourceType "RESCUE_TEAM" ;
+    hep:sourceId "SPEC_001" ;
+    hep:taskStatus "PENDING" ;
+    hep:taskType "RESCUE_TRAPPED_PERSONS" .
+
+ex:SMOKE-T03 a ifcowl:IfcTask ;
+    ifcowl:identification "SMOKE-T03" ;
+    ifcowl:name "清障保通" ;
+    ifcowl:objectType "REMOVE_DAMAGED_VEHICLES" ;
+    ifcowl:predefinedType "EMERGENCY" ;
+    ifcowl:priority 0 ;
+    ifcowl:status "PENDING" ;
+    hep:actualResourceQuantity 0 ;
+    hep:dataProvenance "derived|SPEC_001|process_engine/templates" ;
+    hep:expectedDurationHours "1.5"^^xsd:float ;
+    hep:predecessorTaskId "SMOKE-T02" ;
+    hep:priority 0 ;
+    hep:provenanceLevel "derived" ;
+    hep:requiredQuantity 1 ;
+    hep:requiredResourceType "EQUIPMENT" ;
+    hep:sourceId "SPEC_001" ;
+    hep:taskStatus "PENDING" ;
+    hep:taskType "REMOVE_DAMAGED_VEHICLES" .
+
+ifcowl:IfcCrewResource a owl:Class .
+
+hep:HighwayEmergencyEvent a owl:Class ;
+    rdfs:label "HighwayEmergencyEvent" ;
+    rdfs:subClassOf ifcowl:IfcEvent .
+
+ifcowl:IfcProcedure a owl:Class .
+
+ifcowl:IfcEvent a owl:Class .
+
+ifcowl:IfcTask a owl:Class .
+

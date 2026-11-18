@@ -1,0 +1,28 @@
+=== E5 binomial CI (n=28) ===
+  assignment_fidelity: 28/28 = 1.0 CI95 [0.8766, 1.0]
+  provision_citation_full: 22/28 = 0.7857142857142857 CI95 [0.5905, 0.917]
+  unmet_warning_full: 28/28 = 1.0 CI95 [0.8766, 1.0]
+  quantity_mention_full: 28/28 = 1.0 CI95 [0.8766, 1.0]
+  no_hallucinated_ids: 28/28 = 1.0 CI95 [0.8766, 1.0]
+  plan_valid: 28/28 = 1.0 CI95 [0.8766, 1.0]
+  provision_citations_pooled: 134/140 = 0.9571 CI95 [0.9091, 0.9841]
+  hallucination 0/28 one-sided 95% upper: 0.1015
+=== ESC log-log fit (N=demands) ===
+  proposed: {'alpha': 1.727, 'r2': 0.9789, 'ci95': [1.261, 2.193], 'intercept': -5.043677800879459}
+  standard: {'alpha': 0.754, 'r2': 0.9435, 'ci95': [0.415, 1.093], 'intercept': -2.4598227084705426}
+=== 速度敏感性 (mean time h; p invariance) ===
+  60kmh: {'nearest': 6.969, 'rule_based': 9.542, 'standard_nsga2': 7.131, 'proposed_nsga2': 6.969, 'p_proposed_nsga2_vs_nearest': 0.5, 'p_invariant_proposed_nsga2_vs_nearest': True, 'p_proposed_nsga2_vs_rule_based': 0.0, 'p_invariant_proposed_nsga2_vs_rule_based': True, 'p_proposed_nsga2_vs_standard_nsga2': 5e-05, 'p_invariant_proposed_nsga2_vs_standard_nsga2': True}
+  80kmh: {'nearest': 5.227, 'rule_based': 7.157, 'standard_nsga2': 5.349, 'proposed_nsga2': 5.227, 'p_proposed_nsga2_vs_nearest': 0.5, 'p_invariant_proposed_nsga2_vs_nearest': True, 'p_proposed_nsga2_vs_rule_based': 0.0, 'p_invariant_proposed_nsga2_vs_rule_based': True, 'p_proposed_nsga2_vs_standard_nsga2': 5e-05, 'p_invariant_proposed_nsga2_vs_standard_nsga2': True}
+  100kmh: {'nearest': 4.182, 'rule_based': 5.725, 'standard_nsga2': 4.279, 'proposed_nsga2': 4.182, 'p_proposed_nsga2_vs_nearest': 0.5, 'p_invariant_proposed_nsga2_vs_nearest': True, 'p_proposed_nsga2_vs_rule_based': 0.0, 'p_invariant_proposed_nsga2_vs_rule_based': True, 'p_proposed_nsga2_vs_standard_nsga2': 5e-05, 'p_invariant_proposed_nsga2_vs_standard_nsga2': True}
+=== C1 traceability ===
+  scenarios: 28
+  gold_clauses_total: 180
+  kg_retrieved_total: 140
+  kg_grounded_total: 140
+  kg_grounding_rate: 1.0
+  kg_scenarios_all_grounded: 28
+  kg_official_provenance_rate_mean: 1.0
+  e5_assignments_total: 241
+  e5_provisions_total: 140
+  e5_scenarios_provision_full: 22
+  e5_scenarios_hallucination_free: 28

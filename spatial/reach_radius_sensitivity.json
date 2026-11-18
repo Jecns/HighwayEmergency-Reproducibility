@@ -1,0 +1,29 @@
+{
+  "status": "RUN",
+  "method": "explicit network-distance filter on cached matrix",
+  "constraint_is_official_rule": false,
+  "hard_constraint_in_dispatch": "NOT_IMPLEMENTED",
+  "rows": [
+    {
+      "reach_radius_km": 200.0,
+      "n_eligible": 178,
+      "n_excluded": 914,
+      "excluded_pct": 83.7,
+      "mean_eligible_net_dist_km": 106.777
+    },
+    {
+      "reach_radius_km": 300.0,
+      "n_eligible": 271,
+      "n_excluded": 821,
+      "excluded_pct": 75.18,
+      "mean_eligible_net_dist_km": 153.466
+    },
+    {
+      "reach_radius_km": 400.0,
+      "n_eligible": 366,
+      "n_excluded": 726,
+      "excluded_pct": 66.48,
+      "mean_eligible_net_dist_km": 203.44
+    }
+  ]
+}

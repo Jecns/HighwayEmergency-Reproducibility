@@ -1,0 +1,118 @@
+{
+  "status": "RUN",
+  "note": "SENSITIVITY ONLY. These 6 crews are NOT in the official primary pool. Hash-based _synthetic_coords() locations are never reused.",
+  "profiles": {
+    "co_located_proxy": [
+      {
+        "resource_id": "RES-SYN-TC-001",
+        "profile": "co_located_proxy",
+        "node_id": 8100570090,
+        "longitude": 100.505603,
+        "latitude": 36.592029,
+        "host_team_seq": 4,
+        "location_provenance": "synthetic_TC_co_located_with_official_unit_proxy"
+      },
+      {
+        "resource_id": "RES-SYN-TC-002",
+        "profile": "co_located_proxy",
+        "node_id": 4974138097,
+        "longitude": 102.035685,
+        "latitude": 35.961762,
+        "host_team_seq": 6,
+        "location_provenance": "synthetic_TC_co_located_with_official_unit_proxy"
+      },
+      {
+        "resource_id": "RES-SYN-TC-003",
+        "profile": "co_located_proxy",
+        "node_id": 12603953053,
+        "longitude": 102.919906,
+        "latitude": 35.843914,
+        "host_team_seq": 7,
+        "location_provenance": "synthetic_TC_co_located_with_official_unit_proxy"
+      },
+      {
+        "resource_id": "RES-SYN-TC-004",
+        "profile": "co_located_proxy",
+        "node_id": 2304058191,
+        "longitude": 102.551595,
+        "latitude": 35.840778,
+        "host_team_seq": 8,
+        "location_provenance": "synthetic_TC_co_located_with_official_unit_proxy"
+      },
+      {
+        "resource_id": "RES-SYN-TC-005",
+        "profile": "co_located_proxy",
+        "node_id": 7512210914,
+        "longitude": 101.763985,
+        "latitude": 36.638762,
+        "host_team_seq": 9,
+        "location_provenance": "synthetic_TC_co_located_with_official_unit_proxy"
+      },
+      {
+        "resource_id": "RES-SYN-TC-006",
+        "profile": "co_located_proxy",
+        "node_id": 3755479837,
+        "longitude": 101.772691,
+        "latitude": 36.654065,
+        "host_team_seq": 10,
+        "location_provenance": "synthetic_TC_co_located_with_official_unit_proxy"
+      }
+    ],
+    "corridor_balanced_proxy": [
+      {
+        "resource_id": "RES-SYN-TC-001",
+        "profile": "corridor_balanced_proxy",
+        "node_id": 2525793333,
+        "longitude": 95.019236,
+        "latitude": 38.030649,
+        "host_scenario_id": "S01",
+        "location_provenance": "synthetic_TC_corridor_balanced_route_relative_proxy"
+      },
+      {
+        "resource_id": "RES-SYN-TC-002",
+        "profile": "corridor_balanced_proxy",
+        "node_id": 3034058716,
+        "longitude": 95.453507,
+        "latitude": 37.445791,
+        "host_scenario_id": "S06",
+        "location_provenance": "synthetic_TC_corridor_balanced_route_relative_proxy"
+      },
+      {
+        "resource_id": "RES-SYN-TC-003",
+        "profile": "corridor_balanced_proxy",
+        "node_id": 6139890699,
+        "longitude": 99.782842,
+        "latitude": 36.457135,
+        "host_scenario_id": "S12",
+        "location_provenance": "synthetic_TC_corridor_balanced_route_relative_proxy"
+      },
+      {
+        "resource_id": "RES-SYN-TC-004",
+        "profile": "corridor_balanced_proxy",
+        "node_id": 10285492503,
+        "longitude": 100.814568,
+        "latitude": 36.357079,
+        "host_scenario_id": "S17",
+        "location_provenance": "synthetic_TC_corridor_balanced_route_relative_proxy"
+      },
+      {
+        "resource_id": "RES-SYN-TC-005",
+        "profile": "corridor_balanced_proxy",
+        "node_id": 1231622534,
+        "longitude": 94.909057,
+        "latitude": 36.390114,
+        "host_scenario_id": "S23",
+        "location_provenance": "synthetic_TC_corridor_balanced_route_relative_proxy"
+      },
+      {
+        "resource_id": "RES-SYN-TC-006",
+        "profile": "corridor_balanced_proxy",
+        "node_id": 1231622534,
+        "longitude": 94.909057,
+        "latitude": 36.390114,
+        "host_scenario_id": "S28",
+        "location_provenance": "synthetic_TC_corridor_balanced_route_relative_proxy"
+      }
+    ]
+  }
+}

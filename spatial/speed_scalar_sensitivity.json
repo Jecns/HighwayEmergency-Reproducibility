@@ -1,0 +1,25 @@
+{
+  "status": "RUN",
+  "method": "dimensionless factor on cached travel time",
+  "note": "scenario factor, NOT measured speed; D3 unchanged",
+  "rows": [
+    {
+      "speed_scalar": 0.6,
+      "mean_net_time_min": 596.997,
+      "distance_unchanged": true,
+      "interpretation": "dimensionless scenario factor on travel time; NOT measured speed and NOT used inside D3"
+    },
+    {
+      "speed_scalar": 0.8,
+      "mean_net_time_min": 447.748,
+      "distance_unchanged": true,
+      "interpretation": "dimensionless scenario factor on travel time; NOT measured speed and NOT used inside D3"
+    },
+    {
+      "speed_scalar": 1.0,
+      "mean_net_time_min": 358.198,
+      "distance_unchanged": true,
+      "interpretation": "dimensionless scenario factor on travel time; NOT measured speed and NOT used inside D3"
+    }
+  ]
+}

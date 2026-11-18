@@ -1,0 +1,303 @@
+{
+  "generated_at_local": "2026-11-13 11:12:02",
+  "never_pool_configs": true,
+  "critical_note": "A and B are independent experiments; they differ in distance metric, resource pool AND coordinate basis.",
+  "configs": {
+    "A": {
+      "config": "A",
+      "provider": "haversine",
+      "new_runs": 2240,
+      "new_event_rows": 3820,
+      "old_runs": 2240,
+      "old_status": "superseded_pending_demand_integrity_correction",
+      "variant": "fixed_v2_full_diagnostics",
+      "network_import_shim": false,
+      "source_sha256": {
+        "scripts/run_dynamic_benchmark_v4.py": "77ed7873507b30842ed988c6d841ee16c74a1a79280724a94d2c489bd554bd8a",
+        "audit_demand_integrity/run_dynamic_benchmark_v4_fixed.py": "761ff424fd433bc25d1336359333147163aed6e716f28ae604e5b131af57e389",
+        "audit_demand_integrity/run_dynamic_benchmark_v5_verified.py": "04c7d76690502fdedc2fca6d5ce2c33e3f515a29da8a162f9452a9f92357772f",
+        "audit_demand_integrity/build_verified_variant.py": "984bbe61e1143f438e8280877f62eb431503195b9c64e84ec90fa0aaedf348a5",
+        "audit_demand_integrity/experiment_configs.json": "83d5743dc8d5a4b30aa7d94bdfd41dedfafb79d062012bb86092f1953adf3686",
+        "audit_demand_integrity/audit_demand_integrity.py": "7de86653555d5026cc8e83e57113b49dc5560cd7c5229ad6e488c33b9ea7fe81",
+        "audit_demand_integrity/run_verified_replay.py": "4b559f3e34bb39cf07e4b3ac16c08478cc31053422043c60e2edca3c6010d605",
+        "src/pipeline/event_registry.py": "f00d60476fd126ae50b939a6b9d6314ce5e208fdd3ecb9ba1da14084c67cf09d",
+        "src/dispatch/problem.py": "2aa5fc41f14eefde5f617371c2613c0d122b1397339683d091d0366c21838c2b",
+        "src/dispatch/redispatch.py": "411371c9793a5422e006fc17ecac32903a616165d4b300c5c2f7c2044dccc839",
+        "src/dispatch/nsga2.py": "44094307112df2bf52414d6ab5f0d0c177d7a482fa839767e103917931018dec",
+        "src/dispatch/objectives.py": "a878dcd188e79b67f2690880bbe7906e2abff3fea9f0e751e627ad1c7d0ef4c1",
+        "src/dispatch/constraints.py": "2687d5e5cd1f04df4fd58b4c8b07bc3bd889a7566309e077e6754bcc49807114",
+        "src/road_network/router.py": "e9a2cf4eefa3bbccd831ee1f66d419a38039ccad396a0bf21fda5a24bfdee298",
+        "scripts/run_experiments.py": "4232ffc93a2753daf46d67e1a9f6f946cd24d90bad7e3dbe44ec80f43b7e7537",
+        "scripts/run_net_experiments.py": "e3bbd477c3366371fd38dc4868c38d761031ce0edae63d9e8e29af49a9c182b5",
+        "config/scenario_matrix.yaml": "94071304b94db34a2174a624c44c912a7653440997e9fc655ad2239ca96102a2",
+        "config/demand_rules.yaml": "912ea0645a94ad3fc1170a9dcc44314dc0175e9df87668533c5134d6b7120515",
+        "data/spatial/resource_event_route_matrix.parquet": "0cca66dca5a29775a74f7736b1f63004e2dc7b123c35fb4aa70cdd6321f90b9a"
+      },
+      "new_arm_fulfilment": {
+        "keep": 0.289455,
+        "warm": 0.426109,
+        "cold": 0.426109,
+        "fixed_period": 0.332445,
+        "event_triggered": 0.426109
+      },
+      "old_arm_fulfilment": {
+        "keep": 0.155562,
+        "warm": 0.386231,
+        "cold": 0.386509,
+        "fixed_period": 0.195678,
+        "event_triggered": 0.386254
+      },
+      "difference_first_attributed_to": "demand-set correction (v4 appended full previous + full current demand set at every event; DispatchProblem did not dedupe)",
+      "NOT_attributed_to": "algorithmic improvement",
+      "statistical_unit": "run; events nested, never independent samples",
+      "bootstrap": {
+        "resamples": 20000,
+        "clusters": 28,
+        "unit": "scenario",
+        "seed": 20261112
+      },
+      "warm_vs_event_triggered": {
+        "identical_event_rows": 3820,
+        "total_event_rows": 3820,
+        "solve_calls_warm": 3820,
+        "solve_calls_event_triggered": 3820,
+        "event_triggered_reduces_calls": false,
+        "fulfilment_diff": {
+          "paired_mean_diff": 0.0,
+          "ci95_low": 0.0,
+          "ci95_high": 0.0,
+          "ci_excludes_zero": false
+        }
+      },
+      "deg_arm": {
+        "n": 3820,
+        "min": 0.117647,
+        "p25": 0.142857,
+        "median": 0.166667,
+        "p75": 0.285714,
+        "p95": 0.5,
+        "max": 0.5,
+        "distinct": 11,
+        "tau_grid_descriptive": {
+          "0.05": {
+            "n_above": 3820,
+            "share": 1.0
+          },
+          "0.1": {
+            "n_above": 3820,
+            "share": 1.0
+          },
+          "0.15": {
+            "n_above": 2524,
+            "share": 0.660733
+          },
+          "0.2": {
+            "n_above": 1600,
+            "share": 0.418848
+          },
+          "0.25": {
+            "n_above": 1319,
+            "share": 0.345288
+          },
+          "0.3": {
+            "n_above": 947,
+            "share": 0.247906
+          },
+          "0.4": {
+            "n_above": 680,
+            "share": 0.17801
+          },
+          "0.5": {
+            "n_above": 0,
+            "share": 0.0
+          }
+        }
+      },
+      "demand_integrity": {
+        "runs_with_anomaly": 0,
+        "four_count_identity_violations": 0,
+        "max_n_demands_active": 17
+      },
+      "solver_calls": {
+        "keep": {
+          "n_solve_attempted": 0,
+          "share_of_warm": 0.0,
+          "runtime_s_total": 0.0,
+          "fulfillment_mean": 0.289455
+        },
+        "warm": {
+          "n_solve_attempted": 3820,
+          "share_of_warm": 1.0,
+          "runtime_s_total": 2470.274,
+          "fulfillment_mean": 0.426109
+        },
+        "cold": {
+          "n_solve_attempted": 3820,
+          "share_of_warm": 1.0,
+          "runtime_s_total": 2468.3,
+          "fulfillment_mean": 0.426109
+        },
+        "fixed_period": {
+          "n_solve_attempted": 1020,
+          "share_of_warm": 0.267016,
+          "runtime_s_total": 655.991,
+          "fulfillment_mean": 0.332445
+        },
+        "event_triggered": {
+          "n_solve_attempted": 3820,
+          "share_of_warm": 1.0,
+          "runtime_s_total": 2468.609,
+          "fulfillment_mean": 0.426109
+        }
+      }
+    },
+    "B": {
+      "config": "B",
+      "provider": "network",
+      "new_runs": 2240,
+      "new_event_rows": 3820,
+      "old_runs": 2240,
+      "old_status": "superseded_pending_demand_integrity_correction",
+      "variant": "fixed_v2_full_diagnostics",
+      "network_import_shim": true,
+      "source_sha256": {
+        "scripts/run_dynamic_benchmark_v4.py": "77ed7873507b30842ed988c6d841ee16c74a1a79280724a94d2c489bd554bd8a",
+        "audit_demand_integrity/run_dynamic_benchmark_v4_fixed.py": "761ff424fd433bc25d1336359333147163aed6e716f28ae604e5b131af57e389",
+        "audit_demand_integrity/run_dynamic_benchmark_v5_verified.py": "04c7d76690502fdedc2fca6d5ce2c33e3f515a29da8a162f9452a9f92357772f",
+        "audit_demand_integrity/build_verified_variant.py": "984bbe61e1143f438e8280877f62eb431503195b9c64e84ec90fa0aaedf348a5",
+        "audit_demand_integrity/experiment_configs.json": "83d5743dc8d5a4b30aa7d94bdfd41dedfafb79d062012bb86092f1953adf3686",
+        "audit_demand_integrity/audit_demand_integrity.py": "7de86653555d5026cc8e83e57113b49dc5560cd7c5229ad6e488c33b9ea7fe81",
+        "audit_demand_integrity/run_verified_replay.py": "4b559f3e34bb39cf07e4b3ac16c08478cc31053422043c60e2edca3c6010d605",
+        "src/pipeline/event_registry.py": "f00d60476fd126ae50b939a6b9d6314ce5e208fdd3ecb9ba1da14084c67cf09d",
+        "src/dispatch/problem.py": "2aa5fc41f14eefde5f617371c2613c0d122b1397339683d091d0366c21838c2b",
+        "src/dispatch/redispatch.py": "411371c9793a5422e006fc17ecac32903a616165d4b300c5c2f7c2044dccc839",
+        "src/dispatch/nsga2.py": "44094307112df2bf52414d6ab5f0d0c177d7a482fa839767e103917931018dec",
+        "src/dispatch/objectives.py": "a878dcd188e79b67f2690880bbe7906e2abff3fea9f0e751e627ad1c7d0ef4c1",
+        "src/dispatch/constraints.py": "2687d5e5cd1f04df4fd58b4c8b07bc3bd889a7566309e077e6754bcc49807114",
+        "src/road_network/router.py": "e9a2cf4eefa3bbccd831ee1f66d419a38039ccad396a0bf21fda5a24bfdee298",
+        "scripts/run_experiments.py": "4232ffc93a2753daf46d67e1a9f6f946cd24d90bad7e3dbe44ec80f43b7e7537",
+        "scripts/run_net_experiments.py": "e3bbd477c3366371fd38dc4868c38d761031ce0edae63d9e8e29af49a9c182b5",
+        "config/scenario_matrix.yaml": "94071304b94db34a2174a624c44c912a7653440997e9fc655ad2239ca96102a2",
+        "config/demand_rules.yaml": "912ea0645a94ad3fc1170a9dcc44314dc0175e9df87668533c5134d6b7120515",
+        "data/spatial/resource_event_route_matrix.parquet": "0cca66dca5a29775a74f7736b1f63004e2dc7b123c35fb4aa70cdd6321f90b9a"
+      },
+      "new_arm_fulfilment": {
+        "keep": 0.222724,
+        "warm": 0.358191,
+        "cold": 0.358191,
+        "fixed_period": 0.269607,
+        "event_triggered": 0.358191
+      },
+      "old_arm_fulfilment": {
+        "keep": 0.118278,
+        "warm": 0.346601,
+        "cold": 0.346646,
+        "fixed_period": 0.161488,
+        "event_triggered": 0.346601
+      },
+      "difference_first_attributed_to": "demand-set correction (v4 appended full previous + full current demand set at every event; DispatchProblem did not dedupe)",
+      "NOT_attributed_to": "algorithmic improvement",
+      "statistical_unit": "run; events nested, never independent samples",
+      "bootstrap": {
+        "resamples": 20000,
+        "clusters": 28,
+        "unit": "scenario",
+        "seed": 20261112
+      },
+      "warm_vs_event_triggered": {
+        "identical_event_rows": 3820,
+        "total_event_rows": 3820,
+        "solve_calls_warm": 3820,
+        "solve_calls_event_triggered": 3820,
+        "event_triggered_reduces_calls": false,
+        "fulfilment_diff": {
+          "paired_mean_diff": 0.0,
+          "ci95_low": 0.0,
+          "ci95_high": 0.0,
+          "ci_excludes_zero": false
+        }
+      },
+      "deg_arm": {
+        "n": 3820,
+        "min": 0.117647,
+        "p25": 0.166667,
+        "median": 0.2,
+        "p75": 0.4,
+        "p95": 0.5,
+        "max": 0.5,
+        "distinct": 7,
+        "tau_grid_descriptive": {
+          "0.05": {
+            "n_above": 3820,
+            "share": 1.0
+          },
+          "0.1": {
+            "n_above": 3820,
+            "share": 1.0
+          },
+          "0.15": {
+            "n_above": 3180,
+            "share": 0.832461
+          },
+          "0.2": {
+            "n_above": 1650,
+            "share": 0.431937
+          },
+          "0.25": {
+            "n_above": 1320,
+            "share": 0.34555
+          },
+          "0.3": {
+            "n_above": 1320,
+            "share": 0.34555
+          },
+          "0.4": {
+            "n_above": 709,
+            "share": 0.185602
+          },
+          "0.5": {
+            "n_above": 0,
+            "share": 0.0
+          }
+        }
+      },
+      "demand_integrity": {
+        "runs_with_anomaly": 0,
+        "four_count_identity_violations": 0,
+        "max_n_demands_active": 17
+      },
+      "solver_calls": {
+        "keep": {
+          "n_solve_attempted": 0,
+          "share_of_warm": 0.0,
+          "runtime_s_total": 0.0,
+          "fulfillment_mean": 0.222724
+        },
+        "warm": {
+          "n_solve_attempted": 3820,
+          "share_of_warm": 1.0,
+          "runtime_s_total": 1760.498,
+          "fulfillment_mean": 0.358191
+        },
+        "cold": {
+          "n_solve_attempted": 3820,
+          "share_of_warm": 1.0,
+          "runtime_s_total": 1767.853,
+          "fulfillment_mean": 0.358191
+        },
+        "fixed_period": {
+          "n_solve_attempted": 1020,
+          "share_of_warm": 0.267016,
+          "runtime_s_total": 466.763,
+          "fulfillment_mean": 0.269607
+        },
+        "event_triggered": {
+          "n_solve_attempted": 3820,
+          "share_of_warm": 1.0,
+          "runtime_s_total": 1760.824,
+          "fulfillment_mean": 0.358191
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "manifest_version": "1.0",
+  "created_at_local": "2026-11-13 11:03:23",
+  "config_id": "A",
+  "config": {
+    "name": "Legacy E9 (independent experiment)",
+    "provider": "haversine",
+    "distance_basis": "straight-line Haversine over deterministic synthetic coordinates",
+    "resource_pool": "official 47 crews + simulated inventory + 6 synthetic traffic-control teams",
+    "coordinate_basis": "synthetic Qinghai bbox coordinates (tagged synthetic)",
+    "out_root": "experiments/outputs/E9_v5_legacy",
+    "precheck_runs": 112,
+    "full_runs": 2240,
+    "independent_experiment": true
+  },
+  "phase": "full",
+  "phase_spec": {
+    "replicates": 20,
+    "description": "28 scenarios x 4 profiles x 20 seeds = 2240 runs per config."
+  },
+  "common": {
+    "strategy": "proposed_nsga2",
+    "population": 40,
+    "generations": 30,
+    "threshold": 0.05,
+    "period": 2,
+    "seed_start": 100,
+    "seed_rule": "scenario_seed(scenario_id, seed) = (int.from_bytes(scenario_id.encode(),'big') & 0xFFFFFFFF) XOR (seed & 0xFFFFFFFF); event rng uses scenario_seed XOR 0x9E3779B9",
+    "profiles": [
+      "resource_failure",
+      "road_closure",
+      "demand_surge",
+      "compound"
+    ],
+    "arms": [
+      "keep",
+      "warm",
+      "cold",
+      "fixed_period",
+      "event_triggered"
+    ],
+    "statistical_unit": "run (scenario x seed x profile); events are NESTED and never treated as independent samples",
+    "n_scenarios": 28
+  },
+  "critical_note": "A and B are TWO INDEPENDENT EXPERIMENTS, NOT a controlled distance-metric comparison. They differ simultaneously in distance metric, resource pool and coordinate basis. Never pool their samples, never compute a pooled effect size, never claim OSM routing is superior to Haversine.",
+  "frozen": [
+    "paper text (revision/LaTeX_source/)",
+    "archived E9 v3/v4/NET-E9 CSVs and STATUS_superseded.md",
+    "scripts/run_dynamic_benchmark_v4.py (legacy)",
+    "objective functions / D3",
+    "threshold tau = 0.05",
+    "disturbance distributions / payload generation",
+    "strategy set and evolutionary budget across both configs"
+  ],
+  "go_nogo": {
+    "input_correct_run_complete_stats_reproducible": "allow as new paper evidence",
+    "event_triggered_still_100pct": "keep mechanism implementation, withdraw compute-efficiency advantage",
+    "event_triggered_reduces_calls_but_quality_drops": "report quality-cost trade-off",
+    "event_triggered_reduces_calls_and_quality_preserved": "only then consider an efficiency claim",
+    "any_scenario_has_demand_or_mapping_anomaly": "STOP, do not enter the paper"
+  },
+  "variant": "fixed_v2_full_diagnostics",
+  "python": {
+    "executable": "D:\\Python3.10.8\\python.exe",
+    "version": "3.10.8",
+    "platform": "Windows-10-10.0.19041-SP0"
+  },
+  "dependencies": {
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "pandas": "2.3.3",
+    "networkx": "3.4.2",
+    "yaml": "6.0.3",
+    "rdflib": "7.6.0"
+  },
+  "network_import_shim_installed": false,
+  "network_import_shim_note": "",
+  "argparse": {
+    "seed_start": 100,
+    "shards": 28,
+    "replicates": 20,
+    "population": 40,
+    "generations": 30,
+    "threshold": 0.05,
+    "period": 2,
+    "strategy": "proposed_nsga2",
+    "provider": "haversine"
+  },
+  "source_sha256": {
+    "scripts/run_dynamic_benchmark_v4.py": "77ed7873507b30842ed988c6d841ee16c74a1a79280724a94d2c489bd554bd8a",
+    "audit_demand_integrity/run_dynamic_benchmark_v4_fixed.py": "761ff424fd433bc25d1336359333147163aed6e716f28ae604e5b131af57e389",
+    "audit_demand_integrity/run_dynamic_benchmark_v5_verified.py": "04c7d76690502fdedc2fca6d5ce2c33e3f515a29da8a162f9452a9f92357772f",
+    "audit_demand_integrity/build_verified_variant.py": "984bbe61e1143f438e8280877f62eb431503195b9c64e84ec90fa0aaedf348a5",
+    "audit_demand_integrity/experiment_configs.json": "83d5743dc8d5a4b30aa7d94bdfd41dedfafb79d062012bb86092f1953adf3686",
+    "audit_demand_integrity/audit_demand_integrity.py": "7de86653555d5026cc8e83e57113b49dc5560cd7c5229ad6e488c33b9ea7fe81",
+    "audit_demand_integrity/run_verified_replay.py": "4b559f3e34bb39cf07e4b3ac16c08478cc31053422043c60e2edca3c6010d605",
+    "src/pipeline/event_registry.py": "f00d60476fd126ae50b939a6b9d6314ce5e208fdd3ecb9ba1da14084c67cf09d",
+    "src/dispatch/problem.py": "2aa5fc41f14eefde5f617371c2613c0d122b1397339683d091d0366c21838c2b",
+    "src/dispatch/redispatch.py": "411371c9793a5422e006fc17ecac32903a616165d4b300c5c2f7c2044dccc839",
+    "src/dispatch/nsga2.py": "44094307112df2bf52414d6ab5f0d0c177d7a482fa839767e103917931018dec",
+    "src/dispatch/objectives.py": "a878dcd188e79b67f2690880bbe7906e2abff3fea9f0e751e627ad1c7d0ef4c1",
+    "src/dispatch/constraints.py": "2687d5e5cd1f04df4fd58b4c8b07bc3bd889a7566309e077e6754bcc49807114",
+    "src/road_network/router.py": "e9a2cf4eefa3bbccd831ee1f66d419a38039ccad396a0bf21fda5a24bfdee298",
+    "scripts/run_experiments.py": "4232ffc93a2753daf46d67e1a9f6f946cd24d90bad7e3dbe44ec80f43b7e7537",
+    "scripts/run_net_experiments.py": "e3bbd477c3366371fd38dc4868c38d761031ce0edae63d9e8e29af49a9c182b5",
+    "config/scenario_matrix.yaml": "94071304b94db34a2174a624c44c912a7653440997e9fc655ad2239ca96102a2",
+    "config/demand_rules.yaml": "912ea0645a94ad3fc1170a9dcc44314dc0175e9df87668533c5134d6b7120515",
+    "data/spatial/resource_event_route_matrix.parquet": "0cca66dca5a29775a74f7736b1f63004e2dc7b123c35fb4aa70cdd6321f90b9a"
+  },
+  "source_sha256_of_manifest_inputs": "83d5743dc8d5a4b30aa7d94bdfd41dedfafb79d062012bb86092f1953adf3686",
+  "outputs": [
+    "_shards/shard_*.jsonl",
+    "errors.jsonl",
+    "event_level_results.csv",
+    "run_level_results.csv",
+    "summary.json",
+    "analysis.json"
+  ],
+  "merged_at_local": "2026-11-13 11:03:24",
+  "merge_result": {
+    "n_runs": 2240,
+    "n_event_rows": 3820,
+    "outputs_sha256": {
+      "event_level_results.csv": "957538785cd74cba53be7b8370634343f9e79c91e430eb360a7dcad082e57a94",
+      "run_level_results.csv": "c9b1cbf0674a4538f73921e22885f9f7e7a1801d2bd61a74346047e53db75a2b",
+      "summary.json": "359c2bc9224e2bb2272053bffdb43a53a34d3885162ad2c126089e9bca249200",
+      "analysis.json": "6a1b77c48c50b1819e86e9500c0ecabe1e546191fb1d08e233cf5ec51944ba85"
+    }
+  }
+}

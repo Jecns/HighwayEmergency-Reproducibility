@@ -1,0 +1,64 @@
+{
+  "schema_version": "1.0",
+  "created": "2026-11-12",
+  "purpose": "B-lite full re-run of the dynamic replay after the demand-integrity correction",
+  "critical_note": "A and B are TWO INDEPENDENT EXPERIMENTS, NOT a controlled distance-metric comparison. They differ simultaneously in distance metric, resource pool and coordinate basis. Never pool their samples, never compute a pooled effect size, never claim OSM routing is superior to Haversine.",
+  "frozen": [
+    "paper text (revision/LaTeX_source/)",
+    "archived E9 v3/v4/NET-E9 CSVs and STATUS_superseded.md",
+    "scripts/run_dynamic_benchmark_v4.py (legacy)",
+    "objective functions / D3",
+    "threshold tau = 0.05",
+    "disturbance distributions / payload generation",
+    "strategy set and evolutionary budget across both configs"
+  ],
+  "common": {
+    "strategy": "proposed_nsga2",
+    "population": 40,
+    "generations": 30,
+    "threshold": 0.05,
+    "period": 2,
+    "seed_start": 100,
+    "seed_rule": "scenario_seed(scenario_id, seed) = (int.from_bytes(scenario_id.encode(),'big') & 0xFFFFFFFF) XOR (seed & 0xFFFFFFFF); event rng uses scenario_seed XOR 0x9E3779B9",
+    "profiles": ["resource_failure", "road_closure", "demand_surge", "compound"],
+    "arms": ["keep", "warm", "cold", "fixed_period", "event_triggered"],
+    "statistical_unit": "run (scenario x seed x profile); events are NESTED and never treated as independent samples",
+    "n_scenarios": 28
+  },
+  "configs": {
+    "A": {
+      "name": "Legacy E9 (independent experiment)",
+      "provider": "haversine",
+      "distance_basis": "straight-line Haversine over deterministic synthetic coordinates",
+      "resource_pool": "official 47 crews + simulated inventory + 6 synthetic traffic-control teams",
+      "coordinate_basis": "synthetic Qinghai bbox coordinates (tagged synthetic)",
+      "out_root": "experiments/outputs/E9_v5_legacy",
+      "precheck_runs": 112,
+      "full_runs": 2240,
+      "independent_experiment": true
+    },
+    "B": {
+      "name": "NET-E9 (independent experiment)",
+      "provider": "network",
+      "distance_basis": "OSM shortest-path length from the precomputed routing matrix",
+      "resource_pool": "39 screened official crews (organisation-location proxies), synthetic traffic-control teams and simulated equipment excluded",
+      "coordinate_basis": "official unit-coordinate proxies + synthetic route-relative incident endpoints",
+      "out_root": "experiments/outputs/NET_E9_v5",
+      "precheck_runs": 112,
+      "full_runs": 2240,
+      "independent_experiment": true,
+      "runtime_note": "NetworkMatrixProvider reads data/spatial/resource_event_route_matrix.parquet; no geopandas call occurs on this path. This interpreter lacks geopandas, so a process-local empty-module shim is installed for the unrelated top-level imports in src/road_network/locator.py and route_matcher.py. Recorded in every manifest."
+    }
+  },
+  "phases": {
+    "precheck": {"replicates": 1, "description": "28 scenarios x 4 profiles x 1 fixed seed = 112 runs per config; official optimiser budget; ONLY repetition count is reduced."},
+    "full": {"replicates": 20, "description": "28 scenarios x 4 profiles x 20 seeds = 2240 runs per config."}
+  },
+  "go_nogo": {
+    "input_correct_run_complete_stats_reproducible": "allow as new paper evidence",
+    "event_triggered_still_100pct": "keep mechanism implementation, withdraw compute-efficiency advantage",
+    "event_triggered_reduces_calls_but_quality_drops": "report quality-cost trade-off",
+    "event_triggered_reduces_calls_and_quality_preserved": "only then consider an efficiency claim",
+    "any_scenario_has_demand_or_mapping_anomaly": "STOP, do not enter the paper"
+  }
+}

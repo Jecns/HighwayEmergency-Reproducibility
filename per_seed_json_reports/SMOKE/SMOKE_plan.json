@@ -1,0 +1,160 @@
+{
+  "plan_id": "PLAN-EVT-SMOKE-001",
+  "scenario_id": "SMOKE",
+  "event": {
+    "event_id": "EVT-SMOKE-001",
+    "event_type": "TRAFFIC_ACCIDENT",
+    "severity": "III"
+  },
+  "dispatch": {
+    "strategy": "proposed_nsga2",
+    "seed": 42
+  },
+  "processes": [
+    {
+      "process_id": "SMOKE-P01",
+      "name": "抢险救援",
+      "task_ids": [
+        "SMOKE-T01",
+        "SMOKE-T02",
+        "SMOKE-T03"
+      ]
+    }
+  ],
+  "tasks": [
+    {
+      "task_id": "SMOKE-T01",
+      "process_id": "SMOKE-P01",
+      "name": "现场评估",
+      "task_type": "SCENE_ASSESSMENT",
+      "required_resource_type": "RESCUE_TEAM",
+      "required_quantity": 1,
+      "calibrated_quantity": 1,
+      "predecessor_task_id": null
+    },
+    {
+      "task_id": "SMOKE-T02",
+      "process_id": "SMOKE-P01",
+      "name": "搜救被困人员",
+      "task_type": "RESCUE_TRAPPED_PERSONS",
+      "required_resource_type": "RESCUE_TEAM",
+      "required_quantity": 1,
+      "calibrated_quantity": 1,
+      "predecessor_task_id": "SMOKE-T01"
+    },
+    {
+      "task_id": "SMOKE-T03",
+      "process_id": "SMOKE-P01",
+      "name": "清障保通",
+      "task_type": "REMOVE_DAMAGED_VEHICLES",
+      "required_resource_type": "EQUIPMENT",
+      "required_quantity": 1,
+      "calibrated_quantity": 1,
+      "predecessor_task_id": "SMOKE-T02"
+    }
+  ],
+  "assignments": [
+    {
+      "task_id": "SMOKE-T01",
+      "resource_id": "RES-QH-007",
+      "resource_type": "RESCUE_TEAM",
+      "quantity": 1,
+      "distance_km": 55.34428516711053
+    },
+    {
+      "task_id": "SMOKE-T02",
+      "resource_id": "RES-QH-008",
+      "resource_type": "RESCUE_TEAM",
+      "quantity": 1,
+      "distance_km": 62.45011946071393
+    },
+    {
+      "task_id": "SMOKE-T03",
+      "resource_id": "RES-SIM-001",
+      "resource_type": "EQUIPMENT",
+      "quantity": 1,
+      "distance_km": 102.37788575451555
+    }
+  ],
+  "unmet": [],
+  "demand_estimates": [
+    {
+      "task_id": "SMOKE-T01",
+      "resource_type": "RESCUE_TEAM",
+      "base_quantity": 1,
+      "calibrated_quantity": 1,
+      "multiplier": 1.0,
+      "rationale": "severity III multiplier x1 on base 1 (SCENE_ASSESSMENT)",
+      "provenance": "expert_labeled|SPEC_CALIB_001|planning/demand_estimator#SEVERITY_MULTIPLIER"
+    },
+    {
+      "task_id": "SMOKE-T02",
+      "resource_type": "RESCUE_TEAM",
+      "base_quantity": 1,
+      "calibrated_quantity": 1,
+      "multiplier": 1.0,
+      "rationale": "severity III multiplier x1 on base 1 (RESCUE_TRAPPED_PERSONS)",
+      "provenance": "expert_labeled|SPEC_CALIB_001|planning/demand_estimator#SEVERITY_MULTIPLIER"
+    },
+    {
+      "task_id": "SMOKE-T03",
+      "resource_type": "EQUIPMENT",
+      "base_quantity": 1,
+      "calibrated_quantity": 1,
+      "multiplier": 1.0,
+      "rationale": "severity III multiplier x1 on base 1 (REMOVE_DAMAGED_VEHICLES)",
+      "provenance": "expert_labeled|SPEC_CALIB_001|planning/demand_estimator#SEVERITY_MULTIPLIER"
+    }
+  ],
+  "provisions": [
+    {
+      "provision_id": "PRV-GRADE-002",
+      "text": "交通事故类事件分级：死亡30人（含）以上为Ⅰ级；死亡10人（含）以上30人以下为Ⅱ级；死亡3人（含）以上10人以下为Ⅲ级；死亡3人以下为Ⅳ级（以上含本数，以下不含本数）。",
+      "source": "official_pdf#p32"
+    },
+    {
+      "provision_id": "PRV-RESCUE-001",
+      "text": "组织救援力量赶赴现场搜救被困人员，协调卫生健康部门转运救治伤员，救援过程中应确保救援人员自身安全。",
+      "source": "official_pdf#p17"
+    },
+    {
+      "provision_id": "PRV-CTRL-001",
+      "text": "发生交通安全事故后，应配合公安交警部门实施交通管制，封闭受影响路段或车道，在上下游设置警示标志并发布出行提示。",
+      "source": "official_pdf#p17"
+    },
+    {
+      "provision_id": "PRV-CHEM-001",
+      "text": "危险化学品运输车辆发生事故泄漏时，应立即疏散警戒区域人员，会同应急、生态环境、消防等部门开展泄漏封堵与洗消处置。",
+      "source": "official_pdf#p19"
+    },
+    {
+      "provision_id": "PRV-ASSESS-001",
+      "text": "接报后应立即核实事件时间、地点、类型、伤亡及道路中断情况，组织现场评估并持续跟踪事态发展。",
+      "source": "official_pdf#p13"
+    }
+  ],
+  "provenance": {
+    "prompt_version": "v1",
+    "llm_model": "none(template)",
+    "strategy": "proposed_nsga2",
+    "seed": 42,
+    "dispatch_metrics": {
+      "demand_fulfillment_rate": 1.0,
+      "weighted_response_distance_km": 220.17229038234,
+      "mean_response_time_h": 1.3369325974069062,
+      "gini_fairness": 0.0,
+      "unmet_demands": 0,
+      "violation_rate": 0.0,
+      "violation_count": 0
+    },
+    "provider_source": "builtin",
+    "timestamp": "2026-09-10T09:30:14.409602+00:00"
+  },
+  "validation": {
+    "plan_id": "PLAN-EVT-SMOKE-001",
+    "is_valid": true,
+    "n_tasks_checked": 3,
+    "n_assignments_checked": 3,
+    "violations": []
+  }
+}

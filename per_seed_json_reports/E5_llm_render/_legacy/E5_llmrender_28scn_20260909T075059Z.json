@@ -1,0 +1,462 @@
+{
+  "experiment": "E5_llm_rendering",
+  "model": "agnes-2.5-flash",
+  "api_base": "https://api.agnes-ai.cn/v1",
+  "prompt_version": "v1",
+  "seed": 42,
+  "population_size": 30,
+  "generations": 20,
+  "safety_gate_verified": true,
+  "texts_dir": "C:\\Users\\Young\\Desktop\\IFC\\highway-emergency-ifc\\experiments\\outputs\\e5_texts",
+  "aggregate": {
+    "n_scenarios": 28,
+    "n_errors": 13,
+    "latency_ms_mean": 27501.61333333333,
+    "latency_ms_p50": 21117.2,
+    "latency_ms_p95": 50103.6,
+    "template_latency_ms_mean": 0.4293333333333333,
+    "assignment_fidelity_mean": 1.0,
+    "quantity_mention_rate_mean": 1.0,
+    "unmet_warning_fidelity_mean": 1.0,
+    "provision_citation_fidelity_mean": 0.9733333333333334,
+    "total_hallucinated_ids": 0,
+    "total_prompt_tokens": 74910,
+    "total_completion_tokens": 24212
+  },
+  "errors": [
+    {
+      "scenario_id": "S01",
+      "error": "TimeoutError('The read operation timed out')"
+    },
+    {
+      "scenario_id": "S02",
+      "error": "TimeoutError('The read operation timed out')"
+    },
+    {
+      "scenario_id": "S03",
+      "error": "TimeoutError('The read operation timed out')"
+    },
+    {
+      "scenario_id": "S04",
+      "error": "URLError(OSError('Tunnel connection failed: 502 Bad Gateway'))"
+    },
+    {
+      "scenario_id": "S11",
+      "error": "TimeoutError('The read operation timed out')"
+    },
+    {
+      "scenario_id": "S18",
+      "error": "URLError(OSError('Tunnel connection failed: 502 Bad Gateway'))"
+    },
+    {
+      "scenario_id": "S19",
+      "error": "URLError(OSError('Tunnel connection failed: 502 Bad Gateway'))"
+    },
+    {
+      "scenario_id": "S21",
+      "error": "URLError(OSError('Tunnel connection failed: 502 Bad Gateway'))"
+    },
+    {
+      "scenario_id": "S22",
+      "error": "URLError(OSError('Tunnel connection failed: 502 Bad Gateway'))"
+    },
+    {
+      "scenario_id": "S25",
+      "error": "TimeoutError('The read operation timed out')"
+    },
+    {
+      "scenario_id": "S26",
+      "error": "TimeoutError('The read operation timed out')"
+    },
+    {
+      "scenario_id": "S27",
+      "error": "URLError(OSError('Tunnel connection failed: 502 Bad Gateway'))"
+    },
+    {
+      "scenario_id": "S28",
+      "error": "URLError(OSError('Tunnel connection failed: 502 Bad Gateway'))"
+    }
+  ],
+  "per_scenario": [
+    {
+      "scenario_id": "S01",
+      "error": "TimeoutError('The read operation timed out')",
+      "template_latency_ms": 2.33
+    },
+    {
+      "scenario_id": "S02",
+      "error": "TimeoutError('The read operation timed out')",
+      "template_latency_ms": 0.42
+    },
+    {
+      "scenario_id": "S03",
+      "error": "TimeoutError('The read operation timed out')",
+      "template_latency_ms": 0.33
+    },
+    {
+      "scenario_id": "S04",
+      "error": "URLError(OSError('Tunnel connection failed: 502 Bad Gateway'))",
+      "template_latency_ms": 0.45
+    },
+    {
+      "scenario_id": "S05",
+      "latency_ms": 11324.0,
+      "template_latency_ms": 0.61,
+      "usage": {
+        "completion_tokens": 1615,
+        "prompt_tokens": 5246,
+        "total_tokens": 6861
+      },
+      "n_assignments": 5,
+      "assignment_fidelity": 1.0,
+      "hallucinated_ids": [],
+      "n_hallucinated_ids": 0,
+      "n_unmet": 8,
+      "unmet_warning_fidelity": 1.0,
+      "n_provisions": 5,
+      "provision_citation_fidelity": 1.0,
+      "quantity_mention_rate": 1.0,
+      "text_chars": 2654,
+      "plan_valid": true
+    },
+    {
+      "scenario_id": "S06",
+      "latency_ms": 13356.5,
+      "template_latency_ms": 0.58,
+      "usage": {
+        "completion_tokens": 1453,
+        "prompt_tokens": 5312,
+        "total_tokens": 6765
+      },
+      "n_assignments": 6,
+      "assignment_fidelity": 1.0,
+      "hallucinated_ids": [],
+      "n_hallucinated_ids": 0,
+      "n_unmet": 7,
+      "unmet_warning_fidelity": 1.0,
+      "n_provisions": 5,
+      "provision_citation_fidelity": 1.0,
+      "quantity_mention_rate": 1.0,
+      "text_chars": 2299,
+      "plan_valid": true
+    },
+    {
+      "scenario_id": "S07",
+      "latency_ms": 50103.6,
+      "template_latency_ms": 0.44,
+      "usage": {
+        "completion_tokens": 1913,
+        "prompt_tokens": 5773,
+        "total_tokens": 7686
+      },
+      "n_assignments": 13,
+      "assignment_fidelity": 1.0,
+      "hallucinated_ids": [],
+      "n_hallucinated_ids": 0,
+      "n_unmet": 0,
+      "unmet_warning_fidelity": 1.0,
+      "n_provisions": 5,
+      "provision_citation_fidelity": 1.0,
+      "quantity_mention_rate": 1.0,
+      "text_chars": 3152,
+      "plan_valid": true
+    },
+    {
+      "scenario_id": "S08",
+      "latency_ms": 12572.4,
+      "template_latency_ms": 0.39,
+      "usage": {
+        "completion_tokens": 1540,
+        "prompt_tokens": 5288,
+        "total_tokens": 6828
+      },
+      "n_assignments": 6,
+      "assignment_fidelity": 1.0,
+      "hallucinated_ids": [],
+      "n_hallucinated_ids": 0,
+      "n_unmet": 7,
+      "unmet_warning_fidelity": 1.0,
+      "n_provisions": 5,
+      "provision_citation_fidelity": 1.0,
+      "quantity_mention_rate": 1.0,
+      "text_chars": 2704,
+      "plan_valid": true
+    },
+    {
+      "scenario_id": "S09",
+      "latency_ms": 13121.3,
+      "template_latency_ms": 0.31,
+      "usage": {
+        "completion_tokens": 1235,
+        "prompt_tokens": 4770,
+        "total_tokens": 6005
+      },
+      "n_assignments": 10,
+      "assignment_fidelity": 1.0,
+      "hallucinated_ids": [],
+      "n_hallucinated_ids": 0,
+      "n_unmet": 0,
+      "unmet_warning_fidelity": 1.0,
+      "n_provisions": 5,
+      "provision_citation_fidelity": 1.0,
+      "quantity_mention_rate": 1.0,
+      "text_chars": 1985,
+      "plan_valid": true
+    },
+    {
+      "scenario_id": "S10",
+      "latency_ms": 21299.0,
+      "template_latency_ms": 0.32,
+      "usage": {
+        "completion_tokens": 1618,
+        "prompt_tokens": 4772,
+        "total_tokens": 6390
+      },
+      "n_assignments": 10,
+      "assignment_fidelity": 1.0,
+      "hallucinated_ids": [],
+      "n_hallucinated_ids": 0,
+      "n_unmet": 0,
+      "unmet_warning_fidelity": 1.0,
+      "n_provisions": 5,
+      "provision_citation_fidelity": 1.0,
+      "quantity_mention_rate": 1.0,
+      "text_chars": 2610,
+      "plan_valid": true
+    },
+    {
+      "scenario_id": "S11",
+      "error": "TimeoutError('The read operation timed out')",
+      "template_latency_ms": 0.31
+    },
+    {
+      "scenario_id": "S12",
+      "latency_ms": 49268.5,
+      "template_latency_ms": 0.33,
+      "usage": {
+        "completion_tokens": 1490,
+        "prompt_tokens": 4682,
+        "total_tokens": 6172
+      },
+      "n_assignments": 9,
+      "assignment_fidelity": 1.0,
+      "hallucinated_ids": [],
+      "n_hallucinated_ids": 0,
+      "n_unmet": 1,
+      "unmet_warning_fidelity": 1.0,
+      "n_provisions": 5,
+      "provision_citation_fidelity": 0.8,
+      "quantity_mention_rate": 1.0,
+      "text_chars": 2449,
+      "plan_valid": true
+    },
+    {
+      "scenario_id": "S13",
+      "latency_ms": 16124.3,
+      "template_latency_ms": 0.43,
+      "usage": {
+        "completion_tokens": 1460,
+        "prompt_tokens": 4342,
+        "total_tokens": 5802
+      },
+      "n_assignments": 4,
+      "assignment_fidelity": 1.0,
+      "hallucinated_ids": [],
+      "n_hallucinated_ids": 0,
+      "n_unmet": 6,
+      "unmet_warning_fidelity": 1.0,
+      "n_provisions": 5,
+      "provision_citation_fidelity": 1.0,
+      "quantity_mention_rate": 1.0,
+      "text_chars": 2524,
+      "plan_valid": true
+    },
+    {
+      "scenario_id": "S14",
+      "latency_ms": 25883.9,
+      "template_latency_ms": 0.46,
+      "usage": {
+        "completion_tokens": 1665,
+        "prompt_tokens": 4341,
+        "total_tokens": 6006
+      },
+      "n_assignments": 4,
+      "assignment_fidelity": 1.0,
+      "hallucinated_ids": [],
+      "n_hallucinated_ids": 0,
+      "n_unmet": 6,
+      "unmet_warning_fidelity": 1.0,
+      "n_provisions": 5,
+      "provision_citation_fidelity": 1.0,
+      "quantity_mention_rate": 1.0,
+      "text_chars": 2705,
+      "plan_valid": true
+    },
+    {
+      "scenario_id": "S15",
+      "latency_ms": 55063.8,
+      "template_latency_ms": 0.48,
+      "usage": {
+        "completion_tokens": 1373,
+        "prompt_tokens": 4067,
+        "total_tokens": 5440
+      },
+      "n_assignments": 8,
+      "assignment_fidelity": 1.0,
+      "hallucinated_ids": [],
+      "n_hallucinated_ids": 0,
+      "n_unmet": 0,
+      "unmet_warning_fidelity": 1.0,
+      "n_provisions": 5,
+      "provision_citation_fidelity": 1.0,
+      "quantity_mention_rate": 1.0,
+      "text_chars": 2252,
+      "plan_valid": true
+    },
+    {
+      "scenario_id": "S16",
+      "latency_ms": 21117.2,
+      "template_latency_ms": 0.29,
+      "usage": {
+        "completion_tokens": 1378,
+        "prompt_tokens": 4068,
+        "total_tokens": 5446
+      },
+      "n_assignments": 8,
+      "assignment_fidelity": 1.0,
+      "hallucinated_ids": [],
+      "n_hallucinated_ids": 0,
+      "n_unmet": 0,
+      "unmet_warning_fidelity": 1.0,
+      "n_provisions": 5,
+      "provision_citation_fidelity": 1.0,
+      "quantity_mention_rate": 1.0,
+      "text_chars": 2041,
+      "plan_valid": true
+    },
+    {
+      "scenario_id": "S17",
+      "latency_ms": 11962.8,
+      "template_latency_ms": 0.29,
+      "usage": {
+        "completion_tokens": 1293,
+        "prompt_tokens": 3942,
+        "total_tokens": 5235
+      },
+      "n_assignments": 7,
+      "assignment_fidelity": 1.0,
+      "hallucinated_ids": [],
+      "n_hallucinated_ids": 0,
+      "n_unmet": 1,
+      "unmet_warning_fidelity": 1.0,
+      "n_provisions": 5,
+      "provision_citation_fidelity": 0.8,
+      "quantity_mention_rate": 1.0,
+      "text_chars": 2103,
+      "plan_valid": true
+    },
+    {
+      "scenario_id": "S18",
+      "error": "URLError(OSError('Tunnel connection failed: 502 Bad Gateway'))",
+      "template_latency_ms": 0.51
+    },
+    {
+      "scenario_id": "S19",
+      "error": "URLError(OSError('Tunnel connection failed: 502 Bad Gateway'))",
+      "template_latency_ms": 0.71
+    },
+    {
+      "scenario_id": "S20",
+      "latency_ms": 44382.2,
+      "template_latency_ms": 0.43,
+      "usage": {
+        "completion_tokens": 2456,
+        "prompt_tokens": 6391,
+        "total_tokens": 8847
+      },
+      "n_assignments": 13,
+      "assignment_fidelity": 1.0,
+      "hallucinated_ids": [],
+      "n_hallucinated_ids": 0,
+      "n_unmet": 2,
+      "unmet_warning_fidelity": 1.0,
+      "n_provisions": 5,
+      "provision_citation_fidelity": 1.0,
+      "quantity_mention_rate": 1.0,
+      "text_chars": 4392,
+      "plan_valid": true
+    },
+    {
+      "scenario_id": "S21",
+      "error": "URLError(OSError('Tunnel connection failed: 502 Bad Gateway'))",
+      "template_latency_ms": 0.43
+    },
+    {
+      "scenario_id": "S22",
+      "error": "URLError(OSError('Tunnel connection failed: 502 Bad Gateway'))",
+      "template_latency_ms": 0.41
+    },
+    {
+      "scenario_id": "S23",
+      "latency_ms": 49007.6,
+      "template_latency_ms": 0.64,
+      "usage": {
+        "completion_tokens": 2039,
+        "prompt_tokens": 5957,
+        "total_tokens": 7996
+      },
+      "n_assignments": 7,
+      "assignment_fidelity": 1.0,
+      "hallucinated_ids": [],
+      "n_hallucinated_ids": 0,
+      "n_unmet": 8,
+      "unmet_warning_fidelity": 1.0,
+      "n_provisions": 5,
+      "provision_citation_fidelity": 1.0,
+      "quantity_mention_rate": 1.0,
+      "text_chars": 3370,
+      "plan_valid": true
+    },
+    {
+      "scenario_id": "S24",
+      "latency_ms": 17937.1,
+      "template_latency_ms": 0.44,
+      "usage": {
+        "completion_tokens": 1684,
+        "prompt_tokens": 5959,
+        "total_tokens": 7643
+      },
+      "n_assignments": 7,
+      "assignment_fidelity": 1.0,
+      "hallucinated_ids": [],
+      "n_hallucinated_ids": 0,
+      "n_unmet": 8,
+      "unmet_warning_fidelity": 1.0,
+      "n_provisions": 5,
+      "provision_citation_fidelity": 1.0,
+      "quantity_mention_rate": 1.0,
+      "text_chars": 2863,
+      "plan_valid": true
+    },
+    {
+      "scenario_id": "S25",
+      "error": "TimeoutError('The read operation timed out')",
+      "template_latency_ms": 0.43
+    },
+    {
+      "scenario_id": "S26",
+      "error": "TimeoutError('The read operation timed out')",
+      "template_latency_ms": 0.43
+    },
+    {
+      "scenario_id": "S27",
+      "error": "URLError(OSError('Tunnel connection failed: 502 Bad Gateway'))",
+      "template_latency_ms": 0.29
+    },
+    {
+      "scenario_id": "S28",
+      "error": "URLError(OSError('Tunnel connection failed: 502 Bad Gateway'))",
+      "template_latency_ms": 0.57
+    }
+  ]
+}

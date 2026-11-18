@@ -1,0 +1,40 @@
+figures: 17
+tables:  12
+floats cited at least once: 29/29
+
+FIG   1  cite=1   fig:framework                fig1_framework               figs/fig01.tex
+FIG   2  cite=1   fig:ontology                 fig2_ontology                figs/fig02.tex
+FIG   3  cite=2   fig:ifc-instance             fig3_ifc_instance            figs/fig03.tex
+FIG   4  cite=1   fig:mapping                  fig4_mapping                 tables/tab02_ifc_owl_mapping.tex (embedded figure)
+FIG   5  cite=1   fig:layer3-pipeline          figs/fig_layer3_pipeline     figs/fig_layer3_pipeline.tex
+FIG   6  cite=1   fig:roster                   fig10_roster                 figs/fig10.tex
+FIG   7  cite=2   fig:pool-composition         figs/fig_pool_composition    figs/fig_pool_composition.tex
+FIG   8  cite=2   fig:network-coverage         fig31_network_coverage       figs/fig31_network_coverage.tex
+FIG   9  cite=1   fig:od-surface               figs/fig_od_3d               figs/fig_od_3d.tex
+FIG  10  cite=1   fig:scen-matrix              fig11_scenarios_plate        figs/fig11_scenarios_plate.tex
+FIG  11  cite=3   fig:e2-ablation              figs/fig_e2_ablation         figs/fig_e2_ablation.tex
+FIG  12  cite=1   fig:e3-exact                 figs/fig_e3_exact            figs/fig_e3_exact.tex
+FIG  13  cite=1   fig:e9-trigger               fig26_e9_trigger_warmcold    figs/fig26_e9_trigger_warmcold.tex
+FIG  14  cite=1   fig:e9-arms                  fig27_e9_stability           figs/fig27.tex
+FIG  15  cite=3   fig:e4b-tradeoff             figs/fig_e4b_tradeoff        figs/fig_e4b_tradeoff.tex
+FIG  16  cite=1   fig:case                     fig24_case;fig25_case_assignment figs/fig24.tex
+FIG  17  cite=3   fig:net-e1-dist              figs/fig_net_e1_dist         figs/fig_net_e1_dist.tex
+TAB   1  cite=1   tab:ext-inventory                                         tables/tab01_ext_inventory.tex
+TAB   2  cite=1   tab:ifc-owl-mapping                                       tables/tab02_ifc_owl_mapping.tex
+TAB   3  cite=1   tab:exp-config                                            tables/tab16_experiment_config.tex
+TAB   4  cite=2   tab:prior-work                                            tables/tab14_prior_work.tex
+TAB   5  cite=2   tab:scenario-stats                                        tables/tab04_scenario_stats.tex
+TAB   6  cite=2   tab:four-strategies                                       tables/tab05_four_strategies.tex
+TAB   7  cite=8   tab:ablation                                              tables/tab06_ablation.tex
+TAB   8  cite=5   tab:exact-front                                           tables/tab07_exact_front.tex
+TAB   9  cite=1   tab:traceability                                          tables/tab11_traceability.tex
+TAB  10  cite=3   tab:scalability                                           tables/tab09_scalability.tex
+TAB  11  cite=1   tab:net-e1b                                               tables/tab15_network_e1b.tex
+TAB  12  cite=1   tab:net-e9-traj                                           tables/tab16_net_e9_trajectory.tex
+
+notes:
+- floats parsed from main_published.tex + sections/ \input list (2026-11-17 state)
+- dynamic replay floats (E9 v5): see Section 4.2/4.3; data in dynamic_replay_v5/
+- supplementary floats (S1-S5 + S6) are in supplementary.tex and its table_S*.tex sources
+
+PROBLEMS: none  (float parsing complete, all floats cited)

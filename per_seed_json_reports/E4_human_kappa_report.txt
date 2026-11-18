@@ -1,0 +1,42 @@
+E4 gold-set inter-annotator agreement
+============================================================
+workbook: E4_gold_标注工作表_20260914.xlsx
+  标注者A: 0 items explicitly marked
+  标注者B: 73 items explicitly marked
+  AI标注: 257 items explicitly marked
+
+== 标注者A vs 标注者B  [human-human (blind)] ==
+STATUS: incomplete - 标注者A marked 0, 标注者B marked 73, common marked items: 0
+
+== 标注者A vs AI标注  [human-LLM] ==
+STATUS: incomplete - 标注者A marked 0, AI标注 marked 257, common marked items: 0
+
+== 标注者B vs AI标注  [human-LLM] ==
+items co-marked         : 73
+percent agreement       : 0.890
+Cohen's kappa           : 0.000
+landis-koch band        : slight
+per-clause breakdown (clause, n, agree, kappa)
+  PRV-ASSESS-001       n=  8  agree=1.000  kappa=+1.000
+  PRV-CHEM-001         n=  7  agree=0.000  kappa=+0.000
+  PRV-CLEAR-001        n=  2  agree=1.000  kappa=+1.000
+  PRV-CTRL-001         n=  8  agree=1.000  kappa=+1.000
+  PRV-GRADE-001        n=  8  agree=1.000  kappa=+1.000
+  PRV-GRADE-002        n=  8  agree=1.000  kappa=+1.000
+  PRV-RECOVER-001      n=  8  agree=1.000  kappa=+1.000
+  PRV-REPORT-001       n=  8  agree=0.875  kappa=+0.000
+  PRV-RESCUE-001       n=  8  agree=1.000  kappa=+1.000
+  PRV-RESP-001         n=  8  agree=1.000  kappa=+1.000
+discordant items: 8
+   S01  PRV-REPORT-001   标注者B=1 AI标注=0
+   S02  PRV-CHEM-001   标注者B=1 AI标注=0
+   S03  PRV-CHEM-001   标注者B=1 AI标注=0
+   S04  PRV-CHEM-001   标注者B=1 AI标注=0
+   S05  PRV-CHEM-001   标注者B=1 AI标注=0
+   S06  PRV-CHEM-001   标注者B=1 AI标注=0
+   S07  PRV-CHEM-001   标注者B=1 AI标注=0
+   S08  PRV-CHEM-001   标注者B=1 AI标注=0
+
+agreed gold set (标注者B-AI标注): 65 applicable judgements over 8 scenarios
+
+vs rule-anchored reference: agreed gold covers 62/62 of the rule-positive items (1.000); agreed-positive items not in rule gold: 3

@@ -1,0 +1,155 @@
+{
+  "experiment": "case_study",
+  "scenario_id": "S07",
+  "seed": 42,
+  "strategy": "proposed_nsga2",
+  "timestamp": "2026-09-10T05:08:32.878416+00:00",
+  "event": {
+    "event_id": "EVT-S07",
+    "type": "TRAFFIC_ACCIDENT",
+    "severity": "III",
+    "location": "G3011-K350+600",
+    "casualties": 8,
+    "vehicles": 20,
+    "blockage": "CLOSED"
+  },
+  "ifc_model": {
+    "events": 1,
+    "processes": 4,
+    "tasks": 6,
+    "resources": 5
+  },
+  "n_demands": 13,
+  "n_resources": 57,
+  "roster_types_available": [
+    "EQUIPMENT",
+    "MEDICAL_TEAM",
+    "RESCUE_TEAM",
+    "ROAD_MAINTENANCE_TEAM",
+    "TRAFFIC_CONTROL_TEAM"
+  ],
+  "assignments": [
+    {
+      "task_id": "S07-P01-T01",
+      "resource_type": "TRAFFIC_CONTROL_TEAM",
+      "quantity": 1,
+      "assigned_to": null,
+      "distance_km": null,
+      "response_time_h": null
+    },
+    {
+      "task_id": "S07-P02-T01",
+      "resource_type": "TRAFFIC_CONTROL_TEAM",
+      "quantity": 1,
+      "assigned_to": null,
+      "distance_km": null,
+      "response_time_h": null
+    },
+    {
+      "task_id": "S07-P02-T02",
+      "resource_type": "TRAFFIC_CONTROL_TEAM",
+      "quantity": 1,
+      "assigned_to": null,
+      "distance_km": null,
+      "response_time_h": null
+    },
+    {
+      "task_id": "S07-P02-T03",
+      "resource_type": "TRAFFIC_CONTROL_TEAM",
+      "quantity": 1,
+      "assigned_to": null,
+      "distance_km": null,
+      "response_time_h": null
+    },
+    {
+      "task_id": "S07-P02-T04",
+      "resource_type": "TRAFFIC_CONTROL_TEAM",
+      "quantity": 1,
+      "assigned_to": null,
+      "distance_km": null,
+      "response_time_h": null
+    },
+    {
+      "task_id": "S07-P03-T01",
+      "resource_type": "RESCUE_TEAM",
+      "quantity": 1,
+      "assigned_to": "RES-QH-006",
+      "distance_km": 287.62,
+      "response_time_h": 4.794
+    },
+    {
+      "task_id": "S07-P03-T02",
+      "resource_type": "MEDICAL_TEAM",
+      "quantity": 1,
+      "assigned_to": "RES-SIM-008",
+      "distance_km": 348.67,
+      "response_time_h": 6.973
+    },
+    {
+      "task_id": "S07-P03-T03",
+      "resource_type": "MEDICAL_TEAM",
+      "quantity": 1,
+      "assigned_to": "RES-SIM-009",
+      "distance_km": 619.91,
+      "response_time_h": 12.398
+    },
+    {
+      "task_id": "S07-P04-T01",
+      "resource_type": "ROAD_MAINTENANCE_TEAM",
+      "quantity": 1,
+      "assigned_to": "RES-QH-037",
+      "distance_km": 65.38,
+      "response_time_h": 1.09
+    },
+    {
+      "task_id": "S07-P04-T02",
+      "resource_type": "ROAD_MAINTENANCE_TEAM",
+      "quantity": 1,
+      "assigned_to": "RES-QH-040",
+      "distance_km": 39.25,
+      "response_time_h": 0.654
+    },
+    {
+      "task_id": "S07-P04-T03",
+      "resource_type": "TRAFFIC_CONTROL_TEAM",
+      "quantity": 1,
+      "assigned_to": null,
+      "distance_km": null,
+      "response_time_h": null
+    },
+    {
+      "task_id": "S07-P05-T01",
+      "resource_type": "ROAD_MAINTENANCE_TEAM",
+      "quantity": 1,
+      "assigned_to": "RES-QH-038",
+      "distance_km": 95.6,
+      "response_time_h": 1.593
+    },
+    {
+      "task_id": "S07-P05-T02",
+      "resource_type": "ROAD_MAINTENANCE_TEAM",
+      "quantity": 1,
+      "assigned_to": "RES-QH-039",
+      "distance_km": 95.61,
+      "response_time_h": 1.593
+    }
+  ],
+  "unmet": [
+    "S07-P01-T01",
+    "S07-P02-T01",
+    "S07-P02-T02",
+    "S07-P02-T03",
+    "S07-P02-T04",
+    "S07-P04-T03"
+  ],
+  "metrics": {
+    "demand_fulfillment_rate": 0.5384615384615384,
+    "weighted_response_distance_km": 1746.0291383002173,
+    "mean_response_time_h": 4.15654581498213,
+    "gini_fairness": 0.0,
+    "unmet_demands": 6
+  },
+  "feasible": true,
+  "front_size": 40,
+  "runtime_s": 2.073
+}

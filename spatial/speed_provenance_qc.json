@@ -1,0 +1,39 @@
+{
+  "graph_directed_edges": 139195,
+  "edge_speed_source_counts": {
+    "class_default": 138298,
+    "maxspeed_upper_bound": 853,
+    "unknown_class_fallback_40kmh": 44
+  },
+  "edge_speed_source_length_km": {
+    "class_default": 150489.08,
+    "maxspeed_upper_bound": 2119.71,
+    "unknown_class_fallback_40kmh": 11.24
+  },
+  "edge_speed_source_length_share": {
+    "class_default": 0.986,
+    "maxspeed_upper_bound": 0.0139,
+    "unknown_class_fallback_40kmh": 0.0001
+  },
+  "top_highway_classes": {
+    "residential": 39647,
+    "unclassified": 26706,
+    "service": 22015,
+    "tertiary": 21026,
+    "trunk": 9905,
+    "secondary": 9272,
+    "primary": 4766,
+    "living_street": 2367,
+    "motorway_link": 1195,
+    "motorway": 1099,
+    "trunk_link": 507,
+    "primary_link": 303,
+    "tertiary_link": 181,
+    "secondary_link": 104,
+    "road": 58,
+    "escape": 44
+  },
+  "flagged_speed_unresolved_edges": 0,
+  "speed_config": "config/speed_profile.yaml",
+  "interpretation": "All edge speeds are ASSUMPTIONS (OSM posted-limit upper bound or China road-class default), not measured speeds. The 40 km/h unknown-class fallback is declared in config/speed_profile.yaml; network travel times are estimates and are reported separately from the dispatch D3 objective."
+}

@@ -1,0 +1,45 @@
+{
+  "experiment": "case_s07_baselines",
+  "scenario_id": "S07",
+  "pool": "build_problem_for('S07') - official roster, no synthetic traffic-control injection (identical to run_case_s07.py)",
+  "metric": "evaluate().weighted_response_distance_km (same as case_S07.json)",
+  "timestamp": "2026-09-10T12:50:30.312976+00:00",
+  "single_seed_42": {
+    "rule_based": {
+      "weighted_response_distance_km": 3141.86,
+      "demand_fulfillment_rate": 0.5385,
+      "mean_response_time_h": 7.112,
+      "unmet": 6,
+      "runtime_s": 0.002
+    },
+    "standard_nsga2": {
+      "weighted_response_distance_km": 1830.73,
+      "demand_fulfillment_rate": 0.5385,
+      "mean_response_time_h": 4.269,
+      "unmet": 6,
+      "runtime_s": 0.493
+    }
+  },
+  "twenty_seed_stats": {
+    "rule_based": {
+      "n_seeds": 20,
+      "distance_mean_km": 3141.86,
+      "distance_std_km": 0.0,
+      "fulfillment_mean": 0.5385
+    },
+    "standard_nsga2": {
+      "n_seeds": 20,
+      "distance_mean_km": 1832.87,
+      "distance_std_km": 96.74,
+      "fulfillment_mean": 0.5385
+    }
+  },
+  "proposed_reference": {
+    "source": "case_S07.json (seed 42, same pool)",
+    "weighted_response_distance_km": 1746.03
+  },
+  "reduction_vs_baselines_seed42_pct": {
+    "rule_based": 44.4,
+    "standard_nsga2": 4.6
+  }
+}

@@ -1,0 +1,4 @@
+﻿reach_radius_km,n_eligible,n_excluded,excluded_pct,mean_eligible_net_dist_km
+200.0,178,914,83.7,106.777
+300.0,271,821,75.18,153.466
+400.0,366,726,66.48,203.44

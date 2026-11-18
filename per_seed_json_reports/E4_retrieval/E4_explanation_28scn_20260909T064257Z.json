@@ -1,0 +1,1742 @@
+{
+  "experiment": "E4_explanation",
+  "k": 5,
+  "n_scenarios": 28,
+  "llm_live": false,
+  "note": "Context-stage metrics are renderer-independent; LLM live rendering (groundedness/latency of generated text) is env-gated and not part of these numbers. vector_rag provenance is simulated (hashed n-gram surrogate), never presented as a trained embedder.",
+  "paper_config_map": {
+    "KG+LLM": "kg_structured + LLMRenderer",
+    "no-LLM (default)": "kg_structured + TemplateRenderer",
+    "RAG+LLM": "vector_rag + LLMRenderer",
+    "vector-only": "vector_rag + TemplateRenderer",
+    "no-KG / raw-LLM": "none + LLMRenderer"
+  },
+  "aggregate": {
+    "kg_structured": {
+      "recall": 0.4404761904761905,
+      "precision": 0.5714285714285715,
+      "grade_violation_rate": 0.0,
+      "official_provenance_rate": 1.0,
+      "grounded_citations": 5.0,
+      "latency_ms": 0.03857142857142859,
+      "mean_n_retrieved": 5.0
+    },
+    "vector_rag": {
+      "recall": 0.5633928571428571,
+      "precision": 0.742857142857143,
+      "grade_violation_rate": 0.09285714285714286,
+      "official_provenance_rate": 1.0,
+      "grounded_citations": 5.0,
+      "latency_ms": 0.4123571428571428,
+      "mean_n_retrieved": 5.0
+    },
+    "none": {
+      "recall": 0.0,
+      "precision": 0.0,
+      "grade_violation_rate": 0.0,
+      "official_provenance_rate": 0.0,
+      "grounded_citations": 0.0,
+      "latency_ms": 0.0,
+      "mean_n_retrieved": 0.0
+    }
+  },
+  "paired_stats": {
+    "kg_vs_vector_rag_recall": {
+      "label_x": "kg_structured",
+      "label_y": "vector_rag",
+      "n": 28,
+      "mean_kg_structured": 0.4404761904761905,
+      "mean_vector_rag": 0.5633928571428571,
+      "ci_kg_structured": [
+        0.40476190476190477,
+        0.47857142857142854
+      ],
+      "ci_vector_rag": [
+        0.48690476190476184,
+        0.6300595238095238
+      ],
+      "mean_diff": -0.12291666666666662,
+      "cohens_d": -0.7898825229118043,
+      "wilcoxon_p": 0.009,
+      "significant": true
+    },
+    "kg_vs_none_recall": {
+      "label_x": "kg_structured",
+      "label_y": "none",
+      "n": 28,
+      "mean_kg_structured": 0.4404761904761905,
+      "mean_none": 0.0,
+      "ci_kg_structured": [
+        0.40476190476190477,
+        0.47857142857142854
+      ],
+      "ci_none": [
+        0.0,
+        0.0
+      ],
+      "mean_diff": 0.4404761904761905,
+      "cohens_d": 6.182205310655902,
+      "wilcoxon_p": 0.0,
+      "significant": true
+    },
+    "kg_vs_vector_rag_precision": {
+      "label_x": "kg_structured",
+      "label_y": "vector_rag",
+      "n": 28,
+      "mean_kg_structured": 0.5714285714285715,
+      "mean_vector_rag": 0.742857142857143,
+      "ci_kg_structured": [
+        0.5000000000000002,
+        0.642857142857143
+      ],
+      "ci_vector_rag": [
+        0.6357142857142859,
+        0.835714285714286
+      ],
+      "mean_diff": -0.17142857142857149,
+      "cohens_d": -0.7171371656006366,
+      "wilcoxon_p": 0.00685,
+      "significant": true
+    },
+    "kg_vs_none_precision": {
+      "label_x": "kg_structured",
+      "label_y": "none",
+      "n": 28,
+      "mean_kg_structured": 0.5714285714285715,
+      "mean_none": 0.0,
+      "ci_kg_structured": [
+        0.5000000000000002,
+        0.642857142857143
+      ],
+      "ci_none": [
+        0.0,
+        0.0
+      ],
+      "mean_diff": 0.5714285714285715,
+      "cohens_d": 4.163589018533026,
+      "wilcoxon_p": 0.0,
+      "significant": true
+    },
+    "kg_vs_vector_rag_grade_violation_rate": {
+      "label_x": "kg_structured",
+      "label_y": "vector_rag",
+      "n": 28,
+      "mean_kg_structured": 0.0,
+      "mean_vector_rag": 0.09285714285714286,
+      "ci_kg_structured": [
+        0.0,
+        0.0
+      ],
+      "ci_vector_rag": [
+        0.028571428571428574,
+        0.1642857142857143
+      ],
+      "mean_diff": -0.09285714285714286,
+      "cohens_d": -0.7119602224596595,
+      "wilcoxon_p": 0.015625,
+      "significant": true
+    },
+    "kg_vs_none_grade_violation_rate": {
+      "label_x": "kg_structured",
+      "label_y": "none",
+      "n": 28,
+      "mean_kg_structured": 0.0,
+      "mean_none": 0.0,
+      "ci_kg_structured": [
+        0.0,
+        0.0
+      ],
+      "ci_none": [
+        0.0,
+        0.0
+      ],
+      "mean_diff": 0.0,
+      "cohens_d": 0.0,
+      "wilcoxon_p": 1.0,
+      "significant": false
+    }
+  },
+  "per_scenario": [
+    {
+      "scenario_id": "S01",
+      "event_type": "TRAFFIC_ACCIDENT",
+      "severity": "IV",
+      "n_gold": 6,
+      "gold": [
+        "PRV-ASSESS-001",
+        "PRV-CTRL-001",
+        "PRV-GRADE-001",
+        "PRV-GRADE-002",
+        "PRV-RECOVER-001",
+        "PRV-RESP-001"
+      ],
+      "kg_structured": {
+        "retrieved": [
+          "PRV-GRADE-002",
+          "PRV-CTRL-001",
+          "PRV-ASSESS-001",
+          "PRV-CLEAR-001",
+          "PRV-RECOVER-001"
+        ],
+        "n_retrieved": 5,
+        "recall": 0.6666666666666666,
+        "precision": 0.8,
+        "grade_violation_rate": 0.0,
+        "official_provenance_rate": 1.0,
+        "grounded_citations": 5,
+        "latency_ms": 0.094
+      },
+      "vector_rag": {
+        "retrieved": [
+          "PRV-CTRL-001",
+          "PRV-GRADE-002",
+          "PRV-RESCUE-001",
+          "PRV-REPORT-001",
+          "PRV-ASSESS-001"
+        ],
+        "n_retrieved": 5,
+        "recall": 0.5,
+        "precision": 0.6,
+        "grade_violation_rate": 0.4,
+        "official_provenance_rate": 1.0,
+        "grounded_citations": 5,
+        "latency_ms": 0.685
+      },
+      "none": {
+        "retrieved": [],
+        "n_retrieved": 0,
+        "recall": 0.0,
+        "precision": 0.0,
+        "grade_violation_rate": 0.0,
+        "official_provenance_rate": 0.0,
+        "grounded_citations": 0,
+        "latency_ms": 0.0
+      }
+    },
+    {
+      "scenario_id": "S02",
+      "event_type": "TRAFFIC_ACCIDENT",
+      "severity": "III",
+      "n_gold": 8,
+      "gold": [
+        "PRV-ASSESS-001",
+        "PRV-CTRL-001",
+        "PRV-GRADE-001",
+        "PRV-GRADE-002",
+        "PRV-RECOVER-001",
+        "PRV-REPORT-001",
+        "PRV-RESCUE-001",
+        "PRV-RESP-001"
+      ],
+      "kg_structured": {
+        "retrieved": [
+          "PRV-GRADE-002",
+          "PRV-RESCUE-001",
+          "PRV-CTRL-001",
+          "PRV-CHEM-001",
+          "PRV-ASSESS-001"
+        ],
+        "n_retrieved": 5,
+        "recall": 0.5,
+        "precision": 0.8,
+        "grade_violation_rate": 0.0,
+        "official_provenance_rate": 1.0,
+        "grounded_citations": 5,
+        "latency_ms": 0.061
+      },
+      "vector_rag": {
+        "retrieved": [
+          "PRV-CTRL-001",
+          "PRV-GRADE-002",
+          "PRV-ASSESS-001",
+          "PRV-REPORT-001",
+          "PRV-GRADE-001"
+        ],
+        "n_retrieved": 5,
+        "recall": 0.625,
+        "precision": 1.0,
+        "grade_violation_rate": 0.0,
+        "official_provenance_rate": 1.0,
+        "grounded_citations": 5,
+        "latency_ms": 0.669
+      },
+      "none": {
+        "retrieved": [],
+        "n_retrieved": 0,
+        "recall": 0.0,
+        "precision": 0.0,
+        "grade_violation_rate": 0.0,
+        "official_provenance_rate": 0.0,
+        "grounded_citations": 0,
+        "latency_ms": 0.0
+      }
+    },
+    {
+      "scenario_id": "S03",
+      "event_type": "TRAFFIC_ACCIDENT",
+      "severity": "III",
+      "n_gold": 8,
+      "gold": [
+        "PRV-ASSESS-001",
+        "PRV-CTRL-001",
+        "PRV-GRADE-001",
+        "PRV-GRADE-002",
+        "PRV-RECOVER-001",
+        "PRV-REPORT-001",
+        "PRV-RESCUE-001",
+        "PRV-RESP-001"
+      ],
+      "kg_structured": {
+        "retrieved": [
+          "PRV-GRADE-002",
+          "PRV-RESCUE-001",
+          "PRV-CTRL-001",
+          "PRV-CHEM-001",
+          "PRV-ASSESS-001"
+        ],
+        "n_retrieved": 5,
+        "recall": 0.5,
+        "precision": 0.8,
+        "grade_violation_rate": 0.0,
+        "official_provenance_rate": 1.0,
+        "grounded_citations": 5,
+        "latency_ms": 0.06
+      },
+      "vector_rag": {
+        "retrieved": [
+          "PRV-CTRL-001",
+          "PRV-ASSESS-001",
+          "PRV-REPORT-001",
+          "PRV-CLEAR-001",
+          "PRV-GRADE-002"
+        ],
+        "n_retrieved": 5,
+        "recall": 0.5,
+        "precision": 0.8,
+        "grade_violation_rate": 0.0,
+        "official_provenance_rate": 1.0,
+        "grounded_citations": 5,
+        "latency_ms": 0.631
+      },
+      "none": {
+        "retrieved": [],
+        "n_retrieved": 0,
+        "recall": 0.0,
+        "precision": 0.0,
+        "grade_violation_rate": 0.0,
+        "official_provenance_rate": 0.0,
+        "grounded_citations": 0,
+        "latency_ms": 0.0
+      }
+    },
+    {
+      "scenario_id": "S04",
+      "event_type": "TRAFFIC_ACCIDENT",
+      "severity": "III",
+      "n_gold": 8,
+      "gold": [
+        "PRV-ASSESS-001",
+        "PRV-CTRL-001",
+        "PRV-GRADE-001",
+        "PRV-GRADE-002",
+        "PRV-RECOVER-001",
+        "PRV-REPORT-001",
+        "PRV-RESCUE-001",
+        "PRV-RESP-001"
+      ],
+      "kg_structured": {
+        "retrieved": [
+          "PRV-GRADE-002",
+          "PRV-RESCUE-001",
+          "PRV-CTRL-001",
+          "PRV-CHEM-001",
+          "PRV-ASSESS-001"
+        ],
+        "n_retrieved": 5,
+        "recall": 0.5,
+        "precision": 0.8,
+        "grade_violation_rate": 0.0,
+        "official_provenance_rate": 1.0,
+        "grounded_citations": 5,
+        "latency_ms": 0.065
+      },
+      "vector_rag": {
+        "retrieved": [
+          "PRV-CTRL-001",
+          "PRV-RESCUE-001",
+          "PRV-GRADE-002",
+          "PRV-ASSESS-001",
+          "PRV-GRADE-001"
+        ],
+        "n_retrieved": 5,
+        "recall": 0.625,
+        "precision": 1.0,
+        "grade_violation_rate": 0.0,
+        "official_provenance_rate": 1.0,
+        "grounded_citations": 5,
+        "latency_ms": 0.646
+      },
+      "none": {
+        "retrieved": [],
+        "n_retrieved": 0,
+        "recall": 0.0,
+        "precision": 0.0,
+        "grade_violation_rate": 0.0,
+        "official_provenance_rate": 0.0,
+        "grounded_citations": 0,
+        "latency_ms": 0.0
+      }
+    },
+    {
+      "scenario_id": "S05",
+      "event_type": "TRAFFIC_ACCIDENT",
+      "severity": "II",
+      "n_gold": 8,
+      "gold": [
+        "PRV-ASSESS-001",
+        "PRV-CTRL-001",
+        "PRV-GRADE-001",
+        "PRV-GRADE-002",
+        "PRV-RECOVER-001",
+        "PRV-REPORT-001",
+        "PRV-RESCUE-001",
+        "PRV-RESP-001"
+      ],
+      "kg_structured": {
+        "retrieved": [
+          "PRV-GRADE-002",
+          "PRV-RESCUE-001",
+          "PRV-CTRL-001",
+          "PRV-CHEM-001",
+          "PRV-ASSESS-001"
+        ],
+        "n_retrieved": 5,
+        "recall": 0.5,
+        "precision": 0.8,
+        "grade_violation_rate": 0.0,
+        "official_provenance_rate": 1.0,
+        "grounded_citations": 5,
+        "latency_ms": 0.057
+      },
+      "vector_rag": {
+        "retrieved": [
+          "PRV-CTRL-001",
+          "PRV-RESCUE-001",
+          "PRV-GRADE-002",
+          "PRV-REPORT-001",
+          "PRV-ASSESS-001"
+        ],
+        "n_retrieved": 5,
+        "recall": 0.625,
+        "precision": 1.0,
+        "grade_violation_rate": 0.0,
+        "official_provenance_rate": 1.0,
+        "grounded_citations": 5,
+        "latency_ms": 0.605
+      },
+      "none": {
+        "retrieved": [],
+        "n_retrieved": 0,
+        "recall": 0.0,
+        "precision": 0.0,
+        "grade_violation_rate": 0.0,
+        "official_provenance_rate": 0.0,
+        "grounded_citations": 0,
+        "latency_ms": 0.0
+      }
+    },
+    {
+      "scenario_id": "S06",
+      "event_type": "TRAFFIC_ACCIDENT",
+      "severity": "II",
+      "n_gold": 8,
+      "gold": [
+        "PRV-ASSESS-001",
+        "PRV-CTRL-001",
+        "PRV-GRADE-001",
+        "PRV-GRADE-002",
+        "PRV-RECOVER-001",
+        "PRV-REPORT-001",
+        "PRV-RESCUE-001",
+        "PRV-RESP-001"
+      ],
+      "kg_structured": {
+        "retrieved": [
+          "PRV-GRADE-002",
+          "PRV-RESCUE-001",
+          "PRV-CTRL-001",
+          "PRV-CHEM-001",
+          "PRV-ASSESS-001"
+        ],
+        "n_retrieved": 5,
+        "recall": 0.5,
+        "precision": 0.8,
+        "grade_violation_rate": 0.0,
+        "official_provenance_rate": 1.0,
+        "grounded_citations": 5,
+        "latency_ms": 0.059
+      },
+      "vector_rag": {
+        "retrieved": [
+          "PRV-CTRL-001",
+          "PRV-REPORT-001",
+          "PRV-RESCUE-001",
+          "PRV-ASSESS-001",
+          "PRV-CHEM-001"
+        ],
+        "n_retrieved": 5,
+        "recall": 0.5,
+        "precision": 0.8,
+        "grade_violation_rate": 0.0,
+        "official_provenance_rate": 1.0,
+        "grounded_citations": 5,
+        "latency_ms": 0.53
+      },
+      "none": {
+        "retrieved": [],
+        "n_retrieved": 0,
+        "recall": 0.0,
+        "precision": 0.0,
+        "grade_violation_rate": 0.0,
+        "official_provenance_rate": 0.0,
+        "grounded_citations": 0,
+        "latency_ms": 0.0
+      }
+    },
+    {
+      "scenario_id": "S07",
+      "event_type": "TRAFFIC_ACCIDENT",
+      "severity": "III",
+      "n_gold": 8,
+      "gold": [
+        "PRV-ASSESS-001",
+        "PRV-CTRL-001",
+        "PRV-GRADE-001",
+        "PRV-GRADE-002",
+        "PRV-RECOVER-001",
+        "PRV-REPORT-001",
+        "PRV-RESCUE-001",
+        "PRV-RESP-001"
+      ],
+      "kg_structured": {
+        "retrieved": [
+          "PRV-GRADE-002",
+          "PRV-RESCUE-001",
+          "PRV-CTRL-001",
+          "PRV-CHEM-001",
+          "PRV-ASSESS-001"
+        ],
+        "n_retrieved": 5,
+        "recall": 0.5,
+        "precision": 0.8,
+        "grade_violation_rate": 0.0,
+        "official_provenance_rate": 1.0,
+        "grounded_citations": 5,
+        "latency_ms": 0.034
+      },
+      "vector_rag": {
+        "retrieved": [
+          "PRV-CTRL-001",
+          "PRV-REPORT-001",
+          "PRV-ASSESS-001",
+          "PRV-RESCUE-001",
+          "PRV-GRADE-001"
+        ],
+        "n_retrieved": 5,
+        "recall": 0.625,
+        "precision": 1.0,
+        "grade_violation_rate": 0.0,
+        "official_provenance_rate": 1.0,
+        "grounded_citations": 5,
+        "latency_ms": 0.329
+      },
+      "none": {
+        "retrieved": [],
+        "n_retrieved": 0,
+        "recall": 0.0,
+        "precision": 0.0,
+        "grade_violation_rate": 0.0,
+        "official_provenance_rate": 0.0,
+        "grounded_citations": 0,
+        "latency_ms": 0.0
+      }
+    },
+    {
+      "scenario_id": "S08",
+      "event_type": "TRAFFIC_ACCIDENT",
+      "severity": "I",
+      "n_gold": 8,
+      "gold": [
+        "PRV-ASSESS-001",
+        "PRV-CTRL-001",
+        "PRV-GRADE-001",
+        "PRV-GRADE-002",
+        "PRV-RECOVER-001",
+        "PRV-REPORT-001",
+        "PRV-RESCUE-001",
+        "PRV-RESP-001"
+      ],
+      "kg_structured": {
+        "retrieved": [
+          "PRV-GRADE-002",
+          "PRV-RESCUE-001",
+          "PRV-CTRL-001",
+          "PRV-CHEM-001",
+          "PRV-ASSESS-001"
+        ],
+        "n_retrieved": 5,
+        "recall": 0.5,
+        "precision": 0.8,
+        "grade_violation_rate": 0.0,
+        "official_provenance_rate": 1.0,
+        "grounded_citations": 5,
+        "latency_ms": 0.03
+      },
+      "vector_rag": {
+        "retrieved": [
+          "PRV-CTRL-001",
+          "PRV-GRADE-002",
+          "PRV-REPORT-001",
+          "PRV-RESCUE-001",
+          "PRV-GRADE-001"
+        ],
+        "n_retrieved": 5,
+        "recall": 0.625,
+        "precision": 1.0,
+        "grade_violation_rate": 0.0,
+        "official_provenance_rate": 1.0,
+        "grounded_citations": 5,
+        "latency_ms": 0.32
+      },
+      "none": {
+        "retrieved": [],
+        "n_retrieved": 0,
+        "recall": 0.0,
+        "precision": 0.0,
+        "grade_violation_rate": 0.0,
+        "official_provenance_rate": 0.0,
+        "grounded_citations": 0,
+        "latency_ms": 0.0
+      }
+    },
+    {
+      "scenario_id": "S09",
+      "event_type": "GEOLOGICAL_DISASTER",
+      "severity": "IV",
+      "n_gold": 5,
+      "gold": [
+        "PRV-ASSESS-001",
+        "PRV-CLEAR-001",
+        "PRV-GRADE-001",
+        "PRV-RECOVER-001",
+        "PRV-RESP-001"
+      ],
+      "kg_structured": {
+        "retrieved": [
+          "PRV-CLEAR-001",
+          "PRV-ASSESS-001",
+          "PRV-CTRL-001",
+          "PRV-GRADE-002",
+          "PRV-RECOVER-001"
+        ],
+        "n_retrieved": 5,
+        "recall": 0.6,
+        "precision": 0.6,
+        "grade_violation_rate": 0.0,
+        "official_provenance_rate": 1.0,
+        "grounded_citations": 5,
+        "latency_ms": 0.024
+      },
+      "vector_rag": {
+        "retrieved": [
+          "PRV-CLEAR-001",
+          "PRV-REPORT-001",
+          "PRV-ASSESS-001",
+          "PRV-GRADE-001",
+          "PRV-RECOVER-001"
+        ],
+        "n_retrieved": 5,
+        "recall": 0.8,
+        "precision": 0.8,
+        "grade_violation_rate": 0.2,
+        "official_provenance_rate": 1.0,
+        "grounded_citations": 5,
+        "latency_ms": 0.33
+      },
+      "none": {
+        "retrieved": [],
+        "n_retrieved": 0,
+        "recall": 0.0,
+        "precision": 0.0,
+        "grade_violation_rate": 0.0,
+        "official_provenance_rate": 0.0,
+        "grounded_citations": 0,
+        "latency_ms": 0.0
+      }
+    },
+    {
+      "scenario_id": "S10",
+      "event_type": "GEOLOGICAL_DISASTER",
+      "severity": "IV",
+      "n_gold": 5,
+      "gold": [
+        "PRV-ASSESS-001",
+        "PRV-CLEAR-001",
+        "PRV-GRADE-001",
+        "PRV-RECOVER-001",
+        "PRV-RESP-001"
+      ],
+      "kg_structured": {
+        "retrieved": [
+          "PRV-CLEAR-001",
+          "PRV-ASSESS-001",
+          "PRV-CTRL-001",
+          "PRV-GRADE-002",
+          "PRV-RECOVER-001"
+        ],
+        "n_retrieved": 5,
+        "recall": 0.6,
+        "precision": 0.6,
+        "grade_violation_rate": 0.0,
+        "official_provenance_rate": 1.0,
+        "grounded_citations": 5,
+        "latency_ms": 0.023
+      },
+      "vector_rag": {
+        "retrieved": [
+          "PRV-CLEAR-001",
+          "PRV-REPORT-001",
+          "PRV-GRADE-002",
+          "PRV-GRADE-001",
+          "PRV-RECOVER-001"
+        ],
+        "n_retrieved": 5,
+        "recall": 0.6,
+        "precision": 0.6,
+        "grade_violation_rate": 0.2,
+        "official_provenance_rate": 1.0,
+        "grounded_citations": 5,
+        "latency_ms": 0.319
+      },
+      "none": {
+        "retrieved": [],
+        "n_retrieved": 0,
+        "recall": 0.0,
+        "precision": 0.0,
+        "grade_violation_rate": 0.0,
+        "official_provenance_rate": 0.0,
+        "grounded_citations": 0,
+        "latency_ms": 0.0
+      }
+    },
+    {
+      "scenario_id": "S11",
+      "event_type": "GEOLOGICAL_DISASTER",
+      "severity": "III",
+      "n_gold": 6,
+      "gold": [
+        "PRV-ASSESS-001",
+        "PRV-CLEAR-001",
+        "PRV-GRADE-001",
+        "PRV-RECOVER-001",
+        "PRV-REPORT-001",
+        "PRV-RESP-001"
+      ],
+      "kg_structured": {
+        "retrieved": [
+          "PRV-CLEAR-001",
+          "PRV-ASSESS-001",
+          "PRV-CHEM-001",
+          "PRV-CTRL-001",
+          "PRV-GRADE-002"
+        ],
+        "n_retrieved": 5,
+        "recall": 0.3333333333333333,
+        "precision": 0.4,
+        "grade_violation_rate": 0.0,
+        "official_provenance_rate": 1.0,
+        "grounded_citations": 5,
+        "latency_ms": 0.028
+      },
+      "vector_rag": {
+        "retrieved": [
+          "PRV-CLEAR-001",
+          "PRV-REPORT-001",
+          "PRV-ASSESS-001",
+          "PRV-CHEM-001",
+          "PRV-GRADE-001"
+        ],
+        "n_retrieved": 5,
+        "recall": 0.6666666666666666,
+        "precision": 0.8,
+        "grade_violation_rate": 0.0,
+        "official_provenance_rate": 1.0,
+        "grounded_citations": 5,
+        "latency_ms": 0.348
+      },
+      "none": {
+        "retrieved": [],
+        "n_retrieved": 0,
+        "recall": 0.0,
+        "precision": 0.0,
+        "grade_violation_rate": 0.0,
+        "official_provenance_rate": 0.0,
+        "grounded_citations": 0,
+        "latency_ms": 0.0
+      }
+    },
+    {
+      "scenario_id": "S12",
+      "event_type": "GEOLOGICAL_DISASTER",
+      "severity": "III",
+      "n_gold": 6,
+      "gold": [
+        "PRV-ASSESS-001",
+        "PRV-CLEAR-001",
+        "PRV-GRADE-001",
+        "PRV-RECOVER-001",
+        "PRV-REPORT-001",
+        "PRV-RESP-001"
+      ],
+      "kg_structured": {
+        "retrieved": [
+          "PRV-CLEAR-001",
+          "PRV-ASSESS-001",
+          "PRV-CHEM-001",
+          "PRV-CTRL-001",
+          "PRV-GRADE-002"
+        ],
+        "n_retrieved": 5,
+        "recall": 0.3333333333333333,
+        "precision": 0.4,
+        "grade_violation_rate": 0.0,
+        "official_provenance_rate": 1.0,
+        "grounded_citations": 5,
+        "latency_ms": 0.029
+      },
+      "vector_rag": {
+        "retrieved": [
+          "PRV-CLEAR-001",
+          "PRV-REPORT-001",
+          "PRV-ASSESS-001",
+          "PRV-GRADE-001",
+          "PRV-CHEM-001"
+        ],
+        "n_retrieved": 5,
+        "recall": 0.6666666666666666,
+        "precision": 0.8,
+        "grade_violation_rate": 0.0,
+        "official_provenance_rate": 1.0,
+        "grounded_citations": 5,
+        "latency_ms": 0.332
+      },
+      "none": {
+        "retrieved": [],
+        "n_retrieved": 0,
+        "recall": 0.0,
+        "precision": 0.0,
+        "grade_violation_rate": 0.0,
+        "official_provenance_rate": 0.0,
+        "grounded_citations": 0,
+        "latency_ms": 0.0
+      }
+    },
+    {
+      "scenario_id": "S13",
+      "event_type": "GEOLOGICAL_DISASTER",
+      "severity": "II",
+      "n_gold": 6,
+      "gold": [
+        "PRV-ASSESS-001",
+        "PRV-CLEAR-001",
+        "PRV-GRADE-001",
+        "PRV-RECOVER-001",
+        "PRV-REPORT-001",
+        "PRV-RESP-001"
+      ],
+      "kg_structured": {
+        "retrieved": [
+          "PRV-CLEAR-001",
+          "PRV-ASSESS-001",
+          "PRV-CHEM-001",
+          "PRV-CTRL-001",
+          "PRV-GRADE-002"
+        ],
+        "n_retrieved": 5,
+        "recall": 0.3333333333333333,
+        "precision": 0.4,
+        "grade_violation_rate": 0.0,
+        "official_provenance_rate": 1.0,
+        "grounded_citations": 5,
+        "latency_ms": 0.028
+      },
+      "vector_rag": {
+        "retrieved": [
+          "PRV-CLEAR-001",
+          "PRV-REPORT-001",
+          "PRV-ASSESS-001",
+          "PRV-GRADE-001",
+          "PRV-GRADE-002"
+        ],
+        "n_retrieved": 5,
+        "recall": 0.6666666666666666,
+        "precision": 0.8,
+        "grade_violation_rate": 0.0,
+        "official_provenance_rate": 1.0,
+        "grounded_citations": 5,
+        "latency_ms": 0.405
+      },
+      "none": {
+        "retrieved": [],
+        "n_retrieved": 0,
+        "recall": 0.0,
+        "precision": 0.0,
+        "grade_violation_rate": 0.0,
+        "official_provenance_rate": 0.0,
+        "grounded_citations": 0,
+        "latency_ms": 0.0
+      }
+    },
+    {
+      "scenario_id": "S14",
+      "event_type": "GEOLOGICAL_DISASTER",
+      "severity": "II",
+      "n_gold": 6,
+      "gold": [
+        "PRV-ASSESS-001",
+        "PRV-CLEAR-001",
+        "PRV-GRADE-001",
+        "PRV-RECOVER-001",
+        "PRV-REPORT-001",
+        "PRV-RESP-001"
+      ],
+      "kg_structured": {
+        "retrieved": [
+          "PRV-CLEAR-001",
+          "PRV-ASSESS-001",
+          "PRV-CHEM-001",
+          "PRV-CTRL-001",
+          "PRV-GRADE-002"
+        ],
+        "n_retrieved": 5,
+        "recall": 0.3333333333333333,
+        "precision": 0.4,
+        "grade_violation_rate": 0.0,
+        "official_provenance_rate": 1.0,
+        "grounded_citations": 5,
+        "latency_ms": 0.048
+      },
+      "vector_rag": {
+        "retrieved": [
+          "PRV-CLEAR-001",
+          "PRV-REPORT-001",
+          "PRV-ASSESS-001",
+          "PRV-GRADE-001",
+          "PRV-RECOVER-001"
+        ],
+        "n_retrieved": 5,
+        "recall": 0.8333333333333334,
+        "precision": 1.0,
+        "grade_violation_rate": 0.0,
+        "official_provenance_rate": 1.0,
+        "grounded_citations": 5,
+        "latency_ms": 0.389
+      },
+      "none": {
+        "retrieved": [],
+        "n_retrieved": 0,
+        "recall": 0.0,
+        "precision": 0.0,
+        "grade_violation_rate": 0.0,
+        "official_provenance_rate": 0.0,
+        "grounded_citations": 0,
+        "latency_ms": 0.0
+      }
+    },
+    {
+      "scenario_id": "S15",
+      "event_type": "EXTREME_WEATHER",
+      "severity": "IV",
+      "n_gold": 5,
+      "gold": [
+        "PRV-ASSESS-001",
+        "PRV-GRADE-001",
+        "PRV-RECOVER-001",
+        "PRV-RESP-001",
+        "PRV-WEATHER-001"
+      ],
+      "kg_structured": {
+        "retrieved": [
+          "PRV-WEATHER-001",
+          "PRV-ASSESS-001",
+          "PRV-CLEAR-001",
+          "PRV-CTRL-001",
+          "PRV-GRADE-002"
+        ],
+        "n_retrieved": 5,
+        "recall": 0.4,
+        "precision": 0.4,
+        "grade_violation_rate": 0.0,
+        "official_provenance_rate": 1.0,
+        "grounded_citations": 5,
+        "latency_ms": 0.029
+      },
+      "vector_rag": {
+        "retrieved": [
+          "PRV-WEATHER-001",
+          "PRV-ASSESS-001",
+          "PRV-REPORT-001",
+          "PRV-CLEAR-001",
+          "PRV-GRADE-001"
+        ],
+        "n_retrieved": 5,
+        "recall": 0.6,
+        "precision": 0.6,
+        "grade_violation_rate": 0.2,
+        "official_provenance_rate": 1.0,
+        "grounded_citations": 5,
+        "latency_ms": 0.366
+      },
+      "none": {
+        "retrieved": [],
+        "n_retrieved": 0,
+        "recall": 0.0,
+        "precision": 0.0,
+        "grade_violation_rate": 0.0,
+        "official_provenance_rate": 0.0,
+        "grounded_citations": 0,
+        "latency_ms": 0.0
+      }
+    },
+    {
+      "scenario_id": "S16",
+      "event_type": "EXTREME_WEATHER",
+      "severity": "IV",
+      "n_gold": 5,
+      "gold": [
+        "PRV-ASSESS-001",
+        "PRV-GRADE-001",
+        "PRV-RECOVER-001",
+        "PRV-RESP-001",
+        "PRV-WEATHER-001"
+      ],
+      "kg_structured": {
+        "retrieved": [
+          "PRV-WEATHER-001",
+          "PRV-ASSESS-001",
+          "PRV-CLEAR-001",
+          "PRV-CTRL-001",
+          "PRV-GRADE-002"
+        ],
+        "n_retrieved": 5,
+        "recall": 0.4,
+        "precision": 0.4,
+        "grade_violation_rate": 0.0,
+        "official_provenance_rate": 1.0,
+        "grounded_citations": 5,
+        "latency_ms": 0.027
+      },
+      "vector_rag": {
+        "retrieved": [
+          "PRV-WEATHER-001",
+          "PRV-REPORT-001",
+          "PRV-ASSESS-001",
+          "PRV-CHEM-001",
+          "PRV-CLEAR-001"
+        ],
+        "n_retrieved": 5,
+        "recall": 0.4,
+        "precision": 0.4,
+        "grade_violation_rate": 0.4,
+        "official_provenance_rate": 1.0,
+        "grounded_citations": 5,
+        "latency_ms": 0.383
+      },
+      "none": {
+        "retrieved": [],
+        "n_retrieved": 0,
+        "recall": 0.0,
+        "precision": 0.0,
+        "grade_violation_rate": 0.0,
+        "official_provenance_rate": 0.0,
+        "grounded_citations": 0,
+        "latency_ms": 0.0
+      }
+    },
+    {
+      "scenario_id": "S17",
+      "event_type": "EXTREME_WEATHER",
+      "severity": "III",
+      "n_gold": 6,
+      "gold": [
+        "PRV-ASSESS-001",
+        "PRV-GRADE-001",
+        "PRV-RECOVER-001",
+        "PRV-REPORT-001",
+        "PRV-RESP-001",
+        "PRV-WEATHER-001"
+      ],
+      "kg_structured": {
+        "retrieved": [
+          "PRV-WEATHER-001",
+          "PRV-ASSESS-001",
+          "PRV-CHEM-001",
+          "PRV-CLEAR-001",
+          "PRV-CTRL-001"
+        ],
+        "n_retrieved": 5,
+        "recall": 0.3333333333333333,
+        "precision": 0.4,
+        "grade_violation_rate": 0.0,
+        "official_provenance_rate": 1.0,
+        "grounded_citations": 5,
+        "latency_ms": 0.034
+      },
+      "vector_rag": {
+        "retrieved": [
+          "PRV-REPORT-001",
+          "PRV-WEATHER-001",
+          "PRV-ASSESS-001",
+          "PRV-GRADE-001",
+          "PRV-CHEM-001"
+        ],
+        "n_retrieved": 5,
+        "recall": 0.6666666666666666,
+        "precision": 0.8,
+        "grade_violation_rate": 0.0,
+        "official_provenance_rate": 1.0,
+        "grounded_citations": 5,
+        "latency_ms": 0.35
+      },
+      "none": {
+        "retrieved": [],
+        "n_retrieved": 0,
+        "recall": 0.0,
+        "precision": 0.0,
+        "grade_violation_rate": 0.0,
+        "official_provenance_rate": 0.0,
+        "grounded_citations": 0,
+        "latency_ms": 0.0
+      }
+    },
+    {
+      "scenario_id": "S18",
+      "event_type": "EXTREME_WEATHER",
+      "severity": "III",
+      "n_gold": 6,
+      "gold": [
+        "PRV-ASSESS-001",
+        "PRV-GRADE-001",
+        "PRV-RECOVER-001",
+        "PRV-REPORT-001",
+        "PRV-RESP-001",
+        "PRV-WEATHER-001"
+      ],
+      "kg_structured": {
+        "retrieved": [
+          "PRV-WEATHER-001",
+          "PRV-ASSESS-001",
+          "PRV-CHEM-001",
+          "PRV-CLEAR-001",
+          "PRV-CTRL-001"
+        ],
+        "n_retrieved": 5,
+        "recall": 0.3333333333333333,
+        "precision": 0.4,
+        "grade_violation_rate": 0.0,
+        "official_provenance_rate": 1.0,
+        "grounded_citations": 5,
+        "latency_ms": 0.033
+      },
+      "vector_rag": {
+        "retrieved": [
+          "PRV-WEATHER-001",
+          "PRV-ASSESS-001",
+          "PRV-REPORT-001",
+          "PRV-GRADE-001",
+          "PRV-CLEAR-001"
+        ],
+        "n_retrieved": 5,
+        "recall": 0.6666666666666666,
+        "precision": 0.8,
+        "grade_violation_rate": 0.0,
+        "official_provenance_rate": 1.0,
+        "grounded_citations": 5,
+        "latency_ms": 0.439
+      },
+      "none": {
+        "retrieved": [],
+        "n_retrieved": 0,
+        "recall": 0.0,
+        "precision": 0.0,
+        "grade_violation_rate": 0.0,
+        "official_provenance_rate": 0.0,
+        "grounded_citations": 0,
+        "latency_ms": 0.0
+      }
+    },
+    {
+      "scenario_id": "S19",
+      "event_type": "EXTREME_WEATHER",
+      "severity": "II",
+      "n_gold": 6,
+      "gold": [
+        "PRV-ASSESS-001",
+        "PRV-GRADE-001",
+        "PRV-RECOVER-001",
+        "PRV-REPORT-001",
+        "PRV-RESP-001",
+        "PRV-WEATHER-001"
+      ],
+      "kg_structured": {
+        "retrieved": [
+          "PRV-WEATHER-001",
+          "PRV-ASSESS-001",
+          "PRV-CHEM-001",
+          "PRV-CLEAR-001",
+          "PRV-CTRL-001"
+        ],
+        "n_retrieved": 5,
+        "recall": 0.3333333333333333,
+        "precision": 0.4,
+        "grade_violation_rate": 0.0,
+        "official_provenance_rate": 1.0,
+        "grounded_citations": 5,
+        "latency_ms": 0.033
+      },
+      "vector_rag": {
+        "retrieved": [
+          "PRV-WEATHER-001",
+          "PRV-REPORT-001",
+          "PRV-GRADE-001",
+          "PRV-CHEM-001",
+          "PRV-ASSESS-001"
+        ],
+        "n_retrieved": 5,
+        "recall": 0.6666666666666666,
+        "precision": 0.8,
+        "grade_violation_rate": 0.0,
+        "official_provenance_rate": 1.0,
+        "grounded_citations": 5,
+        "latency_ms": 0.342
+      },
+      "none": {
+        "retrieved": [],
+        "n_retrieved": 0,
+        "recall": 0.0,
+        "precision": 0.0,
+        "grade_violation_rate": 0.0,
+        "official_provenance_rate": 0.0,
+        "grounded_citations": 0,
+        "latency_ms": 0.0
+      }
+    },
+    {
+      "scenario_id": "S20",
+      "event_type": "HAZARDOUS_CHEMICAL_LEAK",
+      "severity": "IV",
+      "n_gold": 4,
+      "gold": [
+        "PRV-ASSESS-001",
+        "PRV-GRADE-001",
+        "PRV-RECOVER-001",
+        "PRV-RESP-001"
+      ],
+      "kg_structured": {
+        "retrieved": [
+          "PRV-ASSESS-001",
+          "PRV-CLEAR-001",
+          "PRV-CTRL-001",
+          "PRV-GRADE-002",
+          "PRV-RECOVER-001"
+        ],
+        "n_retrieved": 5,
+        "recall": 0.5,
+        "precision": 0.4,
+        "grade_violation_rate": 0.0,
+        "official_provenance_rate": 1.0,
+        "grounded_citations": 5,
+        "latency_ms": 0.025
+      },
+      "vector_rag": {
+        "retrieved": [
+          "PRV-CHEM-001",
+          "PRV-GRADE-002",
+          "PRV-RESCUE-001",
+          "PRV-REPORT-001",
+          "PRV-CTRL-001"
+        ],
+        "n_retrieved": 5,
+        "recall": 0.0,
+        "precision": 0.0,
+        "grade_violation_rate": 0.6,
+        "official_provenance_rate": 1.0,
+        "grounded_citations": 5,
+        "latency_ms": 0.474
+      },
+      "none": {
+        "retrieved": [],
+        "n_retrieved": 0,
+        "recall": 0.0,
+        "precision": 0.0,
+        "grade_violation_rate": 0.0,
+        "official_provenance_rate": 0.0,
+        "grounded_citations": 0,
+        "latency_ms": 0.0
+      }
+    },
+    {
+      "scenario_id": "S21",
+      "event_type": "HAZARDOUS_CHEMICAL_LEAK",
+      "severity": "IV",
+      "n_gold": 4,
+      "gold": [
+        "PRV-ASSESS-001",
+        "PRV-GRADE-001",
+        "PRV-RECOVER-001",
+        "PRV-RESP-001"
+      ],
+      "kg_structured": {
+        "retrieved": [
+          "PRV-ASSESS-001",
+          "PRV-CLEAR-001",
+          "PRV-CTRL-001",
+          "PRV-GRADE-002",
+          "PRV-RECOVER-001"
+        ],
+        "n_retrieved": 5,
+        "recall": 0.5,
+        "precision": 0.4,
+        "grade_violation_rate": 0.0,
+        "official_provenance_rate": 1.0,
+        "grounded_citations": 5,
+        "latency_ms": 0.048
+      },
+      "vector_rag": {
+        "retrieved": [
+          "PRV-CHEM-001",
+          "PRV-RESCUE-001",
+          "PRV-REPORT-001",
+          "PRV-GRADE-002",
+          "PRV-CTRL-001"
+        ],
+        "n_retrieved": 5,
+        "recall": 0.0,
+        "precision": 0.0,
+        "grade_violation_rate": 0.6,
+        "official_provenance_rate": 1.0,
+        "grounded_citations": 5,
+        "latency_ms": 0.385
+      },
+      "none": {
+        "retrieved": [],
+        "n_retrieved": 0,
+        "recall": 0.0,
+        "precision": 0.0,
+        "grade_violation_rate": 0.0,
+        "official_provenance_rate": 0.0,
+        "grounded_citations": 0,
+        "latency_ms": 0.0
+      }
+    },
+    {
+      "scenario_id": "S22",
+      "event_type": "HAZARDOUS_CHEMICAL_LEAK",
+      "severity": "III",
+      "n_gold": 6,
+      "gold": [
+        "PRV-ASSESS-001",
+        "PRV-CHEM-001",
+        "PRV-GRADE-001",
+        "PRV-RECOVER-001",
+        "PRV-REPORT-001",
+        "PRV-RESP-001"
+      ],
+      "kg_structured": {
+        "retrieved": [
+          "PRV-CHEM-001",
+          "PRV-ASSESS-001",
+          "PRV-CLEAR-001",
+          "PRV-CTRL-001",
+          "PRV-GRADE-002"
+        ],
+        "n_retrieved": 5,
+        "recall": 0.3333333333333333,
+        "precision": 0.4,
+        "grade_violation_rate": 0.0,
+        "official_provenance_rate": 1.0,
+        "grounded_citations": 5,
+        "latency_ms": 0.032
+      },
+      "vector_rag": {
+        "retrieved": [
+          "PRV-CHEM-001",
+          "PRV-REPORT-001",
+          "PRV-ASSESS-001",
+          "PRV-GRADE-002",
+          "PRV-RESCUE-001"
+        ],
+        "n_retrieved": 5,
+        "recall": 0.5,
+        "precision": 0.6,
+        "grade_violation_rate": 0.0,
+        "official_provenance_rate": 1.0,
+        "grounded_citations": 5,
+        "latency_ms": 0.351
+      },
+      "none": {
+        "retrieved": [],
+        "n_retrieved": 0,
+        "recall": 0.0,
+        "precision": 0.0,
+        "grade_violation_rate": 0.0,
+        "official_provenance_rate": 0.0,
+        "grounded_citations": 0,
+        "latency_ms": 0.0
+      }
+    },
+    {
+      "scenario_id": "S23",
+      "event_type": "HAZARDOUS_CHEMICAL_LEAK",
+      "severity": "II",
+      "n_gold": 6,
+      "gold": [
+        "PRV-ASSESS-001",
+        "PRV-CHEM-001",
+        "PRV-GRADE-001",
+        "PRV-RECOVER-001",
+        "PRV-REPORT-001",
+        "PRV-RESP-001"
+      ],
+      "kg_structured": {
+        "retrieved": [
+          "PRV-CHEM-001",
+          "PRV-ASSESS-001",
+          "PRV-CLEAR-001",
+          "PRV-CTRL-001",
+          "PRV-GRADE-002"
+        ],
+        "n_retrieved": 5,
+        "recall": 0.3333333333333333,
+        "precision": 0.4,
+        "grade_violation_rate": 0.0,
+        "official_provenance_rate": 1.0,
+        "grounded_citations": 5,
+        "latency_ms": 0.036
+      },
+      "vector_rag": {
+        "retrieved": [
+          "PRV-CHEM-001",
+          "PRV-RESCUE-001",
+          "PRV-GRADE-002",
+          "PRV-REPORT-001",
+          "PRV-CTRL-001"
+        ],
+        "n_retrieved": 5,
+        "recall": 0.3333333333333333,
+        "precision": 0.4,
+        "grade_violation_rate": 0.0,
+        "official_provenance_rate": 1.0,
+        "grounded_citations": 5,
+        "latency_ms": 0.352
+      },
+      "none": {
+        "retrieved": [],
+        "n_retrieved": 0,
+        "recall": 0.0,
+        "precision": 0.0,
+        "grade_violation_rate": 0.0,
+        "official_provenance_rate": 0.0,
+        "grounded_citations": 0,
+        "latency_ms": 0.0
+      }
+    },
+    {
+      "scenario_id": "S24",
+      "event_type": "HAZARDOUS_CHEMICAL_LEAK",
+      "severity": "II",
+      "n_gold": 6,
+      "gold": [
+        "PRV-ASSESS-001",
+        "PRV-CHEM-001",
+        "PRV-GRADE-001",
+        "PRV-RECOVER-001",
+        "PRV-REPORT-001",
+        "PRV-RESP-001"
+      ],
+      "kg_structured": {
+        "retrieved": [
+          "PRV-CHEM-001",
+          "PRV-ASSESS-001",
+          "PRV-CLEAR-001",
+          "PRV-CTRL-001",
+          "PRV-GRADE-002"
+        ],
+        "n_retrieved": 5,
+        "recall": 0.3333333333333333,
+        "precision": 0.4,
+        "grade_violation_rate": 0.0,
+        "official_provenance_rate": 1.0,
+        "grounded_citations": 5,
+        "latency_ms": 0.027
+      },
+      "vector_rag": {
+        "retrieved": [
+          "PRV-CHEM-001",
+          "PRV-REPORT-001",
+          "PRV-GRADE-002",
+          "PRV-RESCUE-001",
+          "PRV-ASSESS-001"
+        ],
+        "n_retrieved": 5,
+        "recall": 0.5,
+        "precision": 0.6,
+        "grade_violation_rate": 0.0,
+        "official_provenance_rate": 1.0,
+        "grounded_citations": 5,
+        "latency_ms": 0.318
+      },
+      "none": {
+        "retrieved": [],
+        "n_retrieved": 0,
+        "recall": 0.0,
+        "precision": 0.0,
+        "grade_violation_rate": 0.0,
+        "official_provenance_rate": 0.0,
+        "grounded_citations": 0,
+        "latency_ms": 0.0
+      }
+    },
+    {
+      "scenario_id": "S25",
+      "event_type": "TRAFFIC_ACCIDENT",
+      "severity": "III",
+      "n_gold": 8,
+      "gold": [
+        "PRV-ASSESS-001",
+        "PRV-CTRL-001",
+        "PRV-GRADE-001",
+        "PRV-GRADE-002",
+        "PRV-RECOVER-001",
+        "PRV-REPORT-001",
+        "PRV-RESCUE-001",
+        "PRV-RESP-001"
+      ],
+      "kg_structured": {
+        "retrieved": [
+          "PRV-GRADE-002",
+          "PRV-RESCUE-001",
+          "PRV-CTRL-001",
+          "PRV-CHEM-001",
+          "PRV-ASSESS-001"
+        ],
+        "n_retrieved": 5,
+        "recall": 0.5,
+        "precision": 0.8,
+        "grade_violation_rate": 0.0,
+        "official_provenance_rate": 1.0,
+        "grounded_citations": 5,
+        "latency_ms": 0.03
+      },
+      "vector_rag": {
+        "retrieved": [
+          "PRV-CTRL-001",
+          "PRV-GRADE-002",
+          "PRV-RESCUE-001",
+          "PRV-ASSESS-001",
+          "PRV-GRADE-001"
+        ],
+        "n_retrieved": 5,
+        "recall": 0.625,
+        "precision": 1.0,
+        "grade_violation_rate": 0.0,
+        "official_provenance_rate": 1.0,
+        "grounded_citations": 5,
+        "latency_ms": 0.311
+      },
+      "none": {
+        "retrieved": [],
+        "n_retrieved": 0,
+        "recall": 0.0,
+        "precision": 0.0,
+        "grade_violation_rate": 0.0,
+        "official_provenance_rate": 0.0,
+        "grounded_citations": 0,
+        "latency_ms": 0.0
+      }
+    },
+    {
+      "scenario_id": "S26",
+      "event_type": "TRAFFIC_ACCIDENT",
+      "severity": "III",
+      "n_gold": 8,
+      "gold": [
+        "PRV-ASSESS-001",
+        "PRV-CTRL-001",
+        "PRV-GRADE-001",
+        "PRV-GRADE-002",
+        "PRV-RECOVER-001",
+        "PRV-REPORT-001",
+        "PRV-RESCUE-001",
+        "PRV-RESP-001"
+      ],
+      "kg_structured": {
+        "retrieved": [
+          "PRV-GRADE-002",
+          "PRV-RESCUE-001",
+          "PRV-CTRL-001",
+          "PRV-CHEM-001",
+          "PRV-ASSESS-001"
+        ],
+        "n_retrieved": 5,
+        "recall": 0.5,
+        "precision": 0.8,
+        "grade_violation_rate": 0.0,
+        "official_provenance_rate": 1.0,
+        "grounded_citations": 5,
+        "latency_ms": 0.029
+      },
+      "vector_rag": {
+        "retrieved": [
+          "PRV-CTRL-001",
+          "PRV-REPORT-001",
+          "PRV-ASSESS-001",
+          "PRV-CHEM-001",
+          "PRV-GRADE-001"
+        ],
+        "n_retrieved": 5,
+        "recall": 0.5,
+        "precision": 0.8,
+        "grade_violation_rate": 0.0,
+        "official_provenance_rate": 1.0,
+        "grounded_citations": 5,
+        "latency_ms": 0.306
+      },
+      "none": {
+        "retrieved": [],
+        "n_retrieved": 0,
+        "recall": 0.0,
+        "precision": 0.0,
+        "grade_violation_rate": 0.0,
+        "official_provenance_rate": 0.0,
+        "grounded_citations": 0,
+        "latency_ms": 0.0
+      }
+    },
+    {
+      "scenario_id": "S27",
+      "event_type": "GEOLOGICAL_DISASTER",
+      "severity": "III",
+      "n_gold": 6,
+      "gold": [
+        "PRV-ASSESS-001",
+        "PRV-CLEAR-001",
+        "PRV-GRADE-001",
+        "PRV-RECOVER-001",
+        "PRV-REPORT-001",
+        "PRV-RESP-001"
+      ],
+      "kg_structured": {
+        "retrieved": [
+          "PRV-CLEAR-001",
+          "PRV-ASSESS-001",
+          "PRV-CHEM-001",
+          "PRV-CTRL-001",
+          "PRV-GRADE-002"
+        ],
+        "n_retrieved": 5,
+        "recall": 0.3333333333333333,
+        "precision": 0.4,
+        "grade_violation_rate": 0.0,
+        "official_provenance_rate": 1.0,
+        "grounded_citations": 5,
+        "latency_ms": 0.028
+      },
+      "vector_rag": {
+        "retrieved": [
+          "PRV-CLEAR-001",
+          "PRV-REPORT-001",
+          "PRV-GRADE-001",
+          "PRV-ASSESS-001",
+          "PRV-RECOVER-001"
+        ],
+        "n_retrieved": 5,
+        "recall": 0.8333333333333334,
+        "precision": 1.0,
+        "grade_violation_rate": 0.0,
+        "official_provenance_rate": 1.0,
+        "grounded_citations": 5,
+        "latency_ms": 0.32
+      },
+      "none": {
+        "retrieved": [],
+        "n_retrieved": 0,
+        "recall": 0.0,
+        "precision": 0.0,
+        "grade_violation_rate": 0.0,
+        "official_provenance_rate": 0.0,
+        "grounded_citations": 0,
+        "latency_ms": 0.0
+      }
+    },
+    {
+      "scenario_id": "S28",
+      "event_type": "TRAFFIC_ACCIDENT",
+      "severity": "II",
+      "n_gold": 8,
+      "gold": [
+        "PRV-ASSESS-001",
+        "PRV-CTRL-001",
+        "PRV-GRADE-001",
+        "PRV-GRADE-002",
+        "PRV-RECOVER-001",
+        "PRV-REPORT-001",
+        "PRV-RESCUE-001",
+        "PRV-RESP-001"
+      ],
+      "kg_structured": {
+        "retrieved": [
+          "PRV-GRADE-002",
+          "PRV-RESCUE-001",
+          "PRV-CTRL-001",
+          "PRV-CHEM-001",
+          "PRV-ASSESS-001"
+        ],
+        "n_retrieved": 5,
+        "recall": 0.5,
+        "precision": 0.8,
+        "grade_violation_rate": 0.0,
+        "official_provenance_rate": 1.0,
+        "grounded_citations": 5,
+        "latency_ms": 0.029
+      },
+      "vector_rag": {
+        "retrieved": [
+          "PRV-CTRL-001",
+          "PRV-GRADE-002",
+          "PRV-RESCUE-001",
+          "PRV-ASSESS-001",
+          "PRV-REPORT-001"
+        ],
+        "n_retrieved": 5,
+        "recall": 0.625,
+        "precision": 1.0,
+        "grade_violation_rate": 0.0,
+        "official_provenance_rate": 1.0,
+        "grounded_citations": 5,
+        "latency_ms": 0.311
+      },
+      "none": {
+        "retrieved": [],
+        "n_retrieved": 0,
+        "recall": 0.0,
+        "precision": 0.0,
+        "grade_violation_rate": 0.0,
+        "official_provenance_rate": 0.0,
+        "grounded_citations": 0,
+        "latency_ms": 0.0
+      }
+    }
+  ],
+  "stats_note": "wilcoxon centred-statistic bugfix recomputed 2026-09-09 (pre-fix p values unreliable when diffs predominantly negative)"
+}

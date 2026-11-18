@@ -1,0 +1,496 @@
+{
+  "qc": {
+    "n_pairs_in_matrix": 1092,
+    "n_pairs_recomputed": 60,
+    "max_abs_dist_deviation_km": 0.000479,
+    "max_abs_time_deviation_min": 0.004986,
+    "distance_tolerance_km": 0.002,
+    "time_tolerance_min": 0.02,
+    "distance_ok": true,
+    "time_ok": true,
+    "weight_config": "config/road_network.yaml + config/speed_profile.yaml",
+    "note": "independent Dijkstra recomputation from qinghai_network.gpickle"
+  },
+  "samples": [
+    {
+      "resource_seq": 4,
+      "scenario_id": "S01",
+      "matrix_dist_km": 570.282,
+      "recomputed_dist_km": 570.282,
+      "matrix_time_min": 380.02,
+      "recomputed_time_min": 380.02
+    },
+    {
+      "resource_seq": 4,
+      "scenario_id": "S19",
+      "matrix_dist_km": 799.561,
+      "recomputed_dist_km": 799.561,
+      "matrix_time_min": 628.65,
+      "recomputed_time_min": 628.65
+    },
+    {
+      "resource_seq": 6,
+      "scenario_id": "S10",
+      "matrix_dist_km": 131.458,
+      "recomputed_dist_km": 131.458,
+      "matrix_time_min": 84.74,
+      "recomputed_time_min": 84.74
+    },
+    {
+      "resource_seq": 6,
+      "scenario_id": "S28",
+      "matrix_dist_km": 832.748,
+      "recomputed_dist_km": 832.748,
+      "matrix_time_min": 521.62,
+      "recomputed_time_min": 521.62
+    },
+    {
+      "resource_seq": 7,
+      "scenario_id": "S19",
+      "matrix_dist_km": 1056.403,
+      "recomputed_dist_km": 1056.403,
+      "matrix_time_min": 825.77,
+      "recomputed_time_min": 825.77
+    },
+    {
+      "resource_seq": 8,
+      "scenario_id": "S09",
+      "matrix_dist_km": 956.162,
+      "recomputed_dist_km": 956.162,
+      "matrix_time_min": 688.58,
+      "recomputed_time_min": 688.58
+    },
+    {
+      "resource_seq": 8,
+      "scenario_id": "S28",
+      "matrix_dist_km": 881.684,
+      "recomputed_dist_km": 881.684,
+      "matrix_time_min": 558.38,
+      "recomputed_time_min": 558.38
+    },
+    {
+      "resource_seq": 9,
+      "scenario_id": "S18",
+      "matrix_dist_km": 753.989,
+      "recomputed_dist_km": 753.989,
+      "matrix_time_min": 460.12,
+      "recomputed_time_min": 460.12
+    },
+    {
+      "resource_seq": 10,
+      "scenario_id": "S09",
+      "matrix_dist_km": 829.373,
+      "recomputed_dist_km": 829.373,
+      "matrix_time_min": 590.87,
+      "recomputed_time_min": 590.87
+    },
+    {
+      "resource_seq": 10,
+      "scenario_id": "S27",
+      "matrix_dist_km": 8.569,
+      "recomputed_dist_km": 8.569,
+      "matrix_time_min": 8.22,
+      "recomputed_time_min": 8.22
+    },
+    {
+      "resource_seq": 11,
+      "scenario_id": "S18",
+      "matrix_dist_km": 765.224,
+      "recomputed_dist_km": 765.224,
+      "matrix_time_min": 506.83,
+      "recomputed_time_min": 506.83
+    },
+    {
+      "resource_seq": 12,
+      "scenario_id": "S08",
+      "matrix_dist_km": 653.241,
+      "recomputed_dist_km": 653.241,
+      "matrix_time_min": 423.87,
+      "recomputed_time_min": 423.87
+    },
+    {
+      "resource_seq": 12,
+      "scenario_id": "S27",
+      "matrix_dist_km": 58.577,
+      "recomputed_dist_km": 58.577,
+      "matrix_time_min": 46.29,
+      "recomputed_time_min": 46.29
+    },
+    {
+      "resource_seq": 13,
+      "scenario_id": "S17",
+      "matrix_dist_km": 61.513,
+      "recomputed_dist_km": 61.513,
+      "matrix_time_min": 38.73,
+      "recomputed_time_min": 38.73
+    },
+    {
+      "resource_seq": 14,
+      "scenario_id": "S08",
+      "matrix_dist_km": 258.056,
+      "recomputed_dist_km": 258.056,
+      "matrix_time_min": 238.63,
+      "recomputed_time_min": 238.63
+    },
+    {
+      "resource_seq": 14,
+      "scenario_id": "S26",
+      "matrix_dist_km": 332.789,
+      "recomputed_dist_km": 332.789,
+      "matrix_time_min": 216.65,
+      "recomputed_time_min": 216.65
+    },
+    {
+      "resource_seq": 15,
+      "scenario_id": "S17",
+      "matrix_dist_km": 274.718,
+      "recomputed_dist_km": 274.718,
+      "matrix_time_min": 167.05,
+      "recomputed_time_min": 167.05
+    },
+    {
+      "resource_seq": 16,
+      "scenario_id": "S07",
+      "matrix_dist_km": 627.52,
+      "recomputed_dist_km": 627.52,
+      "matrix_time_min": 381.11,
+      "recomputed_time_min": 381.11
+    },
+    {
+      "resource_seq": 16,
+      "scenario_id": "S26",
+      "matrix_dist_km": 627.52,
+      "recomputed_dist_km": 627.52,
+      "matrix_time_min": 381.11,
+      "recomputed_time_min": 381.11
+    },
+    {
+      "resource_seq": 17,
+      "scenario_id": "S16",
+      "matrix_dist_km": 792.325,
+      "recomputed_dist_km": 792.325,
+      "matrix_time_min": 481.99,
+      "recomputed_time_min": 481.99
+    },
+    {
+      "resource_seq": 18,
+      "scenario_id": "S07",
+      "matrix_dist_km": 770.246,
+      "recomputed_dist_km": 770.246,
+      "matrix_time_min": 532.28,
+      "recomputed_time_min": 532.28
+    },
+    {
+      "resource_seq": 18,
+      "scenario_id": "S25",
+      "matrix_dist_km": 277.051,
+      "recomputed_dist_km": 277.051,
+      "matrix_time_min": 215.4,
+      "recomputed_time_min": 215.4
+    },
+    {
+      "resource_seq": 19,
+      "scenario_id": "S16",
+      "matrix_dist_km": 708.815,
+      "recomputed_dist_km": 708.815,
+      "matrix_time_min": 428.22,
+      "recomputed_time_min": 428.22
+    },
+    {
+      "resource_seq": 20,
+      "scenario_id": "S06",
+      "matrix_dist_km": 472.526,
+      "recomputed_dist_km": 472.526,
+      "matrix_time_min": 295.13,
+      "recomputed_time_min": 295.13
+    },
+    {
+      "resource_seq": 20,
+      "scenario_id": "S25",
+      "matrix_dist_km": 222.108,
+      "recomputed_dist_km": 222.108,
+      "matrix_time_min": 157.36,
+      "recomputed_time_min": 157.36
+    },
+    {
+      "resource_seq": 21,
+      "scenario_id": "S15",
+      "matrix_dist_km": 99.116,
+      "recomputed_dist_km": 99.116,
+      "matrix_time_min": 66.6,
+      "recomputed_time_min": 66.6
+    },
+    {
+      "resource_seq": 22,
+      "scenario_id": "S06",
+      "matrix_dist_km": 491.337,
+      "recomputed_dist_km": 491.337,
+      "matrix_time_min": 316.47,
+      "recomputed_time_min": 316.47
+    },
+    {
+      "resource_seq": 22,
+      "scenario_id": "S24",
+      "matrix_dist_km": 805.295,
+      "recomputed_dist_km": 805.295,
+      "matrix_time_min": 532.04,
+      "recomputed_time_min": 532.04
+    },
+    {
+      "resource_seq": 25,
+      "scenario_id": "S15",
+      "matrix_dist_km": 400.633,
+      "recomputed_dist_km": 400.633,
+      "matrix_time_min": 263.71,
+      "recomputed_time_min": 263.71
+    },
+    {
+      "resource_seq": 26,
+      "scenario_id": "S05",
+      "matrix_dist_km": 331.614,
+      "recomputed_dist_km": 331.614,
+      "matrix_time_min": 218.27,
+      "recomputed_time_min": 218.27
+    },
+    {
+      "resource_seq": 26,
+      "scenario_id": "S24",
+      "matrix_dist_km": 714.915,
+      "recomputed_dist_km": 714.915,
+      "matrix_time_min": 474.96,
+      "recomputed_time_min": 474.96
+    },
+    {
+      "resource_seq": 27,
+      "scenario_id": "S14",
+      "matrix_dist_km": 603.354,
+      "recomputed_dist_km": 603.354,
+      "matrix_time_min": 487.0,
+      "recomputed_time_min": 487.0
+    },
+    {
+      "resource_seq": 28,
+      "scenario_id": "S05",
+      "matrix_dist_km": 714.491,
+      "recomputed_dist_km": 714.491,
+      "matrix_time_min": 459.37,
+      "recomputed_time_min": 459.37
+    },
+    {
+      "resource_seq": 28,
+      "scenario_id": "S23",
+      "matrix_dist_km": 190.243,
+      "recomputed_dist_km": 190.243,
+      "matrix_time_min": 120.74,
+      "recomputed_time_min": 120.74
+    },
+    {
+      "resource_seq": 29,
+      "scenario_id": "S14",
+      "matrix_dist_km": 471.0,
+      "recomputed_dist_km": 471.0,
+      "matrix_time_min": 407.18,
+      "recomputed_time_min": 407.18
+    },
+    {
+      "resource_seq": 30,
+      "scenario_id": "S04",
+      "matrix_dist_km": 838.369,
+      "recomputed_dist_km": 838.369,
+      "matrix_time_min": 701.87,
+      "recomputed_time_min": 701.87
+    },
+    {
+      "resource_seq": 30,
+      "scenario_id": "S23",
+      "matrix_dist_km": 411.78,
+      "recomputed_dist_km": 411.78,
+      "matrix_time_min": 289.75,
+      "recomputed_time_min": 289.75
+    },
+    {
+      "resource_seq": 31,
+      "scenario_id": "S13",
+      "matrix_dist_km": 448.864,
+      "recomputed_dist_km": 448.864,
+      "matrix_time_min": 337.99,
+      "recomputed_time_min": 337.99
+    },
+    {
+      "resource_seq": 32,
+      "scenario_id": "S04",
+      "matrix_dist_km": 750.175,
+      "recomputed_dist_km": 750.175,
+      "matrix_time_min": 568.59,
+      "recomputed_time_min": 568.59
+    },
+    {
+      "resource_seq": 32,
+      "scenario_id": "S22",
+      "matrix_dist_km": 434.041,
+      "recomputed_dist_km": 434.041,
+      "matrix_time_min": 280.44,
+      "recomputed_time_min": 280.44
+    },
+    {
+      "resource_seq": 33,
+      "scenario_id": "S13",
+      "matrix_dist_km": 469.448,
+      "recomputed_dist_km": 469.448,
+      "matrix_time_min": 284.98,
+      "recomputed_time_min": 284.98
+    },
+    {
+      "resource_seq": 34,
+      "scenario_id": "S03",
+      "matrix_dist_km": 199.842,
+      "recomputed_dist_km": 199.842,
+      "matrix_time_min": 126.45,
+      "recomputed_time_min": 126.45
+    },
+    {
+      "resource_seq": 34,
+      "scenario_id": "S22",
+      "matrix_dist_km": 377.745,
+      "recomputed_dist_km": 377.745,
+      "matrix_time_min": 237.78,
+      "recomputed_time_min": 237.78
+    },
+    {
+      "resource_seq": 35,
+      "scenario_id": "S12",
+      "matrix_dist_km": 526.32,
+      "recomputed_dist_km": 526.32,
+      "matrix_time_min": 317.24,
+      "recomputed_time_min": 317.24
+    },
+    {
+      "resource_seq": 36,
+      "scenario_id": "S03",
+      "matrix_dist_km": 149.47,
+      "recomputed_dist_km": 149.47,
+      "matrix_time_min": 96.39,
+      "recomputed_time_min": 96.39
+    },
+    {
+      "resource_seq": 36,
+      "scenario_id": "S21",
+      "matrix_dist_km": 14.175,
+      "recomputed_dist_km": 14.175,
+      "matrix_time_min": 10.53,
+      "recomputed_time_min": 10.53
+    },
+    {
+      "resource_seq": 37,
+      "scenario_id": "S12",
+      "matrix_dist_km": 638.0,
+      "recomputed_dist_km": 638.0,
+      "matrix_time_min": 437.66,
+      "recomputed_time_min": 437.66
+    },
+    {
+      "resource_seq": 40,
+      "scenario_id": "S02",
+      "matrix_dist_km": 457.542,
+      "recomputed_dist_km": 457.542,
+      "matrix_time_min": 281.59,
+      "recomputed_time_min": 281.59
+    },
+    {
+      "resource_seq": 40,
+      "scenario_id": "S21",
+      "matrix_dist_km": 680.837,
+      "recomputed_dist_km": 680.837,
+      "matrix_time_min": 412.49,
+      "recomputed_time_min": 412.49
+    },
+    {
+      "resource_seq": 41,
+      "scenario_id": "S11",
+      "matrix_dist_km": 638.011,
+      "recomputed_dist_km": 638.011,
+      "matrix_time_min": 537.89,
+      "recomputed_time_min": 537.89
+    },
+    {
+      "resource_seq": 42,
+      "scenario_id": "S02",
+      "matrix_dist_km": 788.014,
+      "recomputed_dist_km": 788.014,
+      "matrix_time_min": 504.18,
+      "recomputed_time_min": 504.18
+    },
+    {
+      "resource_seq": 42,
+      "scenario_id": "S20",
+      "matrix_dist_km": 998.871,
+      "recomputed_dist_km": 998.871,
+      "matrix_time_min": 638.1,
+      "recomputed_time_min": 638.1
+    },
+    {
+      "resource_seq": 43,
+      "scenario_id": "S11",
+      "matrix_dist_km": 638.011,
+      "recomputed_dist_km": 638.011,
+      "matrix_time_min": 537.89,
+      "recomputed_time_min": 537.89
+    },
+    {
+      "resource_seq": 44,
+      "scenario_id": "S01",
+      "matrix_dist_km": 585.085,
+      "recomputed_dist_km": 585.085,
+      "matrix_time_min": 363.11,
+      "recomputed_time_min": 363.11
+    },
+    {
+      "resource_seq": 44,
+      "scenario_id": "S20",
+      "matrix_dist_km": 439.176,
+      "recomputed_dist_km": 439.176,
+      "matrix_time_min": 275.36,
+      "recomputed_time_min": 275.36
+    },
+    {
+      "resource_seq": 45,
+      "scenario_id": "S10",
+      "matrix_dist_km": 52.938,
+      "recomputed_dist_km": 52.938,
+      "matrix_time_min": 35.04,
+      "recomputed_time_min": 35.04
+    },
+    {
+      "resource_seq": 46,
+      "scenario_id": "S01",
+      "matrix_dist_km": 578.537,
+      "recomputed_dist_km": 578.537,
+      "matrix_time_min": 498.74,
+      "recomputed_time_min": 498.74
+    },
+    {
+      "resource_seq": 46,
+      "scenario_id": "S19",
+      "matrix_dist_km": 165.118,
+      "recomputed_dist_km": 165.118,
+      "matrix_time_min": 124.73,
+      "recomputed_time_min": 124.73
+    },
+    {
+      "resource_seq": 47,
+      "scenario_id": "S10",
+      "matrix_dist_km": 827.863,
+      "recomputed_dist_km": 827.863,
+      "matrix_time_min": 510.2,
+      "recomputed_time_min": 510.2
+    },
+    {
+      "resource_seq": 47,
+      "scenario_id": "S28",
+      "matrix_dist_km": 585.809,
+      "recomputed_dist_km": 585.809,
+      "matrix_time_min": 506.88,
+      "recomputed_time_min": 506.88
+    }
+  ]
+}

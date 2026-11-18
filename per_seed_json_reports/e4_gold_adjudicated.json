@@ -1,0 +1,2576 @@
+{
+ "protocol": "majority vote of annotatorA, annotatorB, rule-anchored LLM annotation",
+ "n_items": 257,
+ "items": [
+  {
+   "scenario": "S01",
+   "clause": "PRV-ASSESS-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "IV"
+  },
+  {
+   "scenario": "S01",
+   "clause": "PRV-CLEAR-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "IV"
+  },
+  {
+   "scenario": "S01",
+   "clause": "PRV-CTRL-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "IV"
+  },
+  {
+   "scenario": "S01",
+   "clause": "PRV-GRADE-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "IV"
+  },
+  {
+   "scenario": "S01",
+   "clause": "PRV-GRADE-002",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "IV"
+  },
+  {
+   "scenario": "S01",
+   "clause": "PRV-RECOVER-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "IV"
+  },
+  {
+   "scenario": "S01",
+   "clause": "PRV-REPORT-001",
+   "A": 1,
+   "B": 1,
+   "AI": 0,
+   "gold_majority": 1,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "IV"
+  },
+  {
+   "scenario": "S01",
+   "clause": "PRV-RESCUE-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "IV"
+  },
+  {
+   "scenario": "S01",
+   "clause": "PRV-RESP-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "IV"
+  },
+  {
+   "scenario": "S02",
+   "clause": "PRV-ASSESS-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "III"
+  },
+  {
+   "scenario": "S02",
+   "clause": "PRV-CHEM-001",
+   "A": 1,
+   "B": 0,
+   "AI": 0,
+   "gold_majority": 0,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "III"
+  },
+  {
+   "scenario": "S02",
+   "clause": "PRV-CTRL-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "III"
+  },
+  {
+   "scenario": "S02",
+   "clause": "PRV-GRADE-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "III"
+  },
+  {
+   "scenario": "S02",
+   "clause": "PRV-GRADE-002",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "III"
+  },
+  {
+   "scenario": "S02",
+   "clause": "PRV-RECOVER-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "III"
+  },
+  {
+   "scenario": "S02",
+   "clause": "PRV-REPORT-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "III"
+  },
+  {
+   "scenario": "S02",
+   "clause": "PRV-RESCUE-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "III"
+  },
+  {
+   "scenario": "S02",
+   "clause": "PRV-RESP-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "III"
+  },
+  {
+   "scenario": "S03",
+   "clause": "PRV-ASSESS-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "III"
+  },
+  {
+   "scenario": "S03",
+   "clause": "PRV-CHEM-001",
+   "A": 1,
+   "B": 0,
+   "AI": 0,
+   "gold_majority": 0,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "III"
+  },
+  {
+   "scenario": "S03",
+   "clause": "PRV-CLEAR-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "III"
+  },
+  {
+   "scenario": "S03",
+   "clause": "PRV-CTRL-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "III"
+  },
+  {
+   "scenario": "S03",
+   "clause": "PRV-GRADE-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "III"
+  },
+  {
+   "scenario": "S03",
+   "clause": "PRV-GRADE-002",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "III"
+  },
+  {
+   "scenario": "S03",
+   "clause": "PRV-RECOVER-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "III"
+  },
+  {
+   "scenario": "S03",
+   "clause": "PRV-REPORT-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "III"
+  },
+  {
+   "scenario": "S03",
+   "clause": "PRV-RESCUE-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "III"
+  },
+  {
+   "scenario": "S03",
+   "clause": "PRV-RESP-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "III"
+  },
+  {
+   "scenario": "S04",
+   "clause": "PRV-ASSESS-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "III"
+  },
+  {
+   "scenario": "S04",
+   "clause": "PRV-CHEM-001",
+   "A": 1,
+   "B": 0,
+   "AI": 0,
+   "gold_majority": 0,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "III"
+  },
+  {
+   "scenario": "S04",
+   "clause": "PRV-CTRL-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "III"
+  },
+  {
+   "scenario": "S04",
+   "clause": "PRV-GRADE-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "III"
+  },
+  {
+   "scenario": "S04",
+   "clause": "PRV-GRADE-002",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "III"
+  },
+  {
+   "scenario": "S04",
+   "clause": "PRV-RECOVER-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "III"
+  },
+  {
+   "scenario": "S04",
+   "clause": "PRV-REPORT-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "III"
+  },
+  {
+   "scenario": "S04",
+   "clause": "PRV-RESCUE-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "III"
+  },
+  {
+   "scenario": "S04",
+   "clause": "PRV-RESP-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "III"
+  },
+  {
+   "scenario": "S05",
+   "clause": "PRV-ASSESS-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "II"
+  },
+  {
+   "scenario": "S05",
+   "clause": "PRV-CHEM-001",
+   "A": 1,
+   "B": 0,
+   "AI": 0,
+   "gold_majority": 0,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "II"
+  },
+  {
+   "scenario": "S05",
+   "clause": "PRV-CTRL-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "II"
+  },
+  {
+   "scenario": "S05",
+   "clause": "PRV-GRADE-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "II"
+  },
+  {
+   "scenario": "S05",
+   "clause": "PRV-GRADE-002",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "II"
+  },
+  {
+   "scenario": "S05",
+   "clause": "PRV-RECOVER-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "II"
+  },
+  {
+   "scenario": "S05",
+   "clause": "PRV-REPORT-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "II"
+  },
+  {
+   "scenario": "S05",
+   "clause": "PRV-RESCUE-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "II"
+  },
+  {
+   "scenario": "S05",
+   "clause": "PRV-RESP-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "II"
+  },
+  {
+   "scenario": "S06",
+   "clause": "PRV-ASSESS-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "II"
+  },
+  {
+   "scenario": "S06",
+   "clause": "PRV-CHEM-001",
+   "A": 1,
+   "B": 0,
+   "AI": 0,
+   "gold_majority": 0,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "II"
+  },
+  {
+   "scenario": "S06",
+   "clause": "PRV-CTRL-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "II"
+  },
+  {
+   "scenario": "S06",
+   "clause": "PRV-GRADE-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "II"
+  },
+  {
+   "scenario": "S06",
+   "clause": "PRV-GRADE-002",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "II"
+  },
+  {
+   "scenario": "S06",
+   "clause": "PRV-RECOVER-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "II"
+  },
+  {
+   "scenario": "S06",
+   "clause": "PRV-REPORT-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "II"
+  },
+  {
+   "scenario": "S06",
+   "clause": "PRV-RESCUE-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "II"
+  },
+  {
+   "scenario": "S06",
+   "clause": "PRV-RESP-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "II"
+  },
+  {
+   "scenario": "S07",
+   "clause": "PRV-ASSESS-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "III"
+  },
+  {
+   "scenario": "S07",
+   "clause": "PRV-CHEM-001",
+   "A": 1,
+   "B": 0,
+   "AI": 0,
+   "gold_majority": 0,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "III"
+  },
+  {
+   "scenario": "S07",
+   "clause": "PRV-CTRL-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "III"
+  },
+  {
+   "scenario": "S07",
+   "clause": "PRV-GRADE-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "III"
+  },
+  {
+   "scenario": "S07",
+   "clause": "PRV-GRADE-002",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "III"
+  },
+  {
+   "scenario": "S07",
+   "clause": "PRV-RECOVER-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "III"
+  },
+  {
+   "scenario": "S07",
+   "clause": "PRV-REPORT-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "III"
+  },
+  {
+   "scenario": "S07",
+   "clause": "PRV-RESCUE-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "III"
+  },
+  {
+   "scenario": "S07",
+   "clause": "PRV-RESP-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "III"
+  },
+  {
+   "scenario": "S08",
+   "clause": "PRV-ASSESS-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "I"
+  },
+  {
+   "scenario": "S08",
+   "clause": "PRV-CHEM-001",
+   "A": 1,
+   "B": 0,
+   "AI": 0,
+   "gold_majority": 0,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "I"
+  },
+  {
+   "scenario": "S08",
+   "clause": "PRV-CTRL-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "I"
+  },
+  {
+   "scenario": "S08",
+   "clause": "PRV-GRADE-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "I"
+  },
+  {
+   "scenario": "S08",
+   "clause": "PRV-GRADE-002",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "I"
+  },
+  {
+   "scenario": "S08",
+   "clause": "PRV-RECOVER-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "I"
+  },
+  {
+   "scenario": "S08",
+   "clause": "PRV-REPORT-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "I"
+  },
+  {
+   "scenario": "S08",
+   "clause": "PRV-RESCUE-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "I"
+  },
+  {
+   "scenario": "S08",
+   "clause": "PRV-RESP-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "I"
+  },
+  {
+   "scenario": "S09",
+   "clause": "PRV-ASSESS-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "GEOLOGICAL_DISASTER",
+   "severity": "IV"
+  },
+  {
+   "scenario": "S09",
+   "clause": "PRV-CLEAR-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "GEOLOGICAL_DISASTER",
+   "severity": "IV"
+  },
+  {
+   "scenario": "S09",
+   "clause": "PRV-CTRL-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "GEOLOGICAL_DISASTER",
+   "severity": "IV"
+  },
+  {
+   "scenario": "S09",
+   "clause": "PRV-GRADE-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "GEOLOGICAL_DISASTER",
+   "severity": "IV"
+  },
+  {
+   "scenario": "S09",
+   "clause": "PRV-GRADE-002",
+   "A": 1,
+   "B": 1,
+   "AI": 0,
+   "gold_majority": 1,
+   "event_type": "GEOLOGICAL_DISASTER",
+   "severity": "IV"
+  },
+  {
+   "scenario": "S09",
+   "clause": "PRV-RECOVER-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "GEOLOGICAL_DISASTER",
+   "severity": "IV"
+  },
+  {
+   "scenario": "S09",
+   "clause": "PRV-REPORT-001",
+   "A": 1,
+   "B": 0,
+   "AI": 0,
+   "gold_majority": 0,
+   "event_type": "GEOLOGICAL_DISASTER",
+   "severity": "IV"
+  },
+  {
+   "scenario": "S09",
+   "clause": "PRV-RESP-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "GEOLOGICAL_DISASTER",
+   "severity": "IV"
+  },
+  {
+   "scenario": "S10",
+   "clause": "PRV-ASSESS-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "GEOLOGICAL_DISASTER",
+   "severity": "IV"
+  },
+  {
+   "scenario": "S10",
+   "clause": "PRV-CLEAR-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "GEOLOGICAL_DISASTER",
+   "severity": "IV"
+  },
+  {
+   "scenario": "S10",
+   "clause": "PRV-CTRL-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "GEOLOGICAL_DISASTER",
+   "severity": "IV"
+  },
+  {
+   "scenario": "S10",
+   "clause": "PRV-GRADE-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "GEOLOGICAL_DISASTER",
+   "severity": "IV"
+  },
+  {
+   "scenario": "S10",
+   "clause": "PRV-GRADE-002",
+   "A": 1,
+   "B": 1,
+   "AI": 0,
+   "gold_majority": 1,
+   "event_type": "GEOLOGICAL_DISASTER",
+   "severity": "IV"
+  },
+  {
+   "scenario": "S10",
+   "clause": "PRV-RECOVER-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "GEOLOGICAL_DISASTER",
+   "severity": "IV"
+  },
+  {
+   "scenario": "S10",
+   "clause": "PRV-REPORT-001",
+   "A": 1,
+   "B": 1,
+   "AI": 0,
+   "gold_majority": 1,
+   "event_type": "GEOLOGICAL_DISASTER",
+   "severity": "IV"
+  },
+  {
+   "scenario": "S10",
+   "clause": "PRV-RESP-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "GEOLOGICAL_DISASTER",
+   "severity": "IV"
+  },
+  {
+   "scenario": "S11",
+   "clause": "PRV-ASSESS-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "GEOLOGICAL_DISASTER",
+   "severity": "III"
+  },
+  {
+   "scenario": "S11",
+   "clause": "PRV-CHEM-001",
+   "A": 1,
+   "B": 0,
+   "AI": 0,
+   "gold_majority": 0,
+   "event_type": "GEOLOGICAL_DISASTER",
+   "severity": "III"
+  },
+  {
+   "scenario": "S11",
+   "clause": "PRV-CLEAR-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "GEOLOGICAL_DISASTER",
+   "severity": "III"
+  },
+  {
+   "scenario": "S11",
+   "clause": "PRV-CTRL-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "GEOLOGICAL_DISASTER",
+   "severity": "III"
+  },
+  {
+   "scenario": "S11",
+   "clause": "PRV-GRADE-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "GEOLOGICAL_DISASTER",
+   "severity": "III"
+  },
+  {
+   "scenario": "S11",
+   "clause": "PRV-GRADE-002",
+   "A": 1,
+   "B": 1,
+   "AI": 0,
+   "gold_majority": 1,
+   "event_type": "GEOLOGICAL_DISASTER",
+   "severity": "III"
+  },
+  {
+   "scenario": "S11",
+   "clause": "PRV-RECOVER-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "GEOLOGICAL_DISASTER",
+   "severity": "III"
+  },
+  {
+   "scenario": "S11",
+   "clause": "PRV-REPORT-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "GEOLOGICAL_DISASTER",
+   "severity": "III"
+  },
+  {
+   "scenario": "S11",
+   "clause": "PRV-RESP-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "GEOLOGICAL_DISASTER",
+   "severity": "III"
+  },
+  {
+   "scenario": "S12",
+   "clause": "PRV-ASSESS-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "GEOLOGICAL_DISASTER",
+   "severity": "III"
+  },
+  {
+   "scenario": "S12",
+   "clause": "PRV-CHEM-001",
+   "A": 1,
+   "B": 0,
+   "AI": 0,
+   "gold_majority": 0,
+   "event_type": "GEOLOGICAL_DISASTER",
+   "severity": "III"
+  },
+  {
+   "scenario": "S12",
+   "clause": "PRV-CLEAR-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "GEOLOGICAL_DISASTER",
+   "severity": "III"
+  },
+  {
+   "scenario": "S12",
+   "clause": "PRV-CTRL-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "GEOLOGICAL_DISASTER",
+   "severity": "III"
+  },
+  {
+   "scenario": "S12",
+   "clause": "PRV-GRADE-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "GEOLOGICAL_DISASTER",
+   "severity": "III"
+  },
+  {
+   "scenario": "S12",
+   "clause": "PRV-GRADE-002",
+   "A": 1,
+   "B": 1,
+   "AI": 0,
+   "gold_majority": 1,
+   "event_type": "GEOLOGICAL_DISASTER",
+   "severity": "III"
+  },
+  {
+   "scenario": "S12",
+   "clause": "PRV-RECOVER-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "GEOLOGICAL_DISASTER",
+   "severity": "III"
+  },
+  {
+   "scenario": "S12",
+   "clause": "PRV-REPORT-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "GEOLOGICAL_DISASTER",
+   "severity": "III"
+  },
+  {
+   "scenario": "S12",
+   "clause": "PRV-RESP-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "GEOLOGICAL_DISASTER",
+   "severity": "III"
+  },
+  {
+   "scenario": "S13",
+   "clause": "PRV-ASSESS-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "GEOLOGICAL_DISASTER",
+   "severity": "II"
+  },
+  {
+   "scenario": "S13",
+   "clause": "PRV-CHEM-001",
+   "A": 1,
+   "B": 0,
+   "AI": 0,
+   "gold_majority": 0,
+   "event_type": "GEOLOGICAL_DISASTER",
+   "severity": "II"
+  },
+  {
+   "scenario": "S13",
+   "clause": "PRV-CLEAR-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "GEOLOGICAL_DISASTER",
+   "severity": "II"
+  },
+  {
+   "scenario": "S13",
+   "clause": "PRV-CTRL-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "GEOLOGICAL_DISASTER",
+   "severity": "II"
+  },
+  {
+   "scenario": "S13",
+   "clause": "PRV-GRADE-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "GEOLOGICAL_DISASTER",
+   "severity": "II"
+  },
+  {
+   "scenario": "S13",
+   "clause": "PRV-GRADE-002",
+   "A": 1,
+   "B": 1,
+   "AI": 0,
+   "gold_majority": 1,
+   "event_type": "GEOLOGICAL_DISASTER",
+   "severity": "II"
+  },
+  {
+   "scenario": "S13",
+   "clause": "PRV-RECOVER-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "GEOLOGICAL_DISASTER",
+   "severity": "II"
+  },
+  {
+   "scenario": "S13",
+   "clause": "PRV-REPORT-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "GEOLOGICAL_DISASTER",
+   "severity": "II"
+  },
+  {
+   "scenario": "S13",
+   "clause": "PRV-RESP-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "GEOLOGICAL_DISASTER",
+   "severity": "II"
+  },
+  {
+   "scenario": "S14",
+   "clause": "PRV-ASSESS-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "GEOLOGICAL_DISASTER",
+   "severity": "II"
+  },
+  {
+   "scenario": "S14",
+   "clause": "PRV-CHEM-001",
+   "A": 1,
+   "B": 0,
+   "AI": 0,
+   "gold_majority": 0,
+   "event_type": "GEOLOGICAL_DISASTER",
+   "severity": "II"
+  },
+  {
+   "scenario": "S14",
+   "clause": "PRV-CLEAR-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "GEOLOGICAL_DISASTER",
+   "severity": "II"
+  },
+  {
+   "scenario": "S14",
+   "clause": "PRV-CTRL-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "GEOLOGICAL_DISASTER",
+   "severity": "II"
+  },
+  {
+   "scenario": "S14",
+   "clause": "PRV-GRADE-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "GEOLOGICAL_DISASTER",
+   "severity": "II"
+  },
+  {
+   "scenario": "S14",
+   "clause": "PRV-GRADE-002",
+   "A": 1,
+   "B": 1,
+   "AI": 0,
+   "gold_majority": 1,
+   "event_type": "GEOLOGICAL_DISASTER",
+   "severity": "II"
+  },
+  {
+   "scenario": "S14",
+   "clause": "PRV-RECOVER-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "GEOLOGICAL_DISASTER",
+   "severity": "II"
+  },
+  {
+   "scenario": "S14",
+   "clause": "PRV-REPORT-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "GEOLOGICAL_DISASTER",
+   "severity": "II"
+  },
+  {
+   "scenario": "S14",
+   "clause": "PRV-RESP-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "GEOLOGICAL_DISASTER",
+   "severity": "II"
+  },
+  {
+   "scenario": "S15",
+   "clause": "PRV-ASSESS-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "EXTREME_WEATHER",
+   "severity": "IV"
+  },
+  {
+   "scenario": "S15",
+   "clause": "PRV-CLEAR-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "EXTREME_WEATHER",
+   "severity": "IV"
+  },
+  {
+   "scenario": "S15",
+   "clause": "PRV-CTRL-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "EXTREME_WEATHER",
+   "severity": "IV"
+  },
+  {
+   "scenario": "S15",
+   "clause": "PRV-GRADE-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "EXTREME_WEATHER",
+   "severity": "IV"
+  },
+  {
+   "scenario": "S15",
+   "clause": "PRV-GRADE-002",
+   "A": 1,
+   "B": 1,
+   "AI": 0,
+   "gold_majority": 1,
+   "event_type": "EXTREME_WEATHER",
+   "severity": "IV"
+  },
+  {
+   "scenario": "S15",
+   "clause": "PRV-RECOVER-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "EXTREME_WEATHER",
+   "severity": "IV"
+  },
+  {
+   "scenario": "S15",
+   "clause": "PRV-REPORT-001",
+   "A": 1,
+   "B": 1,
+   "AI": 0,
+   "gold_majority": 1,
+   "event_type": "EXTREME_WEATHER",
+   "severity": "IV"
+  },
+  {
+   "scenario": "S15",
+   "clause": "PRV-RESP-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "EXTREME_WEATHER",
+   "severity": "IV"
+  },
+  {
+   "scenario": "S15",
+   "clause": "PRV-WEATHER-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "EXTREME_WEATHER",
+   "severity": "IV"
+  },
+  {
+   "scenario": "S16",
+   "clause": "PRV-ASSESS-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "EXTREME_WEATHER",
+   "severity": "IV"
+  },
+  {
+   "scenario": "S16",
+   "clause": "PRV-CHEM-001",
+   "A": 1,
+   "B": 0,
+   "AI": 0,
+   "gold_majority": 0,
+   "event_type": "EXTREME_WEATHER",
+   "severity": "IV"
+  },
+  {
+   "scenario": "S16",
+   "clause": "PRV-CLEAR-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "EXTREME_WEATHER",
+   "severity": "IV"
+  },
+  {
+   "scenario": "S16",
+   "clause": "PRV-CTRL-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "EXTREME_WEATHER",
+   "severity": "IV"
+  },
+  {
+   "scenario": "S16",
+   "clause": "PRV-GRADE-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "EXTREME_WEATHER",
+   "severity": "IV"
+  },
+  {
+   "scenario": "S16",
+   "clause": "PRV-GRADE-002",
+   "A": 1,
+   "B": 1,
+   "AI": 0,
+   "gold_majority": 1,
+   "event_type": "EXTREME_WEATHER",
+   "severity": "IV"
+  },
+  {
+   "scenario": "S16",
+   "clause": "PRV-RECOVER-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "EXTREME_WEATHER",
+   "severity": "IV"
+  },
+  {
+   "scenario": "S16",
+   "clause": "PRV-REPORT-001",
+   "A": 1,
+   "B": 1,
+   "AI": 0,
+   "gold_majority": 1,
+   "event_type": "EXTREME_WEATHER",
+   "severity": "IV"
+  },
+  {
+   "scenario": "S16",
+   "clause": "PRV-RESP-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "EXTREME_WEATHER",
+   "severity": "IV"
+  },
+  {
+   "scenario": "S16",
+   "clause": "PRV-WEATHER-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "EXTREME_WEATHER",
+   "severity": "IV"
+  },
+  {
+   "scenario": "S17",
+   "clause": "PRV-ASSESS-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "EXTREME_WEATHER",
+   "severity": "III"
+  },
+  {
+   "scenario": "S17",
+   "clause": "PRV-CHEM-001",
+   "A": 1,
+   "B": 0,
+   "AI": 0,
+   "gold_majority": 0,
+   "event_type": "EXTREME_WEATHER",
+   "severity": "III"
+  },
+  {
+   "scenario": "S17",
+   "clause": "PRV-CLEAR-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "EXTREME_WEATHER",
+   "severity": "III"
+  },
+  {
+   "scenario": "S17",
+   "clause": "PRV-CTRL-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "EXTREME_WEATHER",
+   "severity": "III"
+  },
+  {
+   "scenario": "S17",
+   "clause": "PRV-GRADE-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "EXTREME_WEATHER",
+   "severity": "III"
+  },
+  {
+   "scenario": "S17",
+   "clause": "PRV-RECOVER-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "EXTREME_WEATHER",
+   "severity": "III"
+  },
+  {
+   "scenario": "S17",
+   "clause": "PRV-REPORT-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "EXTREME_WEATHER",
+   "severity": "III"
+  },
+  {
+   "scenario": "S17",
+   "clause": "PRV-RESP-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "EXTREME_WEATHER",
+   "severity": "III"
+  },
+  {
+   "scenario": "S17",
+   "clause": "PRV-WEATHER-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "EXTREME_WEATHER",
+   "severity": "III"
+  },
+  {
+   "scenario": "S18",
+   "clause": "PRV-ASSESS-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "EXTREME_WEATHER",
+   "severity": "III"
+  },
+  {
+   "scenario": "S18",
+   "clause": "PRV-CHEM-001",
+   "A": 1,
+   "B": 0,
+   "AI": 0,
+   "gold_majority": 0,
+   "event_type": "EXTREME_WEATHER",
+   "severity": "III"
+  },
+  {
+   "scenario": "S18",
+   "clause": "PRV-CLEAR-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "EXTREME_WEATHER",
+   "severity": "III"
+  },
+  {
+   "scenario": "S18",
+   "clause": "PRV-CTRL-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "EXTREME_WEATHER",
+   "severity": "III"
+  },
+  {
+   "scenario": "S18",
+   "clause": "PRV-GRADE-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "EXTREME_WEATHER",
+   "severity": "III"
+  },
+  {
+   "scenario": "S18",
+   "clause": "PRV-RECOVER-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "EXTREME_WEATHER",
+   "severity": "III"
+  },
+  {
+   "scenario": "S18",
+   "clause": "PRV-REPORT-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "EXTREME_WEATHER",
+   "severity": "III"
+  },
+  {
+   "scenario": "S18",
+   "clause": "PRV-RESP-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "EXTREME_WEATHER",
+   "severity": "III"
+  },
+  {
+   "scenario": "S18",
+   "clause": "PRV-WEATHER-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "EXTREME_WEATHER",
+   "severity": "III"
+  },
+  {
+   "scenario": "S19",
+   "clause": "PRV-ASSESS-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "EXTREME_WEATHER",
+   "severity": "II"
+  },
+  {
+   "scenario": "S19",
+   "clause": "PRV-CHEM-001",
+   "A": 1,
+   "B": 0,
+   "AI": 0,
+   "gold_majority": 0,
+   "event_type": "EXTREME_WEATHER",
+   "severity": "II"
+  },
+  {
+   "scenario": "S19",
+   "clause": "PRV-CLEAR-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "EXTREME_WEATHER",
+   "severity": "II"
+  },
+  {
+   "scenario": "S19",
+   "clause": "PRV-CTRL-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "EXTREME_WEATHER",
+   "severity": "II"
+  },
+  {
+   "scenario": "S19",
+   "clause": "PRV-GRADE-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "EXTREME_WEATHER",
+   "severity": "II"
+  },
+  {
+   "scenario": "S19",
+   "clause": "PRV-RECOVER-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "EXTREME_WEATHER",
+   "severity": "II"
+  },
+  {
+   "scenario": "S19",
+   "clause": "PRV-REPORT-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "EXTREME_WEATHER",
+   "severity": "II"
+  },
+  {
+   "scenario": "S19",
+   "clause": "PRV-RESP-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "EXTREME_WEATHER",
+   "severity": "II"
+  },
+  {
+   "scenario": "S19",
+   "clause": "PRV-WEATHER-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "EXTREME_WEATHER",
+   "severity": "II"
+  },
+  {
+   "scenario": "S20",
+   "clause": "PRV-ASSESS-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "HAZARDOUS_CHEMICAL_LEAK",
+   "severity": "IV"
+  },
+  {
+   "scenario": "S20",
+   "clause": "PRV-CHEM-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "HAZARDOUS_CHEMICAL_LEAK",
+   "severity": "IV"
+  },
+  {
+   "scenario": "S20",
+   "clause": "PRV-CLEAR-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "HAZARDOUS_CHEMICAL_LEAK",
+   "severity": "IV"
+  },
+  {
+   "scenario": "S20",
+   "clause": "PRV-CTRL-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "HAZARDOUS_CHEMICAL_LEAK",
+   "severity": "IV"
+  },
+  {
+   "scenario": "S20",
+   "clause": "PRV-GRADE-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "HAZARDOUS_CHEMICAL_LEAK",
+   "severity": "IV"
+  },
+  {
+   "scenario": "S20",
+   "clause": "PRV-GRADE-002",
+   "A": 0,
+   "B": 1,
+   "AI": 0,
+   "gold_majority": 0,
+   "event_type": "HAZARDOUS_CHEMICAL_LEAK",
+   "severity": "IV"
+  },
+  {
+   "scenario": "S20",
+   "clause": "PRV-RECOVER-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "HAZARDOUS_CHEMICAL_LEAK",
+   "severity": "IV"
+  },
+  {
+   "scenario": "S20",
+   "clause": "PRV-REPORT-001",
+   "A": 1,
+   "B": 0,
+   "AI": 0,
+   "gold_majority": 0,
+   "event_type": "HAZARDOUS_CHEMICAL_LEAK",
+   "severity": "IV"
+  },
+  {
+   "scenario": "S20",
+   "clause": "PRV-RESCUE-001",
+   "A": 1,
+   "B": 1,
+   "AI": 0,
+   "gold_majority": 1,
+   "event_type": "HAZARDOUS_CHEMICAL_LEAK",
+   "severity": "IV"
+  },
+  {
+   "scenario": "S20",
+   "clause": "PRV-RESP-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "HAZARDOUS_CHEMICAL_LEAK",
+   "severity": "IV"
+  },
+  {
+   "scenario": "S21",
+   "clause": "PRV-ASSESS-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "HAZARDOUS_CHEMICAL_LEAK",
+   "severity": "IV"
+  },
+  {
+   "scenario": "S21",
+   "clause": "PRV-CHEM-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "HAZARDOUS_CHEMICAL_LEAK",
+   "severity": "IV"
+  },
+  {
+   "scenario": "S21",
+   "clause": "PRV-CLEAR-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "HAZARDOUS_CHEMICAL_LEAK",
+   "severity": "IV"
+  },
+  {
+   "scenario": "S21",
+   "clause": "PRV-CTRL-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "HAZARDOUS_CHEMICAL_LEAK",
+   "severity": "IV"
+  },
+  {
+   "scenario": "S21",
+   "clause": "PRV-GRADE-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "HAZARDOUS_CHEMICAL_LEAK",
+   "severity": "IV"
+  },
+  {
+   "scenario": "S21",
+   "clause": "PRV-GRADE-002",
+   "A": 0,
+   "B": 1,
+   "AI": 0,
+   "gold_majority": 0,
+   "event_type": "HAZARDOUS_CHEMICAL_LEAK",
+   "severity": "IV"
+  },
+  {
+   "scenario": "S21",
+   "clause": "PRV-RECOVER-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "HAZARDOUS_CHEMICAL_LEAK",
+   "severity": "IV"
+  },
+  {
+   "scenario": "S21",
+   "clause": "PRV-REPORT-001",
+   "A": 1,
+   "B": 1,
+   "AI": 0,
+   "gold_majority": 1,
+   "event_type": "HAZARDOUS_CHEMICAL_LEAK",
+   "severity": "IV"
+  },
+  {
+   "scenario": "S21",
+   "clause": "PRV-RESCUE-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "HAZARDOUS_CHEMICAL_LEAK",
+   "severity": "IV"
+  },
+  {
+   "scenario": "S21",
+   "clause": "PRV-RESP-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "HAZARDOUS_CHEMICAL_LEAK",
+   "severity": "IV"
+  },
+  {
+   "scenario": "S22",
+   "clause": "PRV-ASSESS-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "HAZARDOUS_CHEMICAL_LEAK",
+   "severity": "III"
+  },
+  {
+   "scenario": "S22",
+   "clause": "PRV-CHEM-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "HAZARDOUS_CHEMICAL_LEAK",
+   "severity": "III"
+  },
+  {
+   "scenario": "S22",
+   "clause": "PRV-CLEAR-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "HAZARDOUS_CHEMICAL_LEAK",
+   "severity": "III"
+  },
+  {
+   "scenario": "S22",
+   "clause": "PRV-CTRL-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "HAZARDOUS_CHEMICAL_LEAK",
+   "severity": "III"
+  },
+  {
+   "scenario": "S22",
+   "clause": "PRV-GRADE-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "HAZARDOUS_CHEMICAL_LEAK",
+   "severity": "III"
+  },
+  {
+   "scenario": "S22",
+   "clause": "PRV-GRADE-002",
+   "A": 1,
+   "B": 1,
+   "AI": 0,
+   "gold_majority": 1,
+   "event_type": "HAZARDOUS_CHEMICAL_LEAK",
+   "severity": "III"
+  },
+  {
+   "scenario": "S22",
+   "clause": "PRV-RECOVER-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "HAZARDOUS_CHEMICAL_LEAK",
+   "severity": "III"
+  },
+  {
+   "scenario": "S22",
+   "clause": "PRV-REPORT-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "HAZARDOUS_CHEMICAL_LEAK",
+   "severity": "III"
+  },
+  {
+   "scenario": "S22",
+   "clause": "PRV-RESCUE-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "HAZARDOUS_CHEMICAL_LEAK",
+   "severity": "III"
+  },
+  {
+   "scenario": "S22",
+   "clause": "PRV-RESP-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "HAZARDOUS_CHEMICAL_LEAK",
+   "severity": "III"
+  },
+  {
+   "scenario": "S23",
+   "clause": "PRV-ASSESS-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "HAZARDOUS_CHEMICAL_LEAK",
+   "severity": "II"
+  },
+  {
+   "scenario": "S23",
+   "clause": "PRV-CHEM-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "HAZARDOUS_CHEMICAL_LEAK",
+   "severity": "II"
+  },
+  {
+   "scenario": "S23",
+   "clause": "PRV-CLEAR-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "HAZARDOUS_CHEMICAL_LEAK",
+   "severity": "II"
+  },
+  {
+   "scenario": "S23",
+   "clause": "PRV-CTRL-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "HAZARDOUS_CHEMICAL_LEAK",
+   "severity": "II"
+  },
+  {
+   "scenario": "S23",
+   "clause": "PRV-GRADE-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "HAZARDOUS_CHEMICAL_LEAK",
+   "severity": "II"
+  },
+  {
+   "scenario": "S23",
+   "clause": "PRV-GRADE-002",
+   "A": 1,
+   "B": 1,
+   "AI": 0,
+   "gold_majority": 1,
+   "event_type": "HAZARDOUS_CHEMICAL_LEAK",
+   "severity": "II"
+  },
+  {
+   "scenario": "S23",
+   "clause": "PRV-RECOVER-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "HAZARDOUS_CHEMICAL_LEAK",
+   "severity": "II"
+  },
+  {
+   "scenario": "S23",
+   "clause": "PRV-REPORT-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "HAZARDOUS_CHEMICAL_LEAK",
+   "severity": "II"
+  },
+  {
+   "scenario": "S23",
+   "clause": "PRV-RESCUE-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "HAZARDOUS_CHEMICAL_LEAK",
+   "severity": "II"
+  },
+  {
+   "scenario": "S23",
+   "clause": "PRV-RESP-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "HAZARDOUS_CHEMICAL_LEAK",
+   "severity": "II"
+  },
+  {
+   "scenario": "S24",
+   "clause": "PRV-ASSESS-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "HAZARDOUS_CHEMICAL_LEAK",
+   "severity": "II"
+  },
+  {
+   "scenario": "S24",
+   "clause": "PRV-CHEM-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "HAZARDOUS_CHEMICAL_LEAK",
+   "severity": "II"
+  },
+  {
+   "scenario": "S24",
+   "clause": "PRV-CLEAR-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "HAZARDOUS_CHEMICAL_LEAK",
+   "severity": "II"
+  },
+  {
+   "scenario": "S24",
+   "clause": "PRV-CTRL-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "HAZARDOUS_CHEMICAL_LEAK",
+   "severity": "II"
+  },
+  {
+   "scenario": "S24",
+   "clause": "PRV-GRADE-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "HAZARDOUS_CHEMICAL_LEAK",
+   "severity": "II"
+  },
+  {
+   "scenario": "S24",
+   "clause": "PRV-GRADE-002",
+   "A": 1,
+   "B": 1,
+   "AI": 0,
+   "gold_majority": 1,
+   "event_type": "HAZARDOUS_CHEMICAL_LEAK",
+   "severity": "II"
+  },
+  {
+   "scenario": "S24",
+   "clause": "PRV-RECOVER-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "HAZARDOUS_CHEMICAL_LEAK",
+   "severity": "II"
+  },
+  {
+   "scenario": "S24",
+   "clause": "PRV-REPORT-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "HAZARDOUS_CHEMICAL_LEAK",
+   "severity": "II"
+  },
+  {
+   "scenario": "S24",
+   "clause": "PRV-RESCUE-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "HAZARDOUS_CHEMICAL_LEAK",
+   "severity": "II"
+  },
+  {
+   "scenario": "S24",
+   "clause": "PRV-RESP-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "HAZARDOUS_CHEMICAL_LEAK",
+   "severity": "II"
+  },
+  {
+   "scenario": "S25",
+   "clause": "PRV-ASSESS-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "III"
+  },
+  {
+   "scenario": "S25",
+   "clause": "PRV-CHEM-001",
+   "A": 1,
+   "B": 0,
+   "AI": 0,
+   "gold_majority": 0,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "III"
+  },
+  {
+   "scenario": "S25",
+   "clause": "PRV-CTRL-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "III"
+  },
+  {
+   "scenario": "S25",
+   "clause": "PRV-GRADE-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "III"
+  },
+  {
+   "scenario": "S25",
+   "clause": "PRV-GRADE-002",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "III"
+  },
+  {
+   "scenario": "S25",
+   "clause": "PRV-RECOVER-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "III"
+  },
+  {
+   "scenario": "S25",
+   "clause": "PRV-REPORT-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "III"
+  },
+  {
+   "scenario": "S25",
+   "clause": "PRV-RESCUE-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "III"
+  },
+  {
+   "scenario": "S25",
+   "clause": "PRV-RESP-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "III"
+  },
+  {
+   "scenario": "S26",
+   "clause": "PRV-ASSESS-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "III"
+  },
+  {
+   "scenario": "S26",
+   "clause": "PRV-CHEM-001",
+   "A": 0,
+   "B": 0,
+   "AI": 0,
+   "gold_majority": 0,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "III"
+  },
+  {
+   "scenario": "S26",
+   "clause": "PRV-CTRL-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "III"
+  },
+  {
+   "scenario": "S26",
+   "clause": "PRV-GRADE-001",
+   "A": 0,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "III"
+  },
+  {
+   "scenario": "S26",
+   "clause": "PRV-GRADE-002",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "III"
+  },
+  {
+   "scenario": "S26",
+   "clause": "PRV-RECOVER-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "III"
+  },
+  {
+   "scenario": "S26",
+   "clause": "PRV-REPORT-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "III"
+  },
+  {
+   "scenario": "S26",
+   "clause": "PRV-RESCUE-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "III"
+  },
+  {
+   "scenario": "S26",
+   "clause": "PRV-RESP-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "III"
+  },
+  {
+   "scenario": "S27",
+   "clause": "PRV-ASSESS-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "GEOLOGICAL_DISASTER",
+   "severity": "III"
+  },
+  {
+   "scenario": "S27",
+   "clause": "PRV-CHEM-001",
+   "A": 1,
+   "B": 0,
+   "AI": 0,
+   "gold_majority": 0,
+   "event_type": "GEOLOGICAL_DISASTER",
+   "severity": "III"
+  },
+  {
+   "scenario": "S27",
+   "clause": "PRV-CLEAR-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "GEOLOGICAL_DISASTER",
+   "severity": "III"
+  },
+  {
+   "scenario": "S27",
+   "clause": "PRV-CTRL-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "GEOLOGICAL_DISASTER",
+   "severity": "III"
+  },
+  {
+   "scenario": "S27",
+   "clause": "PRV-GRADE-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "GEOLOGICAL_DISASTER",
+   "severity": "III"
+  },
+  {
+   "scenario": "S27",
+   "clause": "PRV-GRADE-002",
+   "A": 1,
+   "B": 1,
+   "AI": 0,
+   "gold_majority": 1,
+   "event_type": "GEOLOGICAL_DISASTER",
+   "severity": "III"
+  },
+  {
+   "scenario": "S27",
+   "clause": "PRV-RECOVER-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "GEOLOGICAL_DISASTER",
+   "severity": "III"
+  },
+  {
+   "scenario": "S27",
+   "clause": "PRV-REPORT-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "GEOLOGICAL_DISASTER",
+   "severity": "III"
+  },
+  {
+   "scenario": "S27",
+   "clause": "PRV-RESP-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "GEOLOGICAL_DISASTER",
+   "severity": "III"
+  },
+  {
+   "scenario": "S28",
+   "clause": "PRV-ASSESS-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "II"
+  },
+  {
+   "scenario": "S28",
+   "clause": "PRV-CHEM-001",
+   "A": 1,
+   "B": 0,
+   "AI": 0,
+   "gold_majority": 0,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "II"
+  },
+  {
+   "scenario": "S28",
+   "clause": "PRV-CTRL-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "II"
+  },
+  {
+   "scenario": "S28",
+   "clause": "PRV-GRADE-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "II"
+  },
+  {
+   "scenario": "S28",
+   "clause": "PRV-GRADE-002",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "II"
+  },
+  {
+   "scenario": "S28",
+   "clause": "PRV-RECOVER-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "II"
+  },
+  {
+   "scenario": "S28",
+   "clause": "PRV-REPORT-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "II"
+  },
+  {
+   "scenario": "S28",
+   "clause": "PRV-RESCUE-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "II"
+  },
+  {
+   "scenario": "S28",
+   "clause": "PRV-RESP-001",
+   "A": 1,
+   "B": 1,
+   "AI": 1,
+   "gold_majority": 1,
+   "event_type": "TRAFFIC_ACCIDENT",
+   "severity": "II"
+  }
+ ]
+}

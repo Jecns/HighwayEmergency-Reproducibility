@@ -1,0 +1,13 @@
+{
+  "status": "RUN (scenario-node closure only)",
+  "edge_level_rerouting": "NOT RUN",
+  "detail": {
+    "blocked_scenarios": [
+      "S07",
+      "S14"
+    ],
+    "n_pairs_blocked": 78,
+    "null_distance_on_blocked": true,
+    "model": "scenario-node closure (no edge-level re-routing)"
+  }
+}

@@ -1,0 +1,173 @@
+{
+  "status": "superseded_pending_demand_integrity_correction",
+  "marked_at_local": "2026-11-12 14:34:58",
+  "policy": "KEEP everything. Do not delete, do not overwrite, do not use as final paper evidence. Only a verified full new run in a separate output directory may supersede these.",
+  "root_cause": "run_dynamic_benchmark_v4.py L329 + L356/L377 append the FULL current demand set to the FULL previous demand set at every event; DispatchProblem performs no dedup; mapping functions key on task_id and silently overwrite duplicates.",
+  "affected_metrics": [
+    "demand_fulfillment_rate",
+    "unmet_demands",
+    "weighted_response_distance_km",
+    "plan_stability",
+    "degradation",
+    "trigger_rate",
+    "reoptimisation_rate",
+    "reassignment_fraction",
+    "all paired contrasts derived from them"
+  ],
+  "directories": [
+    {
+      "directory": "experiments/outputs/E9_dynamic_replay_v3",
+      "sidecar_added": "STATUS_superseded.md",
+      "n_existing_files": 4,
+      "existing_files": [
+        {
+          "rel": "analysis.json",
+          "bytes": 58740,
+          "sha256": "750939617271de76fe217fc5bd901e4623daeeb712f154a22af4984ff09ded1e"
+        },
+        {
+          "rel": "event_level_results.csv",
+          "bytes": 670504,
+          "sha256": "8d50c12f5b4281f8376dccb01aacf091e9a9d2e0652015621765c1f1779cdb63"
+        },
+        {
+          "rel": "run_level_results.csv",
+          "bytes": 257160,
+          "sha256": "469a07f3efd9eb08e02203009573297caab2f8efb6ce43ccb04d8994184662c7"
+        },
+        {
+          "rel": "summary.json",
+          "bytes": 2093,
+          "sha256": "f182283ce9787328ed2f21ea0c72019c9d636a80a5c6233d68c9715ec7495584"
+        }
+      ],
+      "unchanged_verified": true
+    },
+    {
+      "directory": "experiments/outputs/E9_dynamic_replay_v4",
+      "sidecar_added": "STATUS_superseded.md",
+      "n_existing_files": 11,
+      "existing_files": [
+        {
+          "rel": "_shards/shard_00.jsonl",
+          "bytes": 1188052,
+          "sha256": "c480aafb52c311eb3d68dbc17ad8f531f8d4de09cdb344e2ee26f14a6ea4fa8b"
+        },
+        {
+          "rel": "_shards/shard_01.jsonl",
+          "bytes": 1174443,
+          "sha256": "86e67700b2a313d5487b2223ad7fb7457277a93a32675172dfc8d800acfba131"
+        },
+        {
+          "rel": "_shards/shard_02.jsonl",
+          "bytes": 1128412,
+          "sha256": "16e31480e7b6ece612bd672b7db2519ad572fa678454b9bf23975f4728a44d65"
+        },
+        {
+          "rel": "_shards/shard_03.jsonl",
+          "bytes": 1054971,
+          "sha256": "03b44b35fe6921b949bd03e727aeee9b687c3d86553eaebfb1d2d6df9aa1c96a"
+        },
+        {
+          "rel": "_shards/shard_04.jsonl",
+          "bytes": 943978,
+          "sha256": "c03a2466dc2016272ff0c1b1f71d57998acb0fa196648fa00e5c129ba417055c"
+        },
+        {
+          "rel": "_shards/shard_05.jsonl",
+          "bytes": 943527,
+          "sha256": "85d1931af100577b08183a24e2b374753d265d059e6ae600c17ff3bc183317c5"
+        },
+        {
+          "rel": "analysis.json",
+          "bytes": 141577,
+          "sha256": "4c7c1248e0342d6d9d59227038d7d6501aa2ec704c153817de0474d5de5deb1e"
+        },
+        {
+          "rel": "clustered_analysis.json",
+          "bytes": 15860,
+          "sha256": "18ee34342390b2c291ce583e057939ef4d1935f0b660bae6392aeb2d3c86d6e0"
+        },
+        {
+          "rel": "event_level_results.csv",
+          "bytes": 1132494,
+          "sha256": "a662a763d620bd37986a4f98d3ea72b1cfac65ecd37a6cbdebcc5fa190f9b722"
+        },
+        {
+          "rel": "run_level_results.csv",
+          "bytes": 827098,
+          "sha256": "11869015151634bd2ecbee53b2b571a9b725564062f07c8f61b251ba3e26be2d"
+        },
+        {
+          "rel": "summary.json",
+          "bytes": 2174,
+          "sha256": "b978df930b40750ddc8d31c7775e2378775f278e24d29ac865bba06584c7c725"
+        }
+      ],
+      "unchanged_verified": true
+    },
+    {
+      "directory": "experiments/outputs/NET_E9_dynamic_replay",
+      "sidecar_added": "STATUS_superseded.md",
+      "n_existing_files": 11,
+      "existing_files": [
+        {
+          "rel": "_shards/shard_00.jsonl",
+          "bytes": 1199545,
+          "sha256": "3b6ce8b8a49990136b266baced0c9f5cf47281e95883d1de7d48de44dd2eccc0"
+        },
+        {
+          "rel": "_shards/shard_01.jsonl",
+          "bytes": 1186795,
+          "sha256": "a808a165982a65c5a0b15e1c0184d528d9611c8aae07c14ee1c6548d1edf3d38"
+        },
+        {
+          "rel": "_shards/shard_02.jsonl",
+          "bytes": 1142255,
+          "sha256": "af8d406c003d4727746d5b87b2d18f80b2f9f7e1da3b0a19b37463e1ad892f2d"
+        },
+        {
+          "rel": "_shards/shard_03.jsonl",
+          "bytes": 1068665,
+          "sha256": "1c9ba800e89d54ee8066b29b83e779f5cf52fb737b96a95709205e3982044218"
+        },
+        {
+          "rel": "_shards/shard_04.jsonl",
+          "bytes": 957701,
+          "sha256": "7f44c888f53ec4c4c71c627e7a36bc3f913e90603193f8b47965e525dacb6237"
+        },
+        {
+          "rel": "_shards/shard_05.jsonl",
+          "bytes": 953352,
+          "sha256": "e6f8441ef501e6fd21a9d8915e0099783afd23bd644648f8ac3a3f12535e55d5"
+        },
+        {
+          "rel": "analysis.json",
+          "bytes": 141458,
+          "sha256": "61299094345c13d30f9c328f0cba5c8e815ac173818b36cafe0d2b117e69103b"
+        },
+        {
+          "rel": "clustered_analysis.json",
+          "bytes": 15603,
+          "sha256": "11d09657e4f581153daa7066e1d0d35a51a598e7ce8d4d795c72e6c801da6e5b"
+        },
+        {
+          "rel": "event_level_results.csv",
+          "bytes": 1136460,
+          "sha256": "41ac4058d8ff4aa91a070de02cb0e657cff0e4a2d1731ea5ee772d6b37d4a6d9"
+        },
+        {
+          "rel": "run_level_results.csv",
+          "bytes": 830683,
+          "sha256": "4a0363e4658b99ceb31eb0ca76ee17cc07609cff3075bacddd0026eefc36a3e1"
+        },
+        {
+          "rel": "summary.json",
+          "bytes": 2356,
+          "sha256": "acb91a385d1c78c2a0a2ab58b129e0554be1ec200d8392bf64df2d1c868199f6"
+        }
+      ],
+      "unchanged_verified": true
+    }
+  ]
+}

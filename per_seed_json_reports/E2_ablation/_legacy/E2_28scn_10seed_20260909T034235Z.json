@@ -1,0 +1,83 @@
+{
+  "experiment": "E2",
+  "scarcity": 1.0,
+  "traffic_teams_synthetic": 6,
+  "configs": [
+    "A_standard",
+    "A_greedy",
+    "A_localsearch",
+    "A_constraint",
+    "A_g+l",
+    "A_g+c",
+    "A_l+c",
+    "A_proposed"
+  ],
+  "hypervolume": {
+    "A_standard": 0.05871013545894933,
+    "A_greedy": 0.058749918711843756,
+    "A_localsearch": 0.05874494580523194,
+    "A_constraint": 0.058635541859772274,
+    "A_g+l": 0.058749918711843756,
+    "A_g+c": 0.058749918711843756,
+    "A_l+c": 0.058739972898620145,
+    "A_proposed": 0.058749918711843756
+  },
+  "mean_objectives": {
+    "A_standard": {
+      "demand_fulfillment_rate": 0.7982967032967033,
+      "weighted_response_distance_km": 3449.2573816780623,
+      "mean_response_time_h": 5.441218138227874,
+      "gini_fairness": 0.0,
+      "unmet_demands": 2.414285714285714
+    },
+    "A_greedy": {
+      "demand_fulfillment_rate": 0.8169047619047616,
+      "weighted_response_distance_km": 3325.3372132737495,
+      "mean_response_time_h": 5.219989071083871,
+      "gini_fairness": 0.0,
+      "unmet_demands": 2.1964285714285716
+    },
+    "A_localsearch": {
+      "demand_fulfillment_rate": 0.7958653846153846,
+      "weighted_response_distance_km": 3170.836916121544,
+      "mean_response_time_h": 5.103824732835135,
+      "gini_fairness": 0.0,
+      "unmet_demands": 2.4464285714285716
+    },
+    "A_constraint": {
+      "demand_fulfillment_rate": 0.8044803113553112,
+      "weighted_response_distance_km": 3560.8891974493577,
+      "mean_response_time_h": 5.549540562088268,
+      "gini_fairness": 0.0,
+      "unmet_demands": 2.3392857142857144
+    },
+    "A_g+l": {
+      "demand_fulfillment_rate": 0.8169047619047616,
+      "weighted_response_distance_km": 3319.9882231432116,
+      "mean_response_time_h": 5.219415818540411,
+      "gini_fairness": 0.0,
+      "unmet_demands": 2.1964285714285716
+    },
+    "A_g+c": {
+      "demand_fulfillment_rate": 0.8169047619047616,
+      "weighted_response_distance_km": 3327.1219356836486,
+      "mean_response_time_h": 5.22005552776002,
+      "gini_fairness": 0.0,
+      "unmet_demands": 2.1964285714285716
+    },
+    "A_l+c": {
+      "demand_fulfillment_rate": 0.7996016483516485,
+      "weighted_response_distance_km": 3226.36242124748,
+      "mean_response_time_h": 5.137577317950223,
+      "gini_fairness": 0.0,
+      "unmet_demands": 2.392857142857143
+    },
+    "A_proposed": {
+      "demand_fulfillment_rate": 0.8169047619047616,
+      "weighted_response_distance_km": 3320.999317873535,
+      "mean_response_time_h": 5.219415818540411,
+      "gini_fairness": 0.0,
+      "unmet_demands": 2.1964285714285716
+    }
+  }
+}

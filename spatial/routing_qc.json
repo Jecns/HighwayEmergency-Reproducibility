@@ -1,0 +1,12 @@
+{
+  "n_resources": 39,
+  "n_scenarios": 28,
+  "n_pairs": 1092,
+  "unreachable_pairs": 0,
+  "unreachable_pct": 0.0,
+  "detour_ratio_median": 1.306,
+  "detour_ratio_p90": 1.528,
+  "detour_ratio_max": 6.459,
+  "speed_unresolved_edges_in_graph": 0,
+  "note": "network distance/time from real OSM graph; Haversine is the same-endpoint straight-line reference; unreachable pairs kept as NULL (never silently filled)."
+}

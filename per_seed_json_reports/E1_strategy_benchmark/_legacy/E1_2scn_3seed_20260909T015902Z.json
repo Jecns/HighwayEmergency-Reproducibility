@@ -1,0 +1,440 @@
+{
+  "per_scenario": {
+    "S01": {
+      "nearest": {
+        "mean": {
+          "demand_fulfillment_rate": 0.5384615384615384,
+          "weighted_response_distance_km": 0.0,
+          "mean_response_time_h": 0.0,
+          "gini_fairness": 0.0,
+          "unmet_demands": 6.0
+        },
+        "seeds": [
+          {
+            "demand_fulfillment_rate": 0.5384615384615384,
+            "weighted_response_distance_km": 0.0,
+            "mean_response_time_h": 0.0,
+            "gini_fairness": 0.0,
+            "unmet_demands": 6,
+            "feasible": true,
+            "seed": 0
+          },
+          {
+            "demand_fulfillment_rate": 0.5384615384615384,
+            "weighted_response_distance_km": 0.0,
+            "mean_response_time_h": 0.0,
+            "gini_fairness": 0.0,
+            "unmet_demands": 6,
+            "feasible": true,
+            "seed": 1
+          },
+          {
+            "demand_fulfillment_rate": 0.5384615384615384,
+            "weighted_response_distance_km": 0.0,
+            "mean_response_time_h": 0.0,
+            "gini_fairness": 0.0,
+            "unmet_demands": 6,
+            "feasible": true,
+            "seed": 2
+          }
+        ]
+      },
+      "rule_based": {
+        "mean": {
+          "demand_fulfillment_rate": 0.5384615384615384,
+          "weighted_response_distance_km": 0.0,
+          "mean_response_time_h": 0.0,
+          "gini_fairness": 0.0,
+          "unmet_demands": 6.0
+        },
+        "seeds": [
+          {
+            "demand_fulfillment_rate": 0.5384615384615384,
+            "weighted_response_distance_km": 0.0,
+            "mean_response_time_h": 0.0,
+            "gini_fairness": 0.0,
+            "unmet_demands": 6,
+            "feasible": true,
+            "seed": 0
+          },
+          {
+            "demand_fulfillment_rate": 0.5384615384615384,
+            "weighted_response_distance_km": 0.0,
+            "mean_response_time_h": 0.0,
+            "gini_fairness": 0.0,
+            "unmet_demands": 6,
+            "feasible": true,
+            "seed": 1
+          },
+          {
+            "demand_fulfillment_rate": 0.5384615384615384,
+            "weighted_response_distance_km": 0.0,
+            "mean_response_time_h": 0.0,
+            "gini_fairness": 0.0,
+            "unmet_demands": 6,
+            "feasible": true,
+            "seed": 2
+          }
+        ]
+      },
+      "standard_nsga2": {
+        "mean": {
+          "demand_fulfillment_rate": 0.5384615384615384,
+          "weighted_response_distance_km": 0.0,
+          "mean_response_time_h": 0.0,
+          "gini_fairness": 0.0,
+          "unmet_demands": 6.0
+        },
+        "seeds": [
+          {
+            "demand_fulfillment_rate": 0.5384615384615384,
+            "weighted_response_distance_km": 0.0,
+            "mean_response_time_h": 0.0,
+            "gini_fairness": 0.0,
+            "unmet_demands": 6,
+            "feasible": true,
+            "seed": 0
+          },
+          {
+            "demand_fulfillment_rate": 0.5384615384615384,
+            "weighted_response_distance_km": 0.0,
+            "mean_response_time_h": 0.0,
+            "gini_fairness": 0.0,
+            "unmet_demands": 6,
+            "feasible": true,
+            "seed": 1
+          },
+          {
+            "demand_fulfillment_rate": 0.5384615384615384,
+            "weighted_response_distance_km": 0.0,
+            "mean_response_time_h": 0.0,
+            "gini_fairness": 0.0,
+            "unmet_demands": 6,
+            "feasible": true,
+            "seed": 2
+          }
+        ]
+      },
+      "proposed_nsga2": {
+        "mean": {
+          "demand_fulfillment_rate": 0.5384615384615384,
+          "weighted_response_distance_km": 0.0,
+          "mean_response_time_h": 0.0,
+          "gini_fairness": 0.0,
+          "unmet_demands": 6.0
+        },
+        "seeds": [
+          {
+            "demand_fulfillment_rate": 0.5384615384615384,
+            "weighted_response_distance_km": 0.0,
+            "mean_response_time_h": 0.0,
+            "gini_fairness": 0.0,
+            "unmet_demands": 6,
+            "feasible": true,
+            "seed": 0
+          },
+          {
+            "demand_fulfillment_rate": 0.5384615384615384,
+            "weighted_response_distance_km": 0.0,
+            "mean_response_time_h": 0.0,
+            "gini_fairness": 0.0,
+            "unmet_demands": 6,
+            "feasible": true,
+            "seed": 1
+          },
+          {
+            "demand_fulfillment_rate": 0.5384615384615384,
+            "weighted_response_distance_km": 0.0,
+            "mean_response_time_h": 0.0,
+            "gini_fairness": 0.0,
+            "unmet_demands": 6,
+            "feasible": true,
+            "seed": 2
+          }
+        ]
+      }
+    },
+    "S02": {
+      "nearest": {
+        "mean": {
+          "demand_fulfillment_rate": 0.5384615384615384,
+          "weighted_response_distance_km": 0.0,
+          "mean_response_time_h": 0.0,
+          "gini_fairness": 0.0,
+          "unmet_demands": 6.0
+        },
+        "seeds": [
+          {
+            "demand_fulfillment_rate": 0.5384615384615384,
+            "weighted_response_distance_km": 0.0,
+            "mean_response_time_h": 0.0,
+            "gini_fairness": 0.0,
+            "unmet_demands": 6,
+            "feasible": true,
+            "seed": 0
+          },
+          {
+            "demand_fulfillment_rate": 0.5384615384615384,
+            "weighted_response_distance_km": 0.0,
+            "mean_response_time_h": 0.0,
+            "gini_fairness": 0.0,
+            "unmet_demands": 6,
+            "feasible": true,
+            "seed": 1
+          },
+          {
+            "demand_fulfillment_rate": 0.5384615384615384,
+            "weighted_response_distance_km": 0.0,
+            "mean_response_time_h": 0.0,
+            "gini_fairness": 0.0,
+            "unmet_demands": 6,
+            "feasible": true,
+            "seed": 2
+          }
+        ]
+      },
+      "rule_based": {
+        "mean": {
+          "demand_fulfillment_rate": 0.5384615384615384,
+          "weighted_response_distance_km": 0.0,
+          "mean_response_time_h": 0.0,
+          "gini_fairness": 0.0,
+          "unmet_demands": 6.0
+        },
+        "seeds": [
+          {
+            "demand_fulfillment_rate": 0.5384615384615384,
+            "weighted_response_distance_km": 0.0,
+            "mean_response_time_h": 0.0,
+            "gini_fairness": 0.0,
+            "unmet_demands": 6,
+            "feasible": true,
+            "seed": 0
+          },
+          {
+            "demand_fulfillment_rate": 0.5384615384615384,
+            "weighted_response_distance_km": 0.0,
+            "mean_response_time_h": 0.0,
+            "gini_fairness": 0.0,
+            "unmet_demands": 6,
+            "feasible": true,
+            "seed": 1
+          },
+          {
+            "demand_fulfillment_rate": 0.5384615384615384,
+            "weighted_response_distance_km": 0.0,
+            "mean_response_time_h": 0.0,
+            "gini_fairness": 0.0,
+            "unmet_demands": 6,
+            "feasible": true,
+            "seed": 2
+          }
+        ]
+      },
+      "standard_nsga2": {
+        "mean": {
+          "demand_fulfillment_rate": 0.5384615384615384,
+          "weighted_response_distance_km": 0.0,
+          "mean_response_time_h": 0.0,
+          "gini_fairness": 0.0,
+          "unmet_demands": 6.0
+        },
+        "seeds": [
+          {
+            "demand_fulfillment_rate": 0.5384615384615384,
+            "weighted_response_distance_km": 0.0,
+            "mean_response_time_h": 0.0,
+            "gini_fairness": 0.0,
+            "unmet_demands": 6,
+            "feasible": true,
+            "seed": 0
+          },
+          {
+            "demand_fulfillment_rate": 0.5384615384615384,
+            "weighted_response_distance_km": 0.0,
+            "mean_response_time_h": 0.0,
+            "gini_fairness": 0.0,
+            "unmet_demands": 6,
+            "feasible": true,
+            "seed": 1
+          },
+          {
+            "demand_fulfillment_rate": 0.5384615384615384,
+            "weighted_response_distance_km": 0.0,
+            "mean_response_time_h": 0.0,
+            "gini_fairness": 0.0,
+            "unmet_demands": 6,
+            "feasible": true,
+            "seed": 2
+          }
+        ]
+      },
+      "proposed_nsga2": {
+        "mean": {
+          "demand_fulfillment_rate": 0.5384615384615384,
+          "weighted_response_distance_km": 0.0,
+          "mean_response_time_h": 0.0,
+          "gini_fairness": 0.0,
+          "unmet_demands": 6.0
+        },
+        "seeds": [
+          {
+            "demand_fulfillment_rate": 0.5384615384615384,
+            "weighted_response_distance_km": 0.0,
+            "mean_response_time_h": 0.0,
+            "gini_fairness": 0.0,
+            "unmet_demands": 6,
+            "feasible": true,
+            "seed": 0
+          },
+          {
+            "demand_fulfillment_rate": 0.5384615384615384,
+            "weighted_response_distance_km": 0.0,
+            "mean_response_time_h": 0.0,
+            "gini_fairness": 0.0,
+            "unmet_demands": 6,
+            "feasible": true,
+            "seed": 1
+          },
+          {
+            "demand_fulfillment_rate": 0.5384615384615384,
+            "weighted_response_distance_km": 0.0,
+            "mean_response_time_h": 0.0,
+            "gini_fairness": 0.0,
+            "unmet_demands": 6,
+            "feasible": true,
+            "seed": 2
+          }
+        ]
+      }
+    }
+  },
+  "hypervolume": {
+    "nearest": 0.0001,
+    "rule_based": 0.0001,
+    "standard_nsga2": 0.0001,
+    "proposed_nsga2": 0.0001
+  },
+  "stats": {
+    "proposed_vs_nearest": {
+      "fulfillment": {
+        "label_x": "nearest",
+        "label_y": "proposed_nsga2",
+        "n": 2,
+        "mean_nearest": 0.5384615384615384,
+        "mean_proposed_nsga2": 0.5384615384615384,
+        "ci_nearest": [
+          0.5384615384615384,
+          0.5384615384615384
+        ],
+        "ci_proposed_nsga2": [
+          0.5384615384615384,
+          0.5384615384615384
+        ],
+        "mean_diff": 0.0,
+        "cohens_d": 0.0,
+        "wilcoxon_p": 1.0,
+        "significant": false
+      },
+      "unmet": {
+        "label_x": "nearest",
+        "label_y": "proposed_nsga2",
+        "n": 2,
+        "mean_nearest": 6.0,
+        "mean_proposed_nsga2": 6.0,
+        "ci_nearest": [
+          6.0,
+          6.0
+        ],
+        "ci_proposed_nsga2": [
+          6.0,
+          6.0
+        ],
+        "mean_diff": 0.0,
+        "cohens_d": 0.0,
+        "wilcoxon_p": 1.0,
+        "significant": false
+      }
+    },
+    "proposed_vs_rule_based": {
+      "fulfillment": {
+        "label_x": "rule_based",
+        "label_y": "proposed_nsga2",
+        "n": 2,
+        "mean_rule_based": 0.5384615384615384,
+        "mean_proposed_nsga2": 0.5384615384615384,
+        "ci_rule_based": [
+          0.5384615384615384,
+          0.5384615384615384
+        ],
+        "ci_proposed_nsga2": [
+          0.5384615384615384,
+          0.5384615384615384
+        ],
+        "mean_diff": 0.0,
+        "cohens_d": 0.0,
+        "wilcoxon_p": 1.0,
+        "significant": false
+      },
+      "unmet": {
+        "label_x": "rule_based",
+        "label_y": "proposed_nsga2",
+        "n": 2,
+        "mean_rule_based": 6.0,
+        "mean_proposed_nsga2": 6.0,
+        "ci_rule_based": [
+          6.0,
+          6.0
+        ],
+        "ci_proposed_nsga2": [
+          6.0,
+          6.0
+        ],
+        "mean_diff": 0.0,
+        "cohens_d": 0.0,
+        "wilcoxon_p": 1.0,
+        "significant": false
+      }
+    },
+    "proposed_vs_standard_nsga2": {
+      "fulfillment": {
+        "label_x": "standard_nsga2",
+        "label_y": "proposed_nsga2",
+        "n": 2,
+        "mean_standard_nsga2": 0.5384615384615384,
+        "mean_proposed_nsga2": 0.5384615384615384,
+        "ci_standard_nsga2": [
+          0.5384615384615384,
+          0.5384615384615384
+        ],
+        "ci_proposed_nsga2": [
+          0.5384615384615384,
+          0.5384615384615384
+        ],
+        "mean_diff": 0.0,
+        "cohens_d": 0.0,
+        "wilcoxon_p": 1.0,
+        "significant": false
+      },
+      "unmet": {
+        "label_x": "standard_nsga2",
+        "label_y": "proposed_nsga2",
+        "n": 2,
+        "mean_standard_nsga2": 6.0,
+        "mean_proposed_nsga2": 6.0,
+        "ci_standard_nsga2": [
+          6.0,
+          6.0
+        ],
+        "ci_proposed_nsga2": [
+          6.0,
+          6.0
+        ],
+        "mean_diff": 0.0,
+        "cohens_d": 0.0,
+        "wilcoxon_p": 1.0,
+        "significant": false
+      }
+    }
+  }
+}

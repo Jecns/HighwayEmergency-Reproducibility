@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:hep="https://w3id.org/hepn/"
+   xmlns:ifcowl="https://standards.buildingsmart.org/IFC/DEV/IFC4X3/ADD2/OWL/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="https://w3id.org/hepn/instances/RES-QH-001">
+    <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4X3/ADD2/OWL/IfcCrewResource"/>
+    <ifcowl:identification>RES-QH-001</ifcowl:identification>
+    <ifcowl:name>龙羊峡水上应急救助分队</ifcowl:name>
+    <ifcowl:objectType>RESCUE_TEAM</ifcowl:objectType>
+    <ifcowl:description>青海艺苑龙羊峡水陆运输有限公司</ifcowl:description>
+    <hep:resourceType>RESCUE_TEAM</hep:resourceType>
+    <hep:resourceStatus>AVAILABLE</hep:resourceStatus>
+    <hep:latitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">36.744</hep:latitude>
+    <hep:longitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">100.4532</hep:longitude>
+    <hep:personCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</hep:personCount>
+    <hep:capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">20.0</hep:capacity>
+    <hep:travelSpeedKmh rdf:datatype="http://www.w3.org/2001/XMLSchema#float">60.0</hep:travelSpeedKmh>
+    <hep:specialCapabilities>负责辖区水域突发事件的应急救援任务。</hep:specialCapabilities>
+    <hep:needsVerification>status:synthetic|travel_speed_kmh:simulated|availability_time:synthetic|capacity:derived|current_assignment:derived|last_update_time:synthetic</hep:needsVerification>
+    <hep:dataProvenance>official|QH_JTT_PLAN_2024|附件4#row1</hep:dataProvenance>
+    <hep:sourceId>QH_JTT_PLAN_2024</hep:sourceId>
+    <hep:provenanceLevel>official</hep:provenanceLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hepn/instances/EVT-SMOKE-001">
+    <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4X3/ADD2/OWL/IfcEvent"/>
+    <ifcowl:identification>EVT-SMOKE-001</ifcowl:identification>
+    <ifcowl:name>追尾事故（演示）</ifcowl:name>
+    <ifcowl:objectType>HighwayEmergencyEvent</ifcowl:objectType>
+    <ifcowl:predefinedType>STARTEVENT</ifcowl:predefinedType>
+    <hep:eventType>TRAFFIC_ACCIDENT</hep:eventType>
+    <hep:severityLevel>III</hep:severityLevel>
+    <hep:startTime>2026-09-08T14:05:00</hep:startTime>
+    <hep:locationReference>G3011-K350+600</hep:locationReference>
+    <hep:casualtyCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</hep:casualtyCount>
+    <hep:vehicleCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</hep:vehicleCount>
+    <hep:blockageStatus>OPEN</hep:blockageStatus>
+    <hep:secondaryHazard rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</hep:secondaryHazard>
+    <hep:confidence rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</hep:confidence>
+    <hep:hasIncidentType rdf:resource="https://w3id.org/hepn/TrafficAccidentEvent"/>
+    <hep:dataProvenance>derived|SYNTH_SCENARIO_GEN|run_experiments#smoke</hep:dataProvenance>
+    <hep:sourceId>SYNTH_SCENARIO_GEN</hep:sourceId>
+    <hep:provenanceLevel>derived</hep:provenanceLevel>
+    <hep:triggersProcess rdf:resource="https://w3id.org/hepn/instances/SMOKE-P01"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hepn/instances/SMOKE-T01">
+    <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4X3/ADD2/OWL/IfcTask"/>
+    <ifcowl:identification>SMOKE-T01</ifcowl:identification>
+    <ifcowl:name>现场评估</ifcowl:name>
+    <ifcowl:objectType>SCENE_ASSESSMENT</ifcowl:objectType>
+    <ifcowl:predefinedType>EMERGENCY</ifcowl:predefinedType>
+    <ifcowl:status>PENDING</ifcowl:status>
+    <ifcowl:priority rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ifcowl:priority>
+    <hep:taskType>SCENE_ASSESSMENT</hep:taskType>
+    <hep:taskStatus>PENDING</hep:taskStatus>
+    <hep:priority rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</hep:priority>
+    <hep:expectedDurationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.5</hep:expectedDurationHours>
+    <hep:requiredResourceType>RESCUE_TEAM</hep:requiredResourceType>
+    <hep:requiredQuantity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hep:requiredQuantity>
+    <hep:actualResourceQuantity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</hep:actualResourceQuantity>
+    <hep:dataProvenance>derived|SPEC_001|process_engine/templates</hep:dataProvenance>
+    <hep:sourceId>SPEC_001</hep:sourceId>
+    <hep:provenanceLevel>derived</hep:provenanceLevel>
+    <hep:precedesTask rdf:resource="https://w3id.org/hepn/instances/SMOKE-T02"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hepn/instances/RES-SIM-008">
+    <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4X3/ADD2/OWL/IfcCrewResource"/>
+    <ifcowl:identification>RES-SIM-008</ifcowl:identification>
+    <ifcowl:name>医疗急救组-Medic-A</ifcowl:name>
+    <ifcowl:objectType>MEDICAL_TEAM</ifcowl:objectType>
+    <ifcowl:description>simulated inventory @ Xining-Depot</ifcowl:description>
+    <hep:resourceType>MEDICAL_TEAM</hep:resourceType>
+    <hep:resourceStatus>AVAILABLE</hep:resourceStatus>
+    <hep:latitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">36.617</hep:latitude>
+    <hep:longitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">101.778</hep:longitude>
+    <hep:personCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hep:personCount>
+    <hep:capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.0</hep:capacity>
+    <hep:travelSpeedKmh rdf:datatype="http://www.w3.org/2001/XMLSchema#float">50.0</hep:travelSpeedKmh>
+    <hep:specialCapabilities>simulated</hep:specialCapabilities>
+    <hep:needsVerification>ALL:simulated|depot:Xining-Depot</hep:needsVerification>
+    <hep:dataProvenance>simulated|SYNTH_INVENTORY_001|resource_engine/inventory.py#DEFAULT_INVENTORY_SPEC</hep:dataProvenance>
+    <hep:sourceId>SYNTH_INVENTORY_001</hep:sourceId>
+    <hep:provenanceLevel>simulated</hep:provenanceLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hepn/hasIncidentType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4X3/ADD2/OWL/IfcEvent"/>
+    <rdfs:range rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4X3/ADD2/OWL/IfcEvent"/>
+    <rdfs:range rdf:resource="https://w3id.org/hepn/HighwayEmergencyEvent"/>
+    <rdfs:label>hasIncidentType</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hepn/instances/RES-SIM-001">
+    <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4X3/ADD2/OWL/IfcConstructionEquipmentResource"/>
+    <ifcowl:identification>RES-SIM-001</ifcowl:identification>
+    <ifcowl:name>清障车-Wrecker-A</ifcowl:name>
+    <ifcowl:objectType>EQUIPMENT</ifcowl:objectType>
+    <ifcowl:description>simulated inventory @ Xining-Depot</ifcowl:description>
+    <hep:resourceType>EQUIPMENT</hep:resourceType>
+    <hep:resourceStatus>AVAILABLE</hep:resourceStatus>
+    <hep:latitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">36.617</hep:latitude>
+    <hep:longitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">101.778</hep:longitude>
+    <hep:personCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hep:personCount>
+    <hep:capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</hep:capacity>
+    <hep:travelSpeedKmh rdf:datatype="http://www.w3.org/2001/XMLSchema#float">50.0</hep:travelSpeedKmh>
+    <hep:specialCapabilities>simulated</hep:specialCapabilities>
+    <hep:needsVerification>ALL:simulated|depot:Xining-Depot</hep:needsVerification>
+    <hep:dataProvenance>simulated|SYNTH_INVENTORY_001|resource_engine/inventory.py#DEFAULT_INVENTORY_SPEC</hep:dataProvenance>
+    <hep:sourceId>SYNTH_INVENTORY_001</hep:sourceId>
+    <hep:provenanceLevel>simulated</hep:provenanceLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hepn/instances/SMOKE-T02">
+    <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4X3/ADD2/OWL/IfcTask"/>
+    <ifcowl:identification>SMOKE-T02</ifcowl:identification>
+    <ifcowl:name>搜救被困人员</ifcowl:name>
+    <ifcowl:objectType>RESCUE_TRAPPED_PERSONS</ifcowl:objectType>
+    <ifcowl:predefinedType>EMERGENCY</ifcowl:predefinedType>
+    <ifcowl:status>PENDING</ifcowl:status>
+    <ifcowl:priority rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ifcowl:priority>
+    <hep:taskType>RESCUE_TRAPPED_PERSONS</hep:taskType>
+    <hep:taskStatus>PENDING</hep:taskStatus>
+    <hep:priority rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</hep:priority>
+    <hep:expectedDurationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</hep:expectedDurationHours>
+    <hep:requiredResourceType>RESCUE_TEAM</hep:requiredResourceType>
+    <hep:requiredQuantity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hep:requiredQuantity>
+    <hep:actualResourceQuantity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</hep:actualResourceQuantity>
+    <hep:predecessorTaskId>SMOKE-T01</hep:predecessorTaskId>
+    <hep:dataProvenance>derived|SPEC_001|process_engine/templates</hep:dataProvenance>
+    <hep:sourceId>SPEC_001</hep:sourceId>
+    <hep:provenanceLevel>derived</hep:provenanceLevel>
+    <hep:precedesTask rdf:resource="https://w3id.org/hepn/instances/SMOKE-T03"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hepn/instances/RES-QH-002">
+    <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4X3/ADD2/OWL/IfcCrewResource"/>
+    <ifcowl:identification>RES-QH-002</ifcowl:identification>
+    <ifcowl:name>贵德县滨顺航运旅游有限责任公司</ifcowl:name>
+    <ifcowl:objectType>RESCUE_TEAM</ifcowl:objectType>
+    <ifcowl:description>贵德县滨顺航运旅游有限责任公司</ifcowl:description>
+    <hep:resourceType>RESCUE_TEAM</hep:resourceType>
+    <hep:resourceStatus>AVAILABLE</hep:resourceStatus>
+    <hep:latitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">36.315</hep:latitude>
+    <hep:longitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">101.2531</hep:longitude>
+    <hep:personCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</hep:personCount>
+    <hep:capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">10.0</hep:capacity>
+    <hep:travelSpeedKmh rdf:datatype="http://www.w3.org/2001/XMLSchema#float">60.0</hep:travelSpeedKmh>
+    <hep:specialCapabilities>负责辖区水域突发事件的应急救援任务。</hep:specialCapabilities>
+    <hep:needsVerification>status:synthetic|travel_speed_kmh:simulated|availability_time:synthetic|capacity:derived|current_assignment:derived|last_update_time:synthetic</hep:needsVerification>
+    <hep:dataProvenance>official|QH_JTT_PLAN_2024|附件4#row2</hep:dataProvenance>
+    <hep:sourceId>QH_JTT_PLAN_2024</hep:sourceId>
+    <hep:provenanceLevel>official</hep:provenanceLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hepn/startTime">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4X3/ADD2/OWL/IfcEvent"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label>startTime</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hepn/instances/SMOKE-P01">
+    <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4X3/ADD2/OWL/IfcProcedure"/>
+    <ifcowl:identification>SMOKE-P01</ifcowl:identification>
+    <ifcowl:name>抢险救援</ifcowl:name>
+    <ifcowl:objectType>RescueProcess</ifcowl:objectType>
+    <ifcowl:predefinedType>USERDEFINED</ifcowl:predefinedType>
+    <hep:processType>RESCUE</hep:processType>
+    <hep:processStatus>NOT_STARTED</hep:processStatus>
+    <hep:priority rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</hep:priority>
+    <hep:triggerEventId>EVT-SMOKE-001</hep:triggerEventId>
+    <hep:completionRate rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</hep:completionRate>
+    <hep:replanningCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</hep:replanningCount>
+    <hep:dataProvenance>derived|SPEC_001|process_engine/templates</hep:dataProvenance>
+    <hep:sourceId>SPEC_001</hep:sourceId>
+    <hep:provenanceLevel>derived</hep:provenanceLevel>
+    <hep:hasTask rdf:resource="https://w3id.org/hepn/instances/SMOKE-T01"/>
+    <hep:hasTask rdf:resource="https://w3id.org/hepn/instances/SMOKE-T02"/>
+    <hep:hasTask rdf:resource="https://w3id.org/hepn/instances/SMOKE-T03"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hepn/instances/RES-SIM-002">
+    <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4X3/ADD2/OWL/IfcConstructionEquipmentResource"/>
+    <ifcowl:identification>RES-SIM-002</ifcowl:identification>
+    <ifcowl:name>清障车-Wrecker-B</ifcowl:name>
+    <ifcowl:objectType>EQUIPMENT</ifcowl:objectType>
+    <ifcowl:description>simulated inventory @ Golmud-Depot</ifcowl:description>
+    <hep:resourceType>EQUIPMENT</hep:resourceType>
+    <hep:resourceStatus>AVAILABLE</hep:resourceStatus>
+    <hep:latitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">36.402</hep:latitude>
+    <hep:longitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">94.903</hep:longitude>
+    <hep:personCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hep:personCount>
+    <hep:capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</hep:capacity>
+    <hep:travelSpeedKmh rdf:datatype="http://www.w3.org/2001/XMLSchema#float">50.0</hep:travelSpeedKmh>
+    <hep:specialCapabilities>simulated</hep:specialCapabilities>
+    <hep:needsVerification>ALL:simulated|depot:Golmud-Depot</hep:needsVerification>
+    <hep:dataProvenance>simulated|SYNTH_INVENTORY_001|resource_engine/inventory.py#DEFAULT_INVENTORY_SPEC</hep:dataProvenance>
+    <hep:sourceId>SYNTH_INVENTORY_001</hep:sourceId>
+    <hep:provenanceLevel>simulated</hep:provenanceLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hepn/severityLevel">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4X3/ADD2/OWL/IfcEvent"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label>severityLevel</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4X3/ADD2/OWL/IfcProcedure">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hepn/latitude">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:label>latitude</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hepn/travelSpeedKmh">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:label>travelSpeedKmh</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hepn/HighwayEmergencyEvent">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4X3/ADD2/OWL/IfcEvent"/>
+    <rdfs:label>HighwayEmergencyEvent</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hepn/assignedToTask">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4X3/ADD2/OWL/IfcCrewResource"/>
+    <rdfs:range rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4X3/ADD2/OWL/IfcTask"/>
+    <rdfs:label>assignedToTask</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hepn/taskType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4X3/ADD2/OWL/IfcTask"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label>taskType</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hepn/locationReference">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4X3/ADD2/OWL/IfcEvent"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label>locationReference</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hepn/expectedDurationHours">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4X3/ADD2/OWL/IfcTask"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:label>expectedDurationHours</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hepn/resourceType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label>resourceType</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hepn/instances/SMOKE-T03">
+    <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4X3/ADD2/OWL/IfcTask"/>
+    <ifcowl:identification>SMOKE-T03</ifcowl:identification>
+    <ifcowl:name>清障保通</ifcowl:name>
+    <ifcowl:objectType>REMOVE_DAMAGED_VEHICLES</ifcowl:objectType>
+    <ifcowl:predefinedType>EMERGENCY</ifcowl:predefinedType>
+    <ifcowl:status>PENDING</ifcowl:status>
+    <ifcowl:priority rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ifcowl:priority>
+    <hep:taskType>REMOVE_DAMAGED_VEHICLES</hep:taskType>
+    <hep:taskStatus>PENDING</hep:taskStatus>
+    <hep:priority rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</hep:priority>
+    <hep:expectedDurationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.5</hep:expectedDurationHours>
+    <hep:requiredResourceType>EQUIPMENT</hep:requiredResourceType>
+    <hep:requiredQuantity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hep:requiredQuantity>
+    <hep:actualResourceQuantity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</hep:actualResourceQuantity>
+    <hep:predecessorTaskId>SMOKE-T02</hep:predecessorTaskId>
+    <hep:dataProvenance>derived|SPEC_001|process_engine/templates</hep:dataProvenance>
+    <hep:sourceId>SPEC_001</hep:sourceId>
+    <hep:provenanceLevel>derived</hep:provenanceLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hepn/processType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4X3/ADD2/OWL/IfcProcedure"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label>processType</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hepn/eventType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4X3/ADD2/OWL/IfcEvent"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label>eventType</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hepn/InfrastructureFailureEvent">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/hepn/HighwayEmergencyEvent"/>
+    <rdfs:label>InfrastructureFailureEvent</rdfs:label>
+    <rdfs:comment>基础设施失效事件 — 附件1类别: 公路水运工程基础设施</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hepn/HazardousChemicalLeakEvent">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/hepn/HighwayEmergencyEvent"/>
+    <rdfs:label>HazardousChemicalLeakEvent</rdfs:label>
+    <rdfs:comment>危化品泄漏事件 — 附件1类别: 危险化学(品)运输车辆事故</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hepn/requiredResourceType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4X3/ADD2/OWL/IfcTask"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label>requiredResourceType</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hepn/triggersProcess">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4X3/ADD2/OWL/IfcEvent"/>
+    <rdfs:range rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4X3/ADD2/OWL/IfcProcedure"/>
+    <rdfs:label>triggersProcess</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hepn/predecessorTaskId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4X3/ADD2/OWL/IfcTask"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label>predecessorTaskId</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hepn/blockageStatus">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4X3/ADD2/OWL/IfcEvent"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label>blockageStatus</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hepn/provenanceLevel">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label>provenanceLevel</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hepn/actualResourceQuantity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4X3/ADD2/OWL/IfcTask"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:label>actualResourceQuantity</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hepn/priority">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4X3/ADD2/OWL/IfcProcedure"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:label>priority</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hepn/confidence">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4X3/ADD2/OWL/IfcEvent"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:label>confidence</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hepn/completionRate">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4X3/ADD2/OWL/IfcProcedure"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:label>completionRate</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hepn/longitude">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:label>longitude</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hepn/specialCapabilities">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label>specialCapabilities</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hepn/personCount">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:label>personCount</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hepn/replanningCount">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4X3/ADD2/OWL/IfcProcedure"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:label>replanningCount</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hepn/hasTask">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4X3/ADD2/OWL/IfcProcedure"/>
+    <rdfs:range rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4X3/ADD2/OWL/IfcTask"/>
+    <rdfs:label>hasTask</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hepn/resourceStatus">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label>resourceStatus</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hepn/requiredQuantity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4X3/ADD2/OWL/IfcTask"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:label>requiredQuantity</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hepn/taskStatus">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4X3/ADD2/OWL/IfcTask"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label>taskStatus</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hepn/secondaryHazard">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4X3/ADD2/OWL/IfcEvent"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:label>secondaryHazard</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hepn/triggerEventId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4X3/ADD2/OWL/IfcProcedure"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label>triggerEventId</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hepn/precedesTask">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4X3/ADD2/OWL/IfcTask"/>
+    <rdfs:range rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4X3/ADD2/OWL/IfcTask"/>
+    <rdfs:label>precedesTask</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hepn/vehicleCount">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4X3/ADD2/OWL/IfcEvent"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:label>vehicleCount</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hepn/casualtyCount">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4X3/ADD2/OWL/IfcEvent"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:label>casualtyCount</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hepn/ExtremeWeatherEvent">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/hepn/HighwayEmergencyEvent"/>
+    <rdfs:label>ExtremeWeatherEvent</rdfs:label>
+    <rdfs:comment>极端天气事件 — 附件1类别: 恶劣天气</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4X3/ADD2/OWL/IfcConstructionEquipmentResource">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hepn/dataProvenance">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label>dataProvenance</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hepn/processStatus">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4X3/ADD2/OWL/IfcProcedure"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label>processStatus</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hepn/sourceId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label>sourceId</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hepn/GeologicalDisasterEvent">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/hepn/HighwayEmergencyEvent"/>
+    <rdfs:label>GeologicalDisasterEvent</rdfs:label>
+    <rdfs:comment>地质灾害事件 — 附件1类别: 公路水运工程基础设施</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hepn/capacity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:label>capacity</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hepn/ontology">
+    <owl:imports rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4X3/ADD2/OWL/"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hepn/needsVerification">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label>needsVerification</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4X3/ADD2/OWL/IfcTask">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hepn/TrafficAccidentEvent">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/hepn/HighwayEmergencyEvent"/>
+    <rdfs:label>TrafficAccidentEvent</rdfs:label>
+    <rdfs:comment>交通事故事件 — 附件1类别: 交通安全事故</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4X3/ADD2/OWL/IfcEvent">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4X3/ADD2/OWL/IfcCrewResource">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+</rdf:RDF>
